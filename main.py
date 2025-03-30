@@ -1,82 +1,124 @@
 import asyncio
+import os
 
-from crawl4ai import AsyncWebCrawler
+from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 from dotenv import load_dotenv
 
-from config import BASE_URL, CSS_SELECTOR, REQUIRED_KEYS
-from utils.data_utils import (
-    save_venues_to_csv,
-)
-from utils.scraper_utils import (
-    fetch_and_process_page,
-    get_browser_config,
-    get_llm_strategy,
-)
+from config import BASE_URL, RESOURCE_LINKS, REQUIRED_KEYS
+from utils.data_utils import save_endpoints_to_csv
+from utils.canvas_scraper import parse_canvas_api_page
 
 load_dotenv()
 
 
-async def crawl_venues():
+def get_browser_config() -> BrowserConfig:
     """
-    Main function to crawl venue data from the website.
+    Returns the browser configuration for the crawler.
     """
-    # Initialize configurations
+    return BrowserConfig(
+        browser_type="chromium",
+        headless=False,
+        verbose=True,
+    )
+
+
+async def crawl_canvas_api():
+    """
+    Crawls the Canvas API documentation and extracts endpoint information.
+    """
+    # Initialize browser
     browser_config = get_browser_config()
-    llm_strategy = get_llm_strategy()
-    session_id = "venue_crawl_session"
+    session_id = "canvas_api_crawl_session"
 
-    # Initialize state variables
-    page_number = 1
-    all_venues = []
-    seen_names = set()
+    # Create results directory if it doesn't exist
+    os.makedirs("results", exist_ok=True)
 
-    # Start the web crawler context
-    # https://docs.crawl4ai.com/api/async-webcrawler/#asyncwebcrawler
+    # Initialize data collection
+    all_endpoints = []
+    seen_endpoint_ids = set()
+
+    # Start the crawler
+    print(f"Starting Canvas API documentation scraper for {BASE_URL}")
     async with AsyncWebCrawler(config=browser_config) as crawler:
-        while True:
-            # Fetch and process data from the current page
-            venues, no_results_found = await fetch_and_process_page(
-                crawler,
-                page_number,
-                BASE_URL,
-                CSS_SELECTOR,
-                llm_strategy,
-                session_id,
-                REQUIRED_KEYS,
-                seen_names,
+        # Process each resource page
+        for resource_link in RESOURCE_LINKS:
+            # Extract resource name from filename (e.g., "users.html" -> "Users")
+            resource_name = resource_link.replace(".html", "").capitalize()
+            resource_url = BASE_URL + resource_link
+
+            print(f"Processing resource: {resource_name} ({resource_url})")
+
+            # Crawl the resource page
+            result = await crawler.arun(
+                url=resource_url,
+                config=CrawlerRunConfig(
+                    cache_mode=CacheMode.BYPASS,
+                    session_id=session_id,
+                ),
             )
 
-            if no_results_found:
-                print("No more venues found. Ending crawl.")
-                break  # Stop crawling when "No Results Found" message appears
+            if not result.success:
+                print(f"Error fetching {resource_name}: {result.error_message}")
+                continue
 
-            if not venues:
-                print(f"No venues extracted from page {page_number}.")
-                break  # Stop if no venues are extracted
+            # Save the HTML for the first few resources for debugging
+            if resource_name.lower() in ["users", "courses", "accounts"]:
+                with open(
+                    f"results/debug_{resource_name.lower()}.html", "w", encoding="utf-8"
+                ) as f:
+                    f.write(result.cleaned_html)
+                    print(
+                        f"Saved HTML for {resource_name} to results/debug_{resource_name.lower()}.html"
+                    )
 
-            # Add the venues from this page to the total list
-            all_venues.extend(venues)
-            page_number += 1  # Move to the next page
+            # Parse the page to extract API endpoints
+            endpoints = parse_canvas_api_page(result.cleaned_html, resource_name)
 
-            # Pause between requests to be polite and avoid rate limits
-            await asyncio.sleep(2)  # Adjust sleep time as needed
+            # Filter and deduplicate endpoints
+            for endpoint in endpoints:
+                # Create a unique ID for this endpoint
+                endpoint_id = f"{endpoint['resource']}_{endpoint['http_method']}_{endpoint['path']}"
 
-    # Save the collected venues to a CSV file
-    if all_venues:
-        save_venues_to_csv(all_venues, "complete_venues.csv")
-        print(f"Saved {len(all_venues)} venues to 'complete_venues.csv'.")
+                # Skip if we've seen this endpoint before
+                if endpoint_id in seen_endpoint_ids:
+                    continue
+
+                # Skip if missing required fields
+                if not all(key in endpoint and endpoint[key] for key in REQUIRED_KEYS):
+                    continue
+
+                # Add to results
+                seen_endpoint_ids.add(endpoint_id)
+                all_endpoints.append(endpoint)
+
+            print(f"Extracted {len(endpoints)} endpoints from {resource_name}")
+
+            # Brief pause between requests
+            await asyncio.sleep(1)
+
+    # Save the results
+    if all_endpoints:
+        # Save to CSV
+        csv_file = "results/canvas_api_endpoints.csv"
+        save_endpoints_to_csv(all_endpoints, csv_file)
+        print(f"Saved {len(all_endpoints)} endpoints to {csv_file}")
+
+        # Save detailed JSON
+        import json
+
+        json_file = "results/canvas_api_endpoints.json"
+        with open(json_file, "w", encoding="utf-8") as f:
+            json.dump(all_endpoints, f, indent=2)
+        print(f"Saved detailed endpoint data to {json_file}")
     else:
-        print("No venues were found during the crawl.")
-
-    # Display usage statistics for the LLM strategy
-    llm_strategy.show_usage()
+        print("No API endpoints found.")
 
 
 async def main():
     """
     Entry point of the script.
     """
-    await crawl_venues()
+    await crawl_canvas_api()
 
 
 if __name__ == "__main__":

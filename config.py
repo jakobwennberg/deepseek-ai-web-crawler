@@ -1,13 +1,24 @@
 # config.py
 
-BASE_URL = "https://www.theknot.com/marketplace/wedding-reception-venues-atlanta-ga"
-CSS_SELECTOR = "[class^='info-container']"
+BASE_URL = "https://canvas.instructure.com/doc/api/"
+RESOURCE_LINKS = [
+    "users.html",
+    "courses.html",
+    "accounts.html",
+    "enrollments.html",
+    "assignments.html",
+    "submissions.html",
+    "files.html",
+    "groups.html",
+    "discussion_topics.html",
+    "modules.html",
+    "pages.html",
+    "quizzes.html",
+]
 REQUIRED_KEYS = [
+    "resource",
     "name",
-    "price",
-    "location",
-    "capacity",
-    "rating",
-    "reviews",
+    "http_method",
+    "path",
     "description",
 ]

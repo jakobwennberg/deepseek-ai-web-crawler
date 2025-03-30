@@ -1,0 +1,2344 @@
+
+<div>
+<h1>
+<a href="index.html">Canvas LMS - REST API and Extensions Documentation</a>
+</h1>
+</div>
+<div>
+<nav>
+<div>
+<label>Expand all</label>
+</div>
+<div>
+<label>Basics</label>
+<div>
+<div>
+<a href="file.graphql.html">GraphQL</a><a href="file.changelog.html">API Change Log</a><a href="file.object_ids.html">SIS IDs</a><a href="file.pagination.html">Pagination</a><a href="file.throttling.html">Throttling</a><a href="file.compound_documents.html">Compound Documents</a><a href="file.file_uploads.html">File Uploads</a><a href="file.endpoint_attributes.html">API Endpoint Attributes</a><a href="file.masquerading.html">Masquerading</a>
+</div>
+</div>
+</div>
+<div>
+<label>OAuth2</label>
+<div>
+<div>
+<a href="file.oauth.html">OAuth2 Overview</a><a href="file.oauth_endpoints.html">OAuth2 Endpoints</a><a href="file.developer_keys.html">Developer Keys</a>
+</div>
+</div>
+</div>
+<div>
+<label>Resources</label>
+<div>
+<div>
+<a href="all_resources.html">All Resources Reference</a>
+<a href="access_tokens.html">Access Tokens</a>
+<a href="account_calendars.html">Account Calendars</a>
+<a href="account_domain_lookups.html">Account Domain Lookups</a>
+<a href="account_notifications.html">Account Notifications</a>
+<a href="account_reports.html">Account Reports</a>
+<a href="accounts.html">Accounts</a>
+<a href="accounts_(lti).html">Accounts (LTI)</a>
+<a href="admins.html">Admins</a>
+<a href="analytics.html">Analytics</a>
+<a href="announcement_external_feeds.html">Announcement External Feeds</a>
+<a href="announcements.html">Announcements</a>
+<a href="api_token_scopes.html">API Token Scopes</a>
+<a href="appointment_groups.html">Appointment Groups</a>
+<a href="assignment_extensions.html">Assignment Extensions</a>
+<a href="assignment_groups.html">Assignment Groups</a>
+<a href="assignments.html">Assignments</a>
+<a href="authentication_providers.html">Authentication Providers</a>
+<a href="authentications_log.html">Authentications Log</a>
+<a href="blackout_dates.html">Blackout Dates</a>
+<a href="block_editor_template.html">BlockEditorTemplate</a>
+<a href="blueprint_courses.html">Blueprint Courses</a>
+<a href="bookmarks.html">Bookmarks</a>
+<a href="brand_configs.html">Brand Configs</a>
+<a href="calendar_events.html">Calendar Events</a>
+<a href="collaborations.html">Collaborations</a>
+<a href="comm_messages.html">CommMessages</a>
+<a href="communication_channels.html">Communication Channels</a>
+<a href="conferences.html">Conferences</a>
+<a href="content_exports.html">Content Exports</a>
+<a href="content_migrations.html">Content Migrations</a>
+<a href="content_security_policy_settings.html">Content Security Policy Settings</a>
+<a href="content_shares.html">Content Shares</a>
+<a href="conversations.html">Conversations</a>
+<a href="course_audit_log.html">Course Audit log</a>
+<a href="course_pace.html">Course Pace</a>
+<a href="course_quiz_extensions.html">Course Quiz Extensions</a>
+<a href="course_reports.html">Course Reports</a>
+<a href="courses.html">Courses</a>
+<a href="custom_gradebook_columns.html">Custom Gradebook Columns</a>
+<a href="developer_key_account_bindings.html">Developer Key Account Bindings</a>
+<a href="developer_keys.html">Developer Keys</a>
+<a href="discussion_topics.html">Discussion Topics</a>
+<a href="enrollment_terms.html">Enrollment Terms</a>
+<a href="enrollments.html">Enrollments</a>
+<a href="e_portfolios.html">ePortfolios</a>
+<a href="e_pub_exports.html">ePub Exports</a>
+<a href="error_reports.html">Error Reports</a>
+<a href="external_tools.html">External Tools</a>
+<a href="favorites.html">Favorites</a>
+<a href="feature_flags.html">Feature Flags</a>
+<a href="files.html">Files</a>
+<a href="grade_change_log.html">Grade Change Log</a>
+<a href="gradebook_history.html">Gradebook History</a>
+<a href="grading_period_sets.html">Grading Period Sets</a>
+<a href="grading_periods.html">Grading Periods</a>
+<a href="grading_standards.html">Grading Standards</a>
+<a href="group_categories.html">Group Categories</a>
+<a href="groups.html">Groups</a>
+<a href="history.html">History</a>
+<a href="inst_access_tokens.html">InstAccess tokens</a>
+<a href="jw_ts.html">JWTs</a>
+<a href="late_policy.html">Late Policy</a>
+<a href="learning_object_dates.html">Learning Object Dates</a>
+<a href="line_items.html">Line Items</a>
+<a href="live_assessments.html">LiveAssessments</a>
+<a href="logins.html">Logins</a>
+<a href="lti_launch_definitions.html">LTI Launch Definitions</a>
+<a href="lti_registrations.html">LTI Registrations</a>
+<a href="lti_resource_links.html">LTI Resource Links</a>
+<a href="media_objects.html">Media Objects</a>
+<a href="moderated_grading.html">Moderated Grading</a>
+<a href="modules.html">Modules</a>
+<a href="names_and_role.html">Names and Role</a>
+<a href="new_quiz_items.html">New Quiz Items</a>
+<a href="new_quizzes.html">New Quizzes</a>
+<a href="new_quizzes_accommodations.html">New Quizzes Accommodations</a>
+<a href="new_quizzes_reports.html">New Quizzes Reports</a>
+<a href="notification_preferences.html">Notification Preferences</a>
+<a href="originality_reports.html">Originality Reports</a>
+<a href="outcome_groups.html">Outcome Groups</a>
+<a href="outcome_imports.html">Outcome Imports</a>
+<a href="outcome_results.html">Outcome Results</a>
+<a href="outcomes.html">Outcomes</a>
+<a href="pages.html">Pages</a>
+<a href="peer_reviews.html">Peer Reviews</a>
+<a href="planner.html">Planner</a>
+<a href="poll_sessions.html">Poll Sessions</a>
+<a href="poll_choices.html">PollChoices</a>
+<a href="polls.html">Polls</a>
+<a href="poll_submissions.html">PollSubmissions</a>
+<a href="proficiency_ratings.html">Proficiency Ratings</a>
+<a href="progress.html">Progress</a>
+<a href="public_jwk.html">Public JWK</a>
+<a href="quiz_assignment_overrides.html">Quiz Assignment Overrides</a>
+<a href="quiz_extensions.html">Quiz Extensions</a>
+<a href="quiz_ip_filters.html">Quiz IP Filters</a>
+<a href="quiz_question_groups.html">Quiz Question Groups</a>
+<a href="quiz_questions.html">Quiz Questions</a>
+<a href="quiz_reports.html">Quiz Reports</a>
+<a href="quiz_statistics.html">Quiz Statistics</a>
+<a href="quiz_submission_events.html">Quiz Submission Events</a>
+<a href="quiz_submission_files.html">Quiz Submission Files</a>
+<a href="quiz_submission_questions.html">Quiz Submission Questions</a>
+<a href="quiz_submission_user_list.html">Quiz Submission User List</a>
+<a href="quiz_submissions.html">Quiz Submissions</a>
+<a href="quizzes.html">Quizzes</a>
+<a href="result.html">Result</a>
+<a href="roles.html">Roles</a>
+<a href="rubrics.html">Rubrics</a>
+<a href="sandboxes.html">Sandboxes</a>
+<a href="score.html">Score</a>
+<a href="search.html">Search</a>
+<a href="sections.html">Sections</a>
+<a href="services.html">Services</a>
+<a href="shared_brand_configs.html">Shared Brand Configs</a>
+<a href="sis_import_errors.html">SIS Import Errors</a>
+<a href="sis_imports.html">SIS Imports</a>
+<a href="sis_integration.html">SIS Integration</a>
+<a href="smart_search.html">Smart Search</a>
+<a href="submission_comments.html">Submission Comments</a>
+<a href="submissions.html">Submissions</a>
+<a href="tabs.html">Tabs</a>
+<a href="temporary_enrollment_pairings.html">Temporary Enrollment Pairings</a>
+<a href="user_observees.html">User Observees</a>
+<a href="users.html">Users</a>
+<a href="what_if_grades.html">What If Grades</a>
+</div>
+</div>
+</div>
+<div>
+<label>Outcomes</label>
+<div>
+<div>
+<a href="file.outcomes_csv.html">Outcomes CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>Group Categories</label>
+<div>
+<div>
+<a href="file.group_category_csv.html">Group Categories CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>SIS</label>
+<div>
+<div>
+<a href="file.sis_csv.html">SIS CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>External Tools</label>
+<div>
+<div>
+<label>LTI</label>
+<div>
+<a href="file.tools_intro.html">Introduction</a><a href="file.registration.html">Registration</a><a href="file.lti_launch_overview.html">Launch Overview</a><a href="file.lti_dev_key_config.html">Configuring</a><a href="file.tools_variable_substitutions.html">Variable Substitutions</a><a href="file.content_item.html">Deep Linking</a><a href="file.assignment_tools.html">Grading</a><a href="file.provisioning.html">Provisioning</a><a href="file.lti_window_post_message.html">PostMessage</a>
+<div>
+<label>Placements</label>
+<div>
+<a href="file.placements_overview.html">Placements Overview</a><a href="file.navigation_tools.html">Navigation</a><a href="file.homework_submission_placement.html">Homework Submission</a><a href="file.editor_button_placement.html">Editor Button</a><a href="file.migration_selection_placement.html">Migration Selection</a><a href="file.link_selection_placement.html">Link Selection (Modules)</a><a href="file.assignment_selection_placement.html">Assignment Selection</a><a href="file.collaborations_placement.html">Collaborations</a>
+</div>
+</div>
+</div>
+</div>
+<a href="file.xapi.html">xAPI</a>
+<a href="file.canvas_roles.html">Canvas Roles</a>
+</div>
+<div>
+<div>
+<label>Plagiarism Detection Platform</label>
+<div>
+<a href="file.plagiarism_platform.html">Overview</a>
+<a href="plagiarism_detection_platform_assignments.html">Plagiarism Detection Platform Assignments</a>
+<a href="plagiarism_detection_platform_users.html">Plagiarism Detection Platform Users</a>
+<a href="plagiarism_detection_submissions.html">Plagiarism Detection Submissions</a>
+<a href="webhooks_subscriptions_for_plagiarism_platform.html">Webhooks Subscriptions for Plagiarism Platform</a>
+<a href="file.jwt_access_tokens.html">JWT Access Tokens</a>
+</div>
+</div>
+</div>
+</div>
+<div>
+<label>Data Services</label>
+<div>
+<div>
+<label>Live Events</label>
+<div>
+<div>
+<label>Overview</label>
+<div>
+<a href="file.data_service_introduction.html">Introduction</a><a href="file.data_service_setup.html">Setup</a><a href="file.data_service_caliper_structure.html">Caliper</a><a href="file.data_service_canvas_event_metadata.html">Metadata</a>
+</div>
+</div>
+<span>Event Format</span>
+</div>
+<div>
+<div>
+<label>Canvas</label>
+<div>
+<a href="file.data_service_canvas_account.html">Account</a><a href="file.data_service_canvas_asset.html">Asset</a><a href="file.data_service_canvas_assignment.html">Assignment</a><a href="file.data_service_canvas_attachment.html">Attachment</a><a href="file.data_service_canvas_content.html">Content</a><a href="file.data_service_canvas_conversation.html">Conversation</a><a href="file.data_service_canvas_course.html">Course</a><a href="file.data_service_canvas_discussion.html">Discussion</a><a href="file.data_service_canvas_enrollment.html">Enrollment</a><a href="file.data_service_canvas_grade.html">Grade</a><a href="file.data_service_canvas_group.html">Group</a><a href="file.data_service_canvas_learning.html">Learning</a><a href="file.data_service_canvas_logged.html">Logged</a><a href="file.data_service_canvas_module.html">Module</a><a href="file.data_service_canvas_outcome.html">Outcome</a><a href="file.data_service_canvas_outcomes.html">Outcomes</a><a href="file.data_service_canvas_plagiarism.html">Plagiarism</a><a href="file.data_service_canvas_quiz.html">Quiz</a><a href="file.data_service_canvas_rubric.html">Rubric</a><a href="file.data_service_canvas_sis.html">Sis</a><a href="file.data_service_canvas_submission.html">Submission</a><a href="file.data_service_canvas_syllabus.html">Syllabus</a><a href="file.data_service_canvas_user.html">User</a><a href="file.data_service_canvas_wiki.html">Wiki</a>
+</div>
+</div>
+</div>
+<div>
+<div>
+<label>Caliper IMS 1.1</label>
+<div>
+<a href="file.data_service_caliper_assessment.html">Assessment</a><a href="file.data_service_caliper_basic.html">Basic</a><a href="file.data_service_caliper_forum.html">Forum</a><a href="file.data_service_caliper_grading.html">Grading</a><a href="file.data_service_caliper_navigation_events.html">Navigation Events</a><a href="file.data_service_caliper_session.html">Session</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</nav>
+</div>
+<div><div>
+<h1>Courses API</h1>
+<table>
+<tbody><tr><th>Courses</th><td><a href="#method.courses.index">List your courses</a><a href="#method.courses.user_index">List courses for a user</a><a href="#method.courses.user_progress">Get user progress</a><a href="#method.courses.create">Create a new course</a><a href="#method.courses.create_file">Upload a file</a><a href="#method.courses.students">List students</a><a href="#method.courses.users">List users in course</a><a href="#method.courses.recent_students">List recently logged in students</a><a href="#method.courses.user">Get single user</a><a href="#method.courses.content_share_users">Search for content share users</a><a href="#method.courses.preview_html">Preview processed html</a><a href="#method.courses.activity_stream">Course activity stream</a><a href="#method.courses.activity_stream_summary">Course activity stream summary</a><a href="#method.courses.todo_items">Course TODO items</a><a href="#method.courses.destroy">Delete/Conclude a course</a><a href="#method.courses.api_settings">Get course settings</a><a href="#method.courses.update_settings">Update course settings</a><a href="#method.courses.student_view_student">Return test student for course</a><a href="#method.courses.show">Get a single course</a><a href="#method.courses.update">Update a course</a><a href="#method.courses.batch_update">Update courses</a><a href="#method.courses.reset_content">Reset a course</a><a href="#method.courses.effective_due_dates">Get effective due dates</a><a href="#method.courses.permissions">Permissions</a><a href="#method.courses.bulk_user_progress">Get bulk user progress</a><a href="#method.courses.dismiss_migration_limitation_msg">Remove quiz migration alert</a><a href="#method.content_imports.copy_course_status">Get course copy status</a><a href="#method.content_imports.copy_course_content">Copy course content</a></td></tr></tbody></table>
+<p>API for accessing course information.</p>
+<div>
+<h3><a>A Term object looks like:</a></h3>
+<pre><code><span>{</span><span>"id"</span><span>:</span><span>1</span><span>,</span><span>"name"</span><span>:</span><span>"Default Term"</span><span>,</span><span>"start_at"</span><span>:</span><span>"2012-06-01T00:00:00-06:00"</span><span>,</span><span>"end_at"</span><span>:</span><span>null</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A CourseProgress object looks like:</a></h3>
+<pre><code><span>{</span><span>// total number of requirements from all modules</span><span>"requirement_count"</span><span>:</span><span>10</span><span>,</span><span>// total number of requirements the user has completed from all modules</span><span>"requirement_completed_count"</span><span>:</span><span>1</span><span>,</span><span>// url to next module item that has an unmet requirement. null if the user has</span><span>// completed the course or the current module does not require sequential</span><span>// progress</span><span>"next_requirement_url"</span><span>:</span><span>"http://localhost/courses/1/modules/items/2"</span><span>,</span><span>// date the course was completed. null if the course has not been completed by</span><span>// this user</span><span>"completed_at"</span><span>:</span><span>"2013-06-01T00:00:00-06:00"</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A Course object looks like:</a></h3>
+<pre><code><span>{</span><span>// the unique identifier for the course</span><span>"id"</span><span>:</span><span>370663</span><span>,</span><span>// the SIS identifier for the course, if defined. This field is only included if</span><span>// the user has permission to view SIS information.</span><span>"sis_course_id"</span><span>:</span><span>null</span><span>,</span><span>// the UUID of the course</span><span>"uuid"</span><span>:</span><span>"WvAHhY5FINzq5IyRIJybGeiXyFkG3SqHUPb7jZY5"</span><span>,</span><span>// the integration identifier for the course, if defined. This field is only</span><span>// included if the user has permission to view SIS information.</span><span>"integration_id"</span><span>:</span><span>null</span><span>,</span><span>// the unique identifier for the SIS import. This field is only included if the</span><span>// user has permission to manage SIS information.</span><span>"sis_import_id"</span><span>:</span><span>34</span><span>,</span><span>// the full name of the course. If the requesting user has set a nickname for</span><span>// the course, the nickname will be shown here.</span><span>"name"</span><span>:</span><span>"InstructureCon 2012"</span><span>,</span><span>// the course code</span><span>"course_code"</span><span>:</span><span>"INSTCON12"</span><span>,</span><span>// the actual course name. This field is returned only if the requesting user</span><span>// has set a nickname for the course.</span><span>"original_name"</span><span>:</span><span>"InstructureCon-2012-01"</span><span>,</span><span>// the current state of the course, also known as ‘status’. The value will be</span><span>// one of the following values: 'unpublished', 'available', 'completed', or</span><span>// 'deleted'. NOTE: When fetching a singular course that has a 'deleted'</span><span>// workflow state value, an error will be returned with a message of 'The</span><span>// specified resource does not exist.'</span><span>"workflow_state"</span><span>:</span><span>"available"</span><span>,</span><span>// the account associated with the course</span><span>"account_id"</span><span>:</span><span>81259</span><span>,</span><span>// the root account associated with the course</span><span>"root_account_id"</span><span>:</span><span>81259</span><span>,</span><span>// the enrollment term associated with the course</span><span>"enrollment_term_id"</span><span>:</span><span>34</span><span>,</span><span>// A list of grading periods associated with the course</span><span>"grading_periods"</span><span>:</span><span>null</span><span>,</span><span>// the grading standard associated with the course</span><span>"grading_standard_id"</span><span>:</span><span>25</span><span>,</span><span>// the grade_passback_setting set on the course</span><span>"grade_passback_setting"</span><span>:</span><span>"nightly_sync"</span><span>,</span><span>// the date the course was created.</span><span>"created_at"</span><span>:</span><span>"2012-05-01T00:00:00-06:00"</span><span>,</span><span>// the start date for the course, if applicable</span><span>"start_at"</span><span>:</span><span>"2012-06-01T00:00:00-06:00"</span><span>,</span><span>// the end date for the course, if applicable</span><span>"end_at"</span><span>:</span><span>"2012-09-01T00:00:00-06:00"</span><span>,</span><span>// the course-set locale, if applicable</span><span>"locale"</span><span>:</span><span>"en"</span><span>,</span><span>// A list of enrollments linking the current user to the course. for student</span><span>// enrollments, grading information may be included if include[]=total_scores</span><span>"enrollments"</span><span>:</span><span>null</span><span>,</span><span>// optional: the total number of active and invited students in the course</span><span>"total_students"</span><span>:</span><span>32</span><span>,</span><span>// course calendar</span><span>"calendar"</span><span>:</span><span>null</span><span>,</span><span>// the type of page that users will see when they first visit the course -</span><span>// 'feed': Recent Activity Dashboard - 'wiki': Wiki Front Page - 'modules':</span><span>// Course Modules/Sections Page - 'assignments': Course Assignments List -</span><span>// 'syllabus': Course Syllabus Page other types may be added in the future</span><span>"default_view"</span><span>:</span><span>"feed"</span><span>,</span><span>// optional: user-generated HTML for the course syllabus</span><span>"syllabus_body"</span><span>:</span><span>"&lt;p&gt;syllabus html goes here&lt;/p&gt;"</span><span>,</span><span>// optional: the number of submissions needing grading returned only if the</span><span>// current user has grading rights and include[]=needs_grading_count</span><span>"needs_grading_count"</span><span>:</span><span>17</span><span>,</span><span>// optional: the enrollment term object for the course returned only if</span><span>// include[]=term</span><span>"term"</span><span>:</span><span>null</span><span>,</span><span>// optional: information on progress through the course returned only if</span><span>// include[]=course_progress</span><span>"course_progress"</span><span>:</span><span>null</span><span>,</span><span>// weight final grade based on assignment group percentages</span><span>"apply_assignment_group_weights"</span><span>:</span><span>true</span><span>,</span><span>// optional: the permissions the user has for the course. returned only for a</span><span>// single course and include[]=permissions</span><span>"permissions"</span><span>:</span><span>{</span><span>"create_discussion_topic"</span><span>:</span><span>true</span><span>,</span><span>"create_announcement"</span><span>:</span><span>true</span><span>},</span><span>"is_public"</span><span>:</span><span>true</span><span>,</span><span>"is_public_to_auth_users"</span><span>:</span><span>true</span><span>,</span><span>"public_syllabus"</span><span>:</span><span>true</span><span>,</span><span>"public_syllabus_to_auth"</span><span>:</span><span>true</span><span>,</span><span>// optional: the public description of the course</span><span>"public_description"</span><span>:</span><span>"Come one, come all to InstructureCon 2012!"</span><span>,</span><span>"storage_quota_mb"</span><span>:</span><span>5</span><span>,</span><span>"storage_quota_used_mb"</span><span>:</span><span>5</span><span>,</span><span>"hide_final_grades"</span><span>:</span><span>false</span><span>,</span><span>"license"</span><span>:</span><span>"Creative Commons"</span><span>,</span><span>"allow_student_assignment_edits"</span><span>:</span><span>false</span><span>,</span><span>"allow_wiki_comments"</span><span>:</span><span>false</span><span>,</span><span>"allow_student_forum_attachments"</span><span>:</span><span>false</span><span>,</span><span>"open_enrollment"</span><span>:</span><span>true</span><span>,</span><span>"self_enrollment"</span><span>:</span><span>false</span><span>,</span><span>"restrict_enrollments_to_course_dates"</span><span>:</span><span>false</span><span>,</span><span>"course_format"</span><span>:</span><span>"online"</span><span>,</span><span>// optional: this will be true if this user is currently prevented from viewing</span><span>// the course because of date restriction settings</span><span>"access_restricted_by_date"</span><span>:</span><span>false</span><span>,</span><span>// The course's IANA time zone name.</span><span>"time_zone"</span><span>:</span><span>"America/Denver"</span><span>,</span><span>// optional: whether the course is set as a Blueprint Course (blueprint fields</span><span>// require the Blueprint Courses feature)</span><span>"blueprint"</span><span>:</span><span>true</span><span>,</span><span>// optional: Set of restrictions applied to all locked course objects</span><span>"blueprint_restrictions"</span><span>:</span><span>{</span><span>"content"</span><span>:</span><span>true</span><span>,</span><span>"points"</span><span>:</span><span>true</span><span>,</span><span>"due_dates"</span><span>:</span><span>false</span><span>,</span><span>"availability_dates"</span><span>:</span><span>false</span><span>},</span><span>// optional: Sets of restrictions differentiated by object type applied to</span><span>// locked course objects</span><span>"blueprint_restrictions_by_object_type"</span><span>:</span><span>{</span><span>"assignment"</span><span>:{</span><span>"content"</span><span>:</span><span>true</span><span>,</span><span>"points"</span><span>:</span><span>true</span><span>},</span><span>"wiki_page"</span><span>:{</span><span>"content"</span><span>:</span><span>true</span><span>}},</span><span>// optional: whether the course is set as a template (requires the Course</span><span>// Templates feature)</span><span>"template"</span><span>:</span><span>true</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A CalendarLink object looks like:</a></h3>
+<pre><code><span>{</span><span>// The URL of the calendar in ICS format</span><span>"ics"</span><span>:</span><span>"https://canvas.instructure.com/feeds/calendars/course_abcdef.ics"</span><span>}</span></code></pre>
+</div>
+<div>
+<div>
+<h2>
+<a href="#method.courses.index">
+   List your courses
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#index</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses</code>
+</div>
+<p>Returns the paginated list of active courses for the current user.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enrollment_type</td>
+<td>string</td>
+<td>
+<p>When set, only return courses where the user is enrolled as this type. For example, set to “teacher” to return only courses where the user is enrolled as a Teacher. This argument is ignored if enrollment_role is given.</p>
+<p>
+<span>Allowed values:</span> <code>teacher</code>, <code>student</code>, <code>ta</code>, <code>observer</code>, <code>designer</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_role</td>
+<td>string</td>
+<td>
+<p>Deprecated When set, only return courses where the user is enrolled with the specified course-level role. This can be a role created with the <a href="roles.html#method.role_overrides.add_role" title="Add Role API">Add Role API</a> or a base role type of ‘StudentEnrollment’, ‘TeacherEnrollment’, ‘TaEnrollment’, ‘ObserverEnrollment’, or ‘DesignerEnrollment’.</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_role_id</td>
+<td>integer</td>
+<td>
+<p>When set, only return courses where the user is enrolled with the specified course-level role. This can be a role created with the <a href="roles.html#method.role_overrides.add_role" title="Add Role API">Add Role API</a> or a built_in role type of ‘StudentEnrollment’, ‘TeacherEnrollment’, ‘TaEnrollment’, ‘ObserverEnrollment’, or ‘DesignerEnrollment’.</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_state</td>
+<td>string</td>
+<td>
+<p>When set, only return courses where the user has an enrollment with the given state. This will respect section/course/term date overrides.</p>
+<p>
+<span>Allowed values:</span> <code>active</code>, <code>invited_or_pending</code>, <code>completed</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>exclude_blueprint_courses</td>
+<td>boolean</td>
+<td>
+<p>When set, only return courses that are not configured as blueprint courses.</p>
+</td>
+</tr>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<ul><li>
+<p>“needs_grading_count”: Optional information to include with each Course. When needs_grading_count is given, and the current user has grading rights, the total number of submissions needing grading for all assignments is returned.</p>
+</li><li>
+<p>“syllabus_body”: Optional information to include with each Course. When syllabus_body is given the user-generated html for the course syllabus is returned.</p>
+</li><li>
+<p>“public_description”: Optional information to include with each Course. When public_description is given the user-generated text for the course public description is returned.</p>
+</li><li>
+<p>“total_scores”: Optional information to include with each Course. When total_scores is given, any student enrollments will also include the fields ‘computed_current_score’, ‘computed_final_score’, ‘computed_current_grade’, and ‘computed_final_grade’, as well as (if the user has permission) ‘unposted_current_score’, ‘unposted_final_score’, ‘unposted_current_grade’, and ‘unposted_final_grade’ (see Enrollment documentation for more information on these fields). This argument is ignored if the course is configured to hide final grades.</p>
+</li><li>
+<p>“current_grading_period_scores”: Optional information to include with each Course. When current_grading_period_scores is given and total_scores is given, any student enrollments will also include the fields ‘has_grading_periods’, ‘totals_for_all_grading_periods_option’, ‘current_grading_period_title’, ‘current_grading_period_id’, current_period_computed_current_score’, ‘current_period_computed_final_score’, ‘current_period_computed_current_grade’, and ‘current_period_computed_final_grade’, as well as (if the user has permission) ‘current_period_unposted_current_score’, ‘current_period_unposted_final_score’, ‘current_period_unposted_current_grade’, and ‘current_period_unposted_final_grade’ (see Enrollment documentation for more information on these fields). In addition, when this argument is passed, the course will have a ‘has_grading_periods’ attribute on it. This argument is ignored if the total_scores argument is not included. If the course is configured to hide final grades, the following fields are not returned: ‘totals_for_all_grading_periods_option’, ‘current_period_computed_current_score’, ‘current_period_computed_final_score’, ‘current_period_computed_current_grade’, ‘current_period_computed_final_grade’, ‘current_period_unposted_current_score’, ‘current_period_unposted_final_score’, ‘current_period_unposted_current_grade’, and ‘current_period_unposted_final_grade’</p>
+</li><li>
+<p>“grading_periods”: Optional information to include with each Course. When grading_periods is given, a list of the grading periods associated with each course is returned.</p>
+</li><li>
+<p>“term”: Optional information to include with each Course. When term is given, the information for the enrollment term for each course is returned.</p>
+</li><li>
+<p>“account”: Optional information to include with each Course. When account is given, the account json for each course is returned.</p>
+</li><li>
+<p>“course_progress”: Optional information to include with each Course. When course_progress is given, each course will include a ‘course_progress’ object with the fields: ‘requirement_count’, an integer specifying the total number of requirements in the course, ‘requirement_completed_count’, an integer specifying the total number of requirements in this course that have been completed, and ‘next_requirement_url’, a string url to the next requirement item, and ‘completed_at’, the date the course was completed (null if incomplete). ‘next_requirement_url’ will be null if all requirements have been completed or the current module does not require sequential progress. “course_progress” will return an error message if the course is not module based or the user is not enrolled as a student in the course.</p>
+</li><li>
+<p>“sections”: Section enrollment information to include with each Course. Returns an array of hashes containing the section ID (id), section name (name), start and end dates (start_at, end_at), as well as the enrollment type (enrollment_role, e.g. ‘StudentEnrollment’).</p>
+</li><li>
+<p>“storage_quota_used_mb”: The amount of storage space used by the files in this course</p>
+</li><li>
+<p>“total_students”: Optional information to include with each Course. Returns an integer for the total amount of active and invited students.</p>
+</li><li>
+<p>“passback_status”: Include the grade passback_status</p>
+</li><li>
+<p>“favorites”: Optional information to include with each Course. Indicates if the user has marked the course as a favorite course.</p>
+</li><li>
+<p>“teachers”: Teacher information to include with each Course. Returns an array of hashes containing the <a href="users.html#UserDisplay" title="UserDisplay">UserDisplay</a> information for each teacher in the course.</p>
+</li><li>
+<p>“observed_users”: Optional information to include with each Course. Will include data for observed users if the current user has an observer enrollment.</p>
+</li><li>
+<p>“tabs”: Optional information to include with each Course. Will include the list of tabs configured for each course. See the <a href="tabs.html#method.tabs.index" title="List available tabs API">List available tabs API</a> for more information.</p>
+</li><li>
+<p>“course_image”: Optional information to include with each Course. Returns course image url if a course image has been set.</p>
+</li><li>
+<p>“banner_image”: Optional information to include with each Course. Returns course banner image url if the course is a Canvas for Elementary subject and a banner image has been set.</p>
+</li><li>
+<p>“concluded”: Optional information to include with each Course. Indicates whether the course has been concluded, taking course and term dates into account.</p>
+</li><li>
+<p>“post_manually”: Optional information to include with each Course. Returns true if the course post policy is set to Manually post grades. Returns false if the the course post policy is set to Automatically post grades.</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>needs_grading_count</code>, <code>syllabus_body</code>, <code>public_description</code>, <code>total_scores</code>, <code>current_grading_period_scores</code>, <code>grading_periods</code>, <code>term</code>, <code>account</code>, <code>course_progress</code>, <code>sections</code>, <code>storage_quota_used_mb</code>, <code>total_students</code>, <code>passback_status</code>, <code>favorites</code>, <code>teachers</code>, <code>observed_users</code>, <code>course_image</code>, <code>banner_image</code>, <code>concluded</code>, <code>post_manually</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>state[]</td>
+<td>string</td>
+<td>
+<p>If set, only return courses that are in the given state(s). By default, “available” is returned for students and observers, and anything except “deleted”, for all other enrollment types</p>
+<p>
+<span>Allowed values:</span> <code>unpublished</code>, <code>available</code>, <code>completed</code>, <code>deleted</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="courses.html#Course">Course</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.courses.user_index">
+   List courses for a user
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#user_index</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:user_id/courses
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:user_id/courses</code>
+</div>
+<p>Returns a paginated list of active courses for this user. To view the course list for a user other than yourself, you must be either an observer of that user or an administrator.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<ul><li>
+<p>“needs_grading_count”: Optional information to include with each Course. When needs_grading_count is given, and the current user has grading rights, the total number of submissions needing grading for all assignments is returned.</p>
+</li><li>
+<p>“syllabus_body”: Optional information to include with each Course. When syllabus_body is given the user-generated html for the course syllabus is returned.</p>
+</li><li>
+<p>“public_description”: Optional information to include with each Course. When public_description is given the user-generated text for the course public description is returned.</p>
+</li><li>
+<p>“total_scores”: Optional information to include with each Course. When total_scores is given, any student enrollments will also include the fields ‘computed_current_score’, ‘computed_final_score’, ‘computed_current_grade’, and ‘computed_final_grade’ (see Enrollment documentation for more information on these fields). This argument is ignored if the course is configured to hide final grades.</p>
+</li><li>
+<p>“current_grading_period_scores”: Optional information to include with each Course. When current_grading_period_scores is given and total_scores is given, any student enrollments will also include the fields ‘has_grading_periods’, ‘totals_for_all_grading_periods_option’, ‘current_grading_period_title’, ‘current_grading_period_id’, current_period_computed_current_score’, ‘current_period_computed_final_score’, ‘current_period_computed_current_grade’, and ‘current_period_computed_final_grade’, as well as (if the user has permission) ‘current_period_unposted_current_score’, ‘current_period_unposted_final_score’, ‘current_period_unposted_current_grade’, and ‘current_period_unposted_final_grade’ (see Enrollment documentation for more information on these fields). In addition, when this argument is passed, the course will have a ‘has_grading_periods’ attribute on it. This argument is ignored if the course is configured to hide final grades or if the total_scores argument is not included.</p>
+</li><li>
+<p>“grading_periods”: Optional information to include with each Course. When grading_periods is given, a list of the grading periods associated with each course is returned.</p>
+</li><li>
+<p>“term”: Optional information to include with each Course. When term is given, the information for the enrollment term for each course is returned.</p>
+</li><li>
+<p>“account”: Optional information to include with each Course. When account is given, the account json for each course is returned.</p>
+</li><li>
+<p>“course_progress”: Optional information to include with each Course. When course_progress is given, each course will include a ‘course_progress’ object with the fields: ‘requirement_count’, an integer specifying the total number of requirements in the course, ‘requirement_completed_count’, an integer specifying the total number of requirements in this course that have been completed, and ‘next_requirement_url’, a string url to the next requirement item, and ‘completed_at’, the date the course was completed (null if incomplete). ‘next_requirement_url’ will be null if all requirements have been completed or the current module does not require sequential progress. “course_progress” will return an error message if the course is not module based or the user is not enrolled as a student in the course.</p>
+</li><li>
+<p>“sections”: Section enrollment information to include with each Course. Returns an array of hashes containing the section ID (id), section name (name), start and end dates (start_at, end_at), as well as the enrollment type (enrollment_role, e.g. ‘StudentEnrollment’).</p>
+</li><li>
+<p>“storage_quota_used_mb”: The amount of storage space used by the files in this course</p>
+</li><li>
+<p>“total_students”: Optional information to include with each Course. Returns an integer for the total amount of active and invited students.</p>
+</li><li>
+<p>“passback_status”: Include the grade passback_status</p>
+</li><li>
+<p>“favorites”: Optional information to include with each Course. Indicates if the user has marked the course as a favorite course.</p>
+</li><li>
+<p>“teachers”: Teacher information to include with each Course. Returns an array of hashes containing the <a href="users.html#UserDisplay" title="UserDisplay">UserDisplay</a> information for each teacher in the course.</p>
+</li><li>
+<p>“observed_users”: Optional information to include with each Course. Will include data for observed users if the current user has an observer enrollment.</p>
+</li><li>
+<p>“tabs”: Optional information to include with each Course. Will include the list of tabs configured for each course. See the <a href="tabs.html#method.tabs.index" title="List available tabs API">List available tabs API</a> for more information.</p>
+</li><li>
+<p>“course_image”: Optional information to include with each Course. Returns course image url if a course image has been set.</p>
+</li><li>
+<p>“banner_image”: Optional information to include with each Course. Returns course banner image url if the course is a Canvas for Elementary subject and a banner image has been set.</p>
+</li><li>
+<p>“concluded”: Optional information to include with each Course. Indicates whether the course has been concluded, taking course and term dates into account.</p>
+</li><li>
+<p>“post_manually”: Optional information to include with each Course. Returns true if the course post policy is set to “Manually”. Returns false if the the course post policy is set to “Automatically”.</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>needs_grading_count</code>, <code>syllabus_body</code>, <code>public_description</code>, <code>total_scores</code>, <code>current_grading_period_scores</code>, <code>grading_periods</code>, <code>term</code>, <code>account</code>, <code>course_progress</code>, <code>sections</code>, <code>storage_quota_used_mb</code>, <code>total_students</code>, <code>passback_status</code>, <code>favorites</code>, <code>teachers</code>, <code>observed_users</code>, <code>course_image</code>, <code>banner_image</code>, <code>concluded</code>, <code>post_manually</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>state[]</td>
+<td>string</td>
+<td>
+<p>If set, only return courses that are in the given state(s). By default, “available” is returned for students and observers, and anything except “deleted”, for all other enrollment types</p>
+<p>
+<span>Allowed values:</span> <code>unpublished</code>, <code>available</code>, <code>completed</code>, <code>deleted</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_state</td>
+<td>string</td>
+<td>
+<p>When set, only return courses where the user has an enrollment with the given state. This will respect section/course/term date overrides.</p>
+<p>
+<span>Allowed values:</span> <code>active</code>, <code>invited_or_pending</code>, <code>completed</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>homeroom</td>
+<td>boolean</td>
+<td>
+<p>If set, only return homeroom courses.</p>
+</td>
+</tr>
+<tr>
+<td>account_id</td>
+<td>string</td>
+<td>
+<p>If set, only include courses associated with this account</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="courses.html#Course">Course</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.courses.user_progress">
+   Get user progress
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#user_progress</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/users/:user_id/progress
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/users/:user_id/progress</code>
+</div>
+<p>Return progress information for the user and course</p>
+<p>You can supply <code>self</code> as the user_id to query your own progress in a course. To query another user’s progress, you must be a teacher in the course, an administrator, or a linked observer of the user.</p>
+
+
+ Returns a
+<a href="courses.html#CourseProgress">CourseProgress</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.create">
+   Create a new course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#create</a></span>
+</h2>
+<h3>
+  POST /api/v1/accounts/:account_id/courses
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/accounts/:account_id/courses</code>
+</div>
+<p>Create a new course</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course[name]</td>
+<td>string</td>
+<td>
+<p>The name of the course. If omitted, the course will be named “Unnamed Course.”</p>
+</td>
+</tr>
+<tr>
+<td>course[course_code]</td>
+<td>string</td>
+<td>
+<p>The course code for the course.</p>
+</td>
+</tr>
+<tr>
+<td>course[start_at]</td>
+<td>DateTime</td>
+<td>
+<p>Course start date in ISO8601 format, e.g. 2011-01-01T01:00Z This value is ignored unless ‘restrict_enrollments_to_course_dates’ is set to true.</p>
+</td>
+</tr>
+<tr>
+<td>course[end_at]</td>
+<td>DateTime</td>
+<td>
+<p>Course end date in ISO8601 format. e.g. 2011-01-01T01:00Z This value is ignored unless ‘restrict_enrollments_to_course_dates’ is set to true.</p>
+</td>
+</tr>
+<tr>
+<td>course[license]</td>
+<td>string</td>
+<td>
+<p>The name of the licensing. Should be one of the following abbreviations (a descriptive name is included in parenthesis for reference):</p>
+<ul><li>
+<p>‘private’ (Private Copyrighted)</p>
+</li><li>
+<p>‘cc_by_nc_nd’ (CC Attribution Non-Commercial No Derivatives)</p>
+</li><li>
+<p>‘cc_by_nc_sa’ (CC Attribution Non-Commercial Share Alike)</p>
+</li><li>
+<p>‘cc_by_nc’ (CC Attribution Non-Commercial)</p>
+</li><li>
+<p>‘cc_by_nd’ (CC Attribution No Derivatives)</p>
+</li><li>
+<p>‘cc_by_sa’ (CC Attribution Share Alike)</p>
+</li><li>
+<p>‘cc_by’ (CC Attribution)</p>
+</li><li>
+<p>‘public_domain’ (Public Domain).</p>
+</li></ul>
+</td>
+</tr>
+<tr>
+<td>course[is_public]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if course is public to both authenticated and unauthenticated users.</p>
+</td>
+</tr>
+<tr>
+<td>course[is_public_to_auth_users]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if course is public only to authenticated users.</p>
+</td>
+</tr>
+<tr>
+<td>course[public_syllabus]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to make the course syllabus public.</p>
+</td>
+</tr>
+<tr>
+<td>course[public_syllabus_to_auth]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to make the course syllabus public for authenticated users.</p>
+</td>
+</tr>
+<tr>
+<td>course[public_description]</td>
+<td>string</td>
+<td>
+<p>A publicly visible description of the course.</p>
+</td>
+</tr>
+<tr>
+<td>course[allow_student_wiki_edits]</td>
+<td>boolean</td>
+<td>
+<p>If true, students will be able to modify the course wiki.</p>
+</td>
+</tr>
+<tr>
+<td>course[allow_wiki_comments]</td>
+<td>boolean</td>
+<td>
+<p>If true, course members will be able to comment on wiki pages.</p>
+</td>
+</tr>
+<tr>
+<td>course[allow_student_forum_attachments]</td>
+<td>boolean</td>
+<td>
+<p>If true, students can attach files to forum posts.</p>
+</td>
+</tr>
+<tr>
+<td>course[open_enrollment]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if the course is open enrollment.</p>
+</td>
+</tr>
+<tr>
+<td>course[self_enrollment]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if the course is self enrollment.</p>
+</td>
+</tr>
+<tr>
+<td>course[restrict_enrollments_to_course_dates]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to restrict user enrollments to the start and end dates of the course. This value must be set to true in order to specify a course start date and/or end date.</p>
+</td>
+</tr>
+<tr>
+<td>course[term_id]</td>
+<td>string</td>
+<td>
+<p>The unique ID of the term to create to course in.</p>
+</td>
+</tr>
+<tr>
+<td>course[sis_course_id]</td>
+<td>string</td>
+<td>
+<p>The unique SIS identifier.</p>
+</td>
+</tr>
+<tr>
+<td>course[integration_id]</td>
+<td>string</td>
+<td>
+<p>The unique Integration identifier.</p>
+</td>
+</tr>
+<tr>
+<td>course[hide_final_grades]</td>
+<td>boolean</td>
+<td>
+<p>If this option is set to true, the totals in student grades summary will be hidden.</p>
+</td>
+</tr>
+<tr>
+<td>course[apply_assignment_group_weights]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to weight final grade based on assignment groups percentages.</p>
+</td>
+</tr>
+<tr>
+<td>course[time_zone]</td>
+<td>string</td>
+<td>
+<p>The time zone for the course. Allowed time zones are <a href="http://www.iana.org/time-zones" title="IANA time zones">IANA time zones</a> or friendlier <a href="http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html" title="Ruby on Rails time zones">Ruby on Rails time zones</a>.</p>
+</td>
+</tr>
+<tr>
+<td>offer</td>
+<td>boolean</td>
+<td>
+<p>If this option is set to true, the course will be available to students immediately.</p>
+</td>
+</tr>
+<tr>
+<td>enroll_me</td>
+<td>boolean</td>
+<td>
+<p>Set to true to enroll the current user as the teacher.</p>
+</td>
+</tr>
+<tr>
+<td>course[default_view]</td>
+<td>string</td>
+<td>
+<p>The type of page that users will see when they first visit the course</p>
+<ul><li>
+<p>‘feed’ Recent Activity Dashboard</p>
+</li><li>
+<p>‘modules’ Course Modules/Sections Page</p>
+</li><li>
+<p>‘assignments’ Course Assignments List</p>
+</li><li>
+<p>‘syllabus’ Course Syllabus Page</p>
+</li></ul>
+<p>other types may be added in the future</p>
+<p>
+<span>Allowed values:</span> <code>feed</code>, <code>wiki</code>, <code>modules</code>, <code>syllabus</code>, <code>assignments</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>course[syllabus_body]</td>
+<td>string</td>
+<td>
+<p>The syllabus body for the course</p>
+</td>
+</tr>
+<tr>
+<td>course[grading_standard_id]</td>
+<td>integer</td>
+<td>
+<p>The grading standard id to set for the course. If no value is provided for this argument the current grading_standard will be un-set from this course.</p>
+</td>
+</tr>
+<tr>
+<td>course[grade_passback_setting]</td>
+<td>string</td>
+<td>
+<p>Optional. The grade_passback_setting for the course. Only ‘nightly_sync’, ‘disabled’, and ” are allowed</p>
+</td>
+</tr>
+<tr>
+<td>course[course_format]</td>
+<td>string</td>
+<td>
+<p>Optional. Specifies the format of the course. (Should be ‘on_campus’, ‘online’, or ‘blended’)</p>
+</td>
+</tr>
+<tr>
+<td>course[post_manually]</td>
+<td>boolean</td>
+<td>
+<p>Default is false. When true, all grades in the course must be posted manually, and will not be automatically posted. When false, all grades in the course will be automatically posted.</p>
+</td>
+</tr>
+<tr>
+<td>enable_sis_reactivation</td>
+<td>boolean</td>
+<td>
+<p>When true, will first try to re-activate a deleted course with matching sis_course_id if possible.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a
+<a href="courses.html#Course">Course</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.create_file">
+   Upload a file
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#create_file</a></span>
+</h2>
+<h3>
+  POST /api/v1/courses/:course_id/files
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/courses/:course_id/files</code>
+</div>
+<p>Upload a file to the course.</p>
+<p>This API endpoint is the first step in uploading a file to a course. See the <a href="file_uploads.html" title="File Upload Documentation">File Upload Documentation</a> for details on the file upload workflow.</p>
+<p>Only those with the “Manage Files” permission on a course can upload files to the course. By default, this is Teachers, TAs and Designers.</p>
+</div>
+<div>
+<h2>
+<a href="#method.courses.students">
+   List students
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#students</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/students
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/students</code>
+</div>
+<p>Returns the paginated list of students enrolled in this course.</p>
+<p>DEPRECATED: Please use the <a href="courses.html#method.courses.users" title="course users">course users</a> endpoint and pass “student” as the enrollment_type.</p>
+
+
+ Returns a list of 
+<a href="users.html#User">User</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.courses.users">
+   List users in course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#users</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/users
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/users</code>
+</div>
+<h3>
+  GET /api/v1/courses/:course_id/search_users
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/search_users</code>
+</div>
+<p>Returns the paginated list of users in this course. And optionally the user’s enrollments in the course.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search_term</td>
+<td>string</td>
+<td>
+<p>The partial name or full ID of the users to match and return in the results list.</p>
+</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>string</td>
+<td>
+<p>When set, sort the results of the search based on the given field.</p>
+<p>
+<span>Allowed values:</span> <code>username</code>, <code>last_login</code>, <code>email</code>, <code>sis_id</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_type[]</td>
+<td>string</td>
+<td>
+<p>When set, only return users where the user is enrolled as this type. “student_view” implies include[]=test_student. This argument is ignored if enrollment_role is given.</p>
+<p>
+<span>Allowed values:</span> <code>teacher</code>, <code>student</code>, <code>student_view</code>, <code>ta</code>, <code>observer</code>, <code>designer</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_role</td>
+<td>string</td>
+<td>
+<p>Deprecated When set, only return users enrolled with the specified course-level role. This can be a role created with the <a href="roles.html#method.role_overrides.add_role" title="Add Role API">Add Role API</a> or a base role type of ‘StudentEnrollment’, ‘TeacherEnrollment’, ‘TaEnrollment’, ‘ObserverEnrollment’, or ‘DesignerEnrollment’.</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_role_id</td>
+<td>integer</td>
+<td>
+<p>When set, only return courses where the user is enrolled with the specified course-level role. This can be a role created with the <a href="roles.html#method.role_overrides.add_role" title="Add Role API">Add Role API</a> or a built_in role id with type ‘StudentEnrollment’, ‘TeacherEnrollment’, ‘TaEnrollment’, ‘ObserverEnrollment’, or ‘DesignerEnrollment’.</p>
+</td>
+</tr>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<ul><li>
+<p>“enrollments”:</p>
+</li></ul>
+<p>Optionally include with each Course the user’s current and invited enrollments. If the user is enrolled as a student, and the account has permission to manage or view all grades, each enrollment will include a ‘grades’ key with ‘current_score’, ‘final_score’, ‘current_grade’ and ‘final_grade’ values.</p>
+<ul><li>
+<p>“locked”: Optionally include whether an enrollment is locked.</p>
+</li><li>
+<p>“avatar_url”: Optionally include avatar_url.</p>
+</li><li>
+<p>“bio”: Optionally include each user’s bio.</p>
+</li><li>
+<p>“test_student”: Optionally include the course’s Test Student,</p>
+</li></ul>
+<p>if present. Default is to not include Test Student.</p>
+<ul><li>
+<p>“custom_links”: Optionally include plugin-supplied custom links for each student,</p>
+</li></ul>
+<p>such as analytics information</p>
+<ul><li>
+<p>“current_grading_period_scores”: if enrollments is included as</p>
+</li></ul>
+<p>well as this directive, the scores returned in the enrollment will be for the current grading period if there is one. A ‘grading_period_id’ value will also be included with the scores. if grading_period_id is nil there is no current grading period and the score is a total score.</p>
+<ul><li>
+<p>“uuid”: Optionally include the users uuid</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>enrollments</code>, <code>locked</code>, <code>avatar_url</code>, <code>test_student</code>, <code>bio</code>, <code>custom_links</code>, <code>current_grading_period_scores</code>, <code>uuid</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>string</td>
+<td>
+<p>If this parameter is given and it corresponds to a user in the course, the <code>page</code> parameter will be ignored and the page containing the specified user will be returned instead.</p>
+</td>
+</tr>
+<tr>
+<td>user_ids[]</td>
+<td>integer</td>
+<td>
+<p>If included, the course users set will only include users with IDs specified by the param. Note: this will not work in conjunction with the “user_id” argument but multiple user_ids can be included.</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_state[]</td>
+<td>string</td>
+<td>
+<p>When set, only return users where the enrollment workflow state is of one of the given types. “active” and “invited” enrollments are returned by default.</p>
+<p>
+<span>Allowed values:</span> <code>active</code>, <code>invited</code>, <code>rejected</code>, <code>completed</code>, <code>inactive</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="users.html#User">User</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.courses.recent_students">
+   List recently logged in students
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#recent_students</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/recent_students
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/recent_students</code>
+</div>
+<p>Returns the paginated list of users in this course, ordered by how recently they have logged in. The records include the ‘last_login’ field which contains a timestamp of the last time that user logged into canvas. The querying user must have the ‘View usage reports’ permission.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+   https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>recent_users</span></code></pre>
+</div>
+
+ Returns a list of 
+<a href="users.html#User">User</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.courses.user">
+   Get single user
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#user</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/users/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/users/:id</code>
+</div>
+<p>Return information on a single user.</p>
+<p>Accepts the same include[] parameters as the :users: action, and returns a single user with the same fields as that action.</p>
+
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.content_share_users">
+   Search for content share users
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#content_share_users</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/content_share_users
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/content_share_users</code>
+</div>
+<p>Returns a paginated list of users you can share content with. Requires the content share feature and the user must have the manage content permission for the course.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search_term</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>Term used to find users. Will search available share users with the search term in their name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+   https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>content_share_users \
+   </span><span>-</span><span>d </span><span>'search_term=smith'</span></code></pre>
+</div>
+
+ Returns a list of 
+<a href="users.html#User">User</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.courses.preview_html">
+   Preview processed html
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#preview_html</a></span>
+</h2>
+<h3>
+  POST /api/v1/courses/:course_id/preview_html
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/courses/:course_id/preview_html</code>
+</div>
+<p>Preview html content processed for this course</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>html</td>
+<td>string</td>
+<td>
+<p>The html content to process</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>preview_html \
+   </span><span>-</span><span>F </span><span>'html=&lt;p&gt;&lt;badhtml&gt;&lt;/badhtml&gt;processed html&lt;/p&gt;'</span><span> \
+   </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"html"</span><span>:</span><span>"&lt;p&gt;processed html&lt;/p&gt;"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.activity_stream">
+   Course activity stream
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#activity_stream</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/activity_stream
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/activity_stream</code>
+</div>
+<p>Returns the current user’s course-specific activity stream, paginated.</p>
+<p>For full documentation, see the API documentation for the user activity stream, in the user api.</p>
+</div>
+<div>
+<h2>
+<a href="#method.courses.activity_stream_summary">
+   Course activity stream summary
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#activity_stream_summary</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/activity_stream/summary
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/activity_stream/summary</code>
+</div>
+<p>Returns a summary of the current user’s course-specific activity stream.</p>
+<p>For full documentation, see the API documentation for the user activity stream summary, in the user api.</p>
+</div>
+<div>
+<h2>
+<a href="#method.courses.todo_items">
+   Course TODO items
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#todo_items</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/todo
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/todo</code>
+</div>
+<p>Returns the current user’s course-specific todo items.</p>
+<p>For full documentation, see the API documentation for the user todo items, in the user api.</p>
+</div>
+<div>
+<h2>
+<a href="#method.courses.destroy">
+   Delete/Conclude a course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#destroy</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/courses/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/courses/:id</code>
+</div>
+<p>Delete or conclude an existing course</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The action to take on the course.</p>
+<p>
+<span>Allowed values:</span> <code>delete</code>, <code>conclude</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"delete"</span><span>:</span><span>"true"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.api_settings">
+   Get course settings
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#api_settings</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/settings
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/settings</code>
+</div>
+<p>Returns some of a course’s settings.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>settings \
+ </span><span>-</span><span>X GET \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"allow_student_discussion_topics"</span><span>:</span><span>true</span><span>,</span><span>"allow_student_forum_attachments"</span><span>:</span><span>false</span><span>,</span><span>"allow_student_discussion_editing"</span><span>:</span><span>true</span><span>,</span><span>"grading_standard_enabled"</span><span>:</span><span>true</span><span>,</span><span>"grading_standard_id"</span><span>:</span><span>137</span><span>,</span><span>"allow_student_organized_groups"</span><span>:</span><span>true</span><span>,</span><span>"hide_final_grades"</span><span>:</span><span>false</span><span>,</span><span>"hide_distribution_graphs"</span><span>:</span><span>false</span><span>,</span><span>"hide_sections_on_course_users_page"</span><span>:</span><span>false</span><span>,</span><span>"lock_all_announcements"</span><span>:</span><span>true</span><span>,</span><span>"usage_rights_required"</span><span>:</span><span>false</span><span>,</span><span>"homeroom_course"</span><span>:</span><span>false</span><span>,</span><span>"default_due_time"</span><span>:</span><span>"23:59:59"</span><span>,</span><span>"conditional_release"</span><span>:</span><span>false</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.update_settings">
+   Update course settings
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#update_settings</a></span>
+</h2>
+<h3>
+  PUT /api/v1/courses/:course_id/settings
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/courses/:course_id/settings</code>
+</div>
+<p>Can update the following course settings:</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allow_final_grade_override</td>
+<td>boolean</td>
+<td>
+<p>Let student final grades for a grading period or the total grades for the course be overridden</p>
+</td>
+</tr>
+<tr>
+<td>allow_student_discussion_topics</td>
+<td>boolean</td>
+<td>
+<p>Let students create discussion topics</p>
+</td>
+</tr>
+<tr>
+<td>allow_student_forum_attachments</td>
+<td>boolean</td>
+<td>
+<p>Let students attach files to discussions</p>
+</td>
+</tr>
+<tr>
+<td>allow_student_discussion_editing</td>
+<td>boolean</td>
+<td>
+<p>Let students edit or delete their own discussion replies</p>
+</td>
+</tr>
+<tr>
+<td>allow_student_organized_groups</td>
+<td>boolean</td>
+<td>
+<p>Let students organize their own groups</p>
+</td>
+</tr>
+<tr>
+<td>allow_student_discussion_reporting</td>
+<td>boolean</td>
+<td>
+<p>Let students report offensive discussion content</p>
+</td>
+</tr>
+<tr>
+<td>allow_student_anonymous_discussion_topics</td>
+<td>boolean</td>
+<td>
+<p>Let students create anonymous discussion topics</p>
+</td>
+</tr>
+<tr>
+<td>filter_speed_grader_by_student_group</td>
+<td>boolean</td>
+<td>
+<p>Filter SpeedGrader to only the selected student group</p>
+</td>
+</tr>
+<tr>
+<td>hide_final_grades</td>
+<td>boolean</td>
+<td>
+<p>Hide totals in student grades summary</p>
+</td>
+</tr>
+<tr>
+<td>hide_distribution_graphs</td>
+<td>boolean</td>
+<td>
+<p>Hide grade distribution graphs from students</p>
+</td>
+</tr>
+<tr>
+<td>hide_sections_on_course_users_page</td>
+<td>boolean</td>
+<td>
+<p>Disallow students from viewing students in sections they do not belong to</p>
+</td>
+</tr>
+<tr>
+<td>lock_all_announcements</td>
+<td>boolean</td>
+<td>
+<p>Disable comments on announcements</p>
+</td>
+</tr>
+<tr>
+<td>usage_rights_required</td>
+<td>boolean</td>
+<td>
+<p>Copyright and license information must be provided for files before they are published.</p>
+</td>
+</tr>
+<tr>
+<td>restrict_student_past_view</td>
+<td>boolean</td>
+<td>
+<p>Restrict students from viewing courses after end date</p>
+</td>
+</tr>
+<tr>
+<td>restrict_student_future_view</td>
+<td>boolean</td>
+<td>
+<p>Restrict students from viewing courses before start date</p>
+</td>
+</tr>
+<tr>
+<td>show_announcements_on_home_page</td>
+<td>boolean</td>
+<td>
+<p>Show the most recent announcements on the Course home page (if a Wiki, defaults to five announcements, configurable via home_page_announcement_limit). Canvas for Elementary subjects ignore this setting.</p>
+</td>
+</tr>
+<tr>
+<td>home_page_announcement_limit</td>
+<td>integer</td>
+<td>
+<p>Limit the number of announcements on the home page if enabled via show_announcements_on_home_page</p>
+</td>
+</tr>
+<tr>
+<td>syllabus_course_summary</td>
+<td>boolean</td>
+<td>
+<p>Show the course summary (list of assignments and calendar events) on the syllabus page. Default is true.</p>
+</td>
+</tr>
+<tr>
+<td>default_due_time</td>
+<td>string</td>
+<td>
+<p>Set the default due time for assignments. This is the time that will be pre-selected in the Canvas user interface when setting a due date for an assignment. It does not change when any existing assignment is due. It should be given in 24-hour HH:MM:SS format. The default is “23:59:59”. Use “inherit” to inherit the account setting.</p>
+</td>
+</tr>
+<tr>
+<td>conditional_release</td>
+<td>boolean</td>
+<td>
+<p>Enable or disable individual learning paths for students based on assessment</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>settings \
+ </span><span>-</span><span>X PUT \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+ </span><span>-</span><span>d </span><span>'allow_student_discussion_topics=false'</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.student_view_student">
+   Return test student for course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#student_view_student</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/student_view_student
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/student_view_student</code>
+</div>
+<p>Returns information for a test student in this course. Creates a test student if one does not already exist for the course. The caller must have permission to access the course’s student view.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>student_view_student \
+ </span><span>-</span><span>X GET \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.show">
+   Get a single course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#show</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:id</code>
+</div>
+<h3>
+  GET /api/v1/accounts/:account_id/courses/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/courses/:id</code>
+</div>
+<p>Return information on a single course.</p>
+<p>Accepts the same include[] parameters as the list action plus:</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<ul><li>
+<p>“all_courses”: Also search recently deleted courses.</p>
+</li><li>
+<p>“permissions”: Include permissions the current user has for the course.</p>
+</li><li>
+<p>“observed_users”: Include observed users in the enrollments</p>
+</li><li>
+<p>“course_image”: Include course image url if a course image has been set</p>
+</li><li>
+<p>“banner_image”: Include course banner image url if the course is a Canvas for Elementary subject and a banner image has been set</p>
+</li><li>
+<p>“concluded”: Optional information to include with Course. Indicates whether the course has been concluded, taking course and term dates into account.</p>
+</li><li>
+<p>“lti_context_id”: Include course LTI tool id.</p>
+</li><li>
+<p>“post_manually”: Include course post policy. If the post policy is manually post grades, the value will be true. If the post policy is automatically post grades, the value will be false.</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>needs_grading_count</code>, <code>syllabus_body</code>, <code>public_description</code>, <code>total_scores</code>, <code>current_grading_period_scores</code>, <code>term</code>, <code>account</code>, <code>course_progress</code>, <code>sections</code>, <code>storage_quota_used_mb</code>, <code>total_students</code>, <code>passback_status</code>, <code>favorites</code>, <code>teachers</code>, <code>observed_users</code>, <code>all_courses</code>, <code>permissions</code>, <code>course_image</code>, <code>banner_image</code>, <code>concluded</code>, <code>lti_context_id</code>, <code>post_manually</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>teacher_limit</td>
+<td>integer</td>
+<td>
+<p>The maximum number of teacher enrollments to show. If the course contains more teachers than this, instead of giving the teacher enrollments, the count of teachers will be given under a <em>teacher_count</em> key.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a
+<a href="courses.html#Course">Course</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.update">
+   Update a course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#update</a></span>
+</h2>
+<h3>
+  PUT /api/v1/courses/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/courses/:id</code>
+</div>
+<p>Update an existing course.</p>
+<p>Arguments are the same as Courses#create, with a few exceptions (enroll_me).</p>
+<p>If a user has content management rights, but not full course editing rights, the only attribute editable through this endpoint will be “syllabus_body”</p>
+<p>If an account has set prevent_course_availability_editing_by_teachers, a teacher cannot change <a href="start_at">course</a>, <a href="conclude_at">course</a>, or <a href="restrict_enrollments_to_course_dates">course</a> here.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course[account_id]</td>
+<td>integer</td>
+<td>
+<p>The unique ID of the account to move the course to.</p>
+</td>
+</tr>
+<tr>
+<td>course[name]</td>
+<td>string</td>
+<td>
+<p>The name of the course. If omitted, the course will be named “Unnamed Course.”</p>
+</td>
+</tr>
+<tr>
+<td>course[course_code]</td>
+<td>string</td>
+<td>
+<p>The course code for the course.</p>
+</td>
+</tr>
+<tr>
+<td>course[start_at]</td>
+<td>DateTime</td>
+<td>
+<p>Course start date in ISO8601 format, e.g. 2011-01-01T01:00Z This value is ignored unless ‘restrict_enrollments_to_course_dates’ is set to true, or the course is already published.</p>
+</td>
+</tr>
+<tr>
+<td>course[end_at]</td>
+<td>DateTime</td>
+<td>
+<p>Course end date in ISO8601 format. e.g. 2011-01-01T01:00Z This value is ignored unless ‘restrict_enrollments_to_course_dates’ is set to true.</p>
+</td>
+</tr>
+<tr>
+<td>course[license]</td>
+<td>string</td>
+<td>
+<p>The name of the licensing. Should be one of the following abbreviations (a descriptive name is included in parenthesis for reference):</p>
+<ul><li>
+<p>‘private’ (Private Copyrighted)</p>
+</li><li>
+<p>‘cc_by_nc_nd’ (CC Attribution Non-Commercial No Derivatives)</p>
+</li><li>
+<p>‘cc_by_nc_sa’ (CC Attribution Non-Commercial Share Alike)</p>
+</li><li>
+<p>‘cc_by_nc’ (CC Attribution Non-Commercial)</p>
+</li><li>
+<p>‘cc_by_nd’ (CC Attribution No Derivatives)</p>
+</li><li>
+<p>‘cc_by_sa’ (CC Attribution Share Alike)</p>
+</li><li>
+<p>‘cc_by’ (CC Attribution)</p>
+</li><li>
+<p>‘public_domain’ (Public Domain).</p>
+</li></ul>
+</td>
+</tr>
+<tr>
+<td>course[is_public]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if course is public to both authenticated and unauthenticated users.</p>
+</td>
+</tr>
+<tr>
+<td>course[is_public_to_auth_users]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if course is public only to authenticated users.</p>
+</td>
+</tr>
+<tr>
+<td>course[public_syllabus]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to make the course syllabus public.</p>
+</td>
+</tr>
+<tr>
+<td>course[public_syllabus_to_auth]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to make the course syllabus to public for authenticated users.</p>
+</td>
+</tr>
+<tr>
+<td>course[public_description]</td>
+<td>string</td>
+<td>
+<p>A publicly visible description of the course.</p>
+</td>
+</tr>
+<tr>
+<td>course[allow_student_wiki_edits]</td>
+<td>boolean</td>
+<td>
+<p>If true, students will be able to modify the course wiki.</p>
+</td>
+</tr>
+<tr>
+<td>course[allow_wiki_comments]</td>
+<td>boolean</td>
+<td>
+<p>If true, course members will be able to comment on wiki pages.</p>
+</td>
+</tr>
+<tr>
+<td>course[allow_student_forum_attachments]</td>
+<td>boolean</td>
+<td>
+<p>If true, students can attach files to forum posts.</p>
+</td>
+</tr>
+<tr>
+<td>course[open_enrollment]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if the course is open enrollment.</p>
+</td>
+</tr>
+<tr>
+<td>course[self_enrollment]</td>
+<td>boolean</td>
+<td>
+<p>Set to true if the course is self enrollment.</p>
+</td>
+</tr>
+<tr>
+<td>course[restrict_enrollments_to_course_dates]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to restrict user enrollments to the start and end dates of the course. Setting this value to false will remove the course end date (if it exists), as well as the course start date (if the course is unpublished).</p>
+</td>
+</tr>
+<tr>
+<td>course[term_id]</td>
+<td>integer</td>
+<td>
+<p>The unique ID of the term to create to course in.</p>
+</td>
+</tr>
+<tr>
+<td>course[sis_course_id]</td>
+<td>string</td>
+<td>
+<p>The unique SIS identifier.</p>
+</td>
+</tr>
+<tr>
+<td>course[integration_id]</td>
+<td>string</td>
+<td>
+<p>The unique Integration identifier.</p>
+</td>
+</tr>
+<tr>
+<td>course[hide_final_grades]</td>
+<td>boolean</td>
+<td>
+<p>If this option is set to true, the totals in student grades summary will be hidden.</p>
+</td>
+</tr>
+<tr>
+<td>course[time_zone]</td>
+<td>string</td>
+<td>
+<p>The time zone for the course. Allowed time zones are <a href="http://www.iana.org/time-zones" title="IANA time zones">IANA time zones</a> or friendlier <a href="http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html" title="Ruby on Rails time zones">Ruby on Rails time zones</a>.</p>
+</td>
+</tr>
+<tr>
+<td>course[apply_assignment_group_weights]</td>
+<td>boolean</td>
+<td>
+<p>Set to true to weight final grade based on assignment groups percentages.</p>
+</td>
+</tr>
+<tr>
+<td>course[storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>Set the storage quota for the course, in megabytes. The caller must have the “Manage storage quotas” account permission.</p>
+</td>
+</tr>
+<tr>
+<td>offer</td>
+<td>boolean</td>
+<td>
+<p>If this option is set to true, the course will be available to students immediately.</p>
+</td>
+</tr>
+<tr>
+<td>course[event]</td>
+<td>string</td>
+<td>
+<p>The action to take on each course.</p>
+<ul><li>
+<p>‘claim’ makes a course no longer visible to students. This action is also called “unpublish” on the web site. A course cannot be unpublished if students have received graded submissions.</p>
+</li><li>
+<p>‘offer’ makes a course visible to students. This action is also called “publish” on the web site.</p>
+</li><li>
+<p>‘conclude’ prevents future enrollments and makes a course read-only for all participants. The course still appears in prior-enrollment lists.</p>
+</li><li>
+<p>‘delete’ completely removes the course from the web site (including course menus and prior-enrollment lists). All enrollments are deleted. Course content may be physically deleted at a future date.</p>
+</li><li>
+<p>‘undelete’ attempts to recover a course that has been deleted. This action requires account administrative rights. (Recovery is not guaranteed; please conclude rather than delete a course if there is any possibility the course will be used again.) The recovered course will be unpublished. Deleted enrollments will not be recovered.</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>claim</code>, <code>offer</code>, <code>conclude</code>, <code>delete</code>, <code>undelete</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>course[default_view]</td>
+<td>string</td>
+<td>
+<p>The type of page that users will see when they first visit the course</p>
+<ul><li>
+<p>‘feed’ Recent Activity Dashboard</p>
+</li><li>
+<p>‘wiki’ Wiki Front Page</p>
+</li><li>
+<p>‘modules’ Course Modules/Sections Page</p>
+</li><li>
+<p>‘assignments’ Course Assignments List</p>
+</li><li>
+<p>‘syllabus’ Course Syllabus Page</p>
+</li></ul>
+<p>other types may be added in the future</p>
+<p>
+<span>Allowed values:</span> <code>feed</code>, <code>wiki</code>, <code>modules</code>, <code>syllabus</code>, <code>assignments</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>course[syllabus_body]</td>
+<td>string</td>
+<td>
+<p>The syllabus body for the course</p>
+</td>
+</tr>
+<tr>
+<td>course[syllabus_course_summary]</td>
+<td>boolean</td>
+<td>
+<p>Optional. Indicates whether the Course Summary (consisting of the course’s assignments and calendar events) is displayed on the syllabus page. Defaults to <code>true</code>.</p>
+</td>
+</tr>
+<tr>
+<td>course[grading_standard_id]</td>
+<td>integer</td>
+<td>
+<p>The grading standard id to set for the course. If no value is provided for this argument the current grading_standard will be un-set from this course.</p>
+</td>
+</tr>
+<tr>
+<td>course[grade_passback_setting]</td>
+<td>string</td>
+<td>
+<p>Optional. The grade_passback_setting for the course. Only ‘nightly_sync’ and ” are allowed</p>
+</td>
+</tr>
+<tr>
+<td>course[course_format]</td>
+<td>string</td>
+<td>
+<p>Optional. Specifies the format of the course. (Should be either ‘on_campus’ or ‘online’)</p>
+</td>
+</tr>
+<tr>
+<td>course[image_id]</td>
+<td>integer</td>
+<td>
+<p>This is a file ID corresponding to an image file in the course that will be used as the course image. This will clear the course’s image_url setting if set. If you attempt to provide image_url and image_id in a request it will fail.</p>
+</td>
+</tr>
+<tr>
+<td>course[image_url]</td>
+<td>string</td>
+<td>
+<p>This is a URL to an image to be used as the course image. This will clear the course’s image_id setting if set. If you attempt to provide image_url and image_id in a request it will fail.</p>
+</td>
+</tr>
+<tr>
+<td>course[remove_image]</td>
+<td>boolean</td>
+<td>
+<p>If this option is set to true, the course image url and course image ID are both set to nil</p>
+</td>
+</tr>
+<tr>
+<td>course[remove_banner_image]</td>
+<td>boolean</td>
+<td>
+<p>If this option is set to true, the course banner image url and course banner image ID are both set to nil</p>
+</td>
+</tr>
+<tr>
+<td>course[blueprint]</td>
+<td>boolean</td>
+<td>
+<p>Sets the course as a blueprint course.</p>
+</td>
+</tr>
+<tr>
+<td>course[blueprint_restrictions]</td>
+<td>BlueprintRestriction</td>
+<td>
+<p>Sets a default set to apply to blueprint course objects when restricted, unless <em>use_blueprint_restrictions_by_object_type</em> is enabled. See the <a href="blueprint_courses.html#BlueprintRestriction" title="Blueprint Restriction">Blueprint Restriction</a> documentation</p>
+</td>
+</tr>
+<tr>
+<td>course[use_blueprint_restrictions_by_object_type]</td>
+<td>boolean</td>
+<td>
+<p>When enabled, the <em>blueprint_restrictions</em> parameter will be ignored in favor of the <em>blueprint_restrictions_by_object_type</em> parameter</p>
+</td>
+</tr>
+<tr>
+<td>course[blueprint_restrictions_by_object_type]</td>
+<td>multiple BlueprintRestrictions</td>
+<td>
+<p>Allows setting multiple <a href="blueprint_courses.html#BlueprintRestriction" title="Blueprint Restriction">Blueprint Restriction</a> to apply to blueprint course objects of the matching type when restricted. The possible object types are “assignment”, “attachment”, “discussion_topic”, “quiz” and “wiki_page”. Example usage:</p>
+<pre><code><span>course</span><span>[</span><span>blueprint_restrictions_by_object_type</span><span>]</span><span>[</span><span>assignment</span><span>]</span><span>[</span><span>content</span><span>]</span><span>=</span><span>1</span>
+</code></pre>
+</td>
+</tr>
+<tr>
+<td>course[homeroom_course]</td>
+<td>boolean</td>
+<td>
+<p>Sets the course as a homeroom course. The setting takes effect only when the course is associated with a Canvas for Elementary-enabled account.</p>
+</td>
+</tr>
+<tr>
+<td>course[sync_enrollments_from_homeroom]</td>
+<td>string</td>
+<td>
+<p>Syncs enrollments from the homeroom that is set in homeroom_course_id. The setting only takes effect when the course is associated with a Canvas for Elementary-enabled account and sync_enrollments_from_homeroom is enabled.</p>
+</td>
+</tr>
+<tr>
+<td>course[homeroom_course_id]</td>
+<td>string</td>
+<td>
+<p>Sets the Homeroom Course id to be used with sync_enrollments_from_homeroom. The setting only takes effect when the course is associated with a Canvas for Elementary-enabled account and sync_enrollments_from_homeroom is enabled.</p>
+</td>
+</tr>
+<tr>
+<td>course[template]</td>
+<td>boolean</td>
+<td>
+<p>Enable or disable the course as a template that can be selected by an account</p>
+</td>
+</tr>
+<tr>
+<td>course[course_color]</td>
+<td>string</td>
+<td>
+<p>Sets a color in hex code format to be associated with the course. The setting takes effect only when the course is associated with a Canvas for Elementary-enabled account.</p>
+</td>
+</tr>
+<tr>
+<td>course[friendly_name]</td>
+<td>string</td>
+<td>
+<p>Set a friendly name for the course. If this is provided and the course is associated with a Canvas for Elementary account, it will be shown instead of the course name. This setting takes priority over course nicknames defined by individual users.</p>
+</td>
+</tr>
+<tr>
+<td>course[enable_course_paces]</td>
+<td>boolean</td>
+<td>
+<p>Enable or disable Course Pacing for the course. This setting only has an effect when the Course Pacing feature flag is enabled for the sub-account. Otherwise, Course Pacing are always disabled.</p>
+<pre><code>Note: Course Pacing is in active development.
+</code></pre>
+</td>
+</tr>
+<tr>
+<td>course[conditional_release]</td>
+<td>boolean</td>
+<td>
+<p>Enable or disable individual learning paths for students based on assessment</p>
+</td>
+</tr>
+<tr>
+<td>course[post_manually]</td>
+<td>boolean</td>
+<td>
+<p>When true, all grades in the course will be posted manually. When false, all grades in the course will be automatically posted. Use with caution as this setting will override any assignment level post policy.</p>
+</td>
+</tr>
+<tr>
+<td>override_sis_stickiness</td>
+<td>boolean</td>
+<td>
+<p>Default is true. If false, any fields containing “sticky” changes will not be updated. See SIS CSV Format documentation for information on which fields can have SIS stickiness</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;</span><span> \
+ </span><span>-</span><span>X PUT \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+ </span><span>-</span><span>d </span><span>'course[name]=New course name'</span><span> \
+ </span><span>-</span><span>d </span><span>'course[start_at]=2012-05-05T00:00:00Z'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"name"</span><span>:</span><span>"New course name"</span><span>,</span><span>"course_code"</span><span>:</span><span>"COURSE-001"</span><span>,</span><span>"start_at"</span><span>:</span><span>"2012-05-05T00:00:00Z"</span><span>,</span><span>"end_at"</span><span>:</span><span>"2012-08-05T23:59:59Z"</span><span>,</span><span>"sis_course_id"</span><span>:</span><span>"12345"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.batch_update">
+   Update courses
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#batch_update</a></span>
+</h2>
+<h3>
+  PUT /api/v1/accounts/:account_id/courses
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/accounts/:account_id/courses</code>
+</div>
+<p>Update multiple courses in an account. Operates asynchronously; use the <a href="progress.html#method.progress.show" title="progress endpoint">progress endpoint</a> to query the status of an operation.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course_ids[]</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>List of ids of courses to update. At most 500 courses may be updated in one call.</p>
+</td>
+</tr>
+<tr>
+<td>event</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The action to take on each course. Must be one of ‘offer’, ‘conclude’, ‘delete’, or ‘undelete’.</p>
+<ul><li>
+<p>‘offer’ makes a course visible to students. This action is also called “publish” on the web site.</p>
+</li><li>
+<p>‘conclude’ prevents future enrollments and makes a course read-only for all participants. The course still appears in prior-enrollment lists.</p>
+</li><li>
+<p>‘delete’ completely removes the course from the web site (including course menus and prior-enrollment lists). All enrollments are deleted. Course content may be physically deleted at a future date.</p>
+</li><li>
+<p>‘undelete’ attempts to recover a course that has been deleted. (Recovery is not guaranteed; please conclude rather than delete a course if there is any possibility the course will be used again.) The recovered course will be unpublished. Deleted enrollments will not be recovered.</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>offer</code>, <code>conclude</code>, <code>delete</code>, <code>undelete</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/&lt;</span><span>account_id</span><span>&gt;/</span><span>courses \
+ </span><span>-</span><span>X PUT \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+ </span><span>-</span><span>d </span><span>'event=offer'</span><span> \
+ </span><span>-</span><span>d </span><span>'course_ids[]=1'</span><span> \
+ </span><span>-</span><span>d </span><span>'course_ids[]=2'</span></code></pre>
+</div>
+
+ Returns a
+<a href="progress.html#Progress">Progress</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.reset_content">
+   Reset a course
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#reset_content</a></span>
+</h2>
+<h3>
+  POST /api/v1/courses/:course_id/reset_content
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/courses/:course_id/reset_content</code>
+</div>
+<p>Deletes the current course, and creates a new equivalent course with no content, but all sections and users moved over.</p>
+
+
+ Returns a
+<a href="courses.html#Course">Course</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.courses.effective_due_dates">
+   Get effective due dates
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#effective_due_dates</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/effective_due_dates
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/effective_due_dates</code>
+</div>
+<p>For each assignment in the course, returns each assigned student’s ID and their corresponding due date along with some grading period data. Returns a collection with keys representing assignment IDs and values as a collection containing keys representing student IDs and values representing the student’s effective due_at, the grading_period_id of which the due_at falls in, and whether or not the grading period is closed (in_closed_grading_period)</p>
+<p>The list of assignment IDs for which effective student due dates are requested. If not provided, all assignments in the course will be used.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>assignment_ids[]</td>
+<td>string</td>
+<td>
+<p>no description</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>effective_due_dates
+ </span><span>-</span><span>X GET \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"1"</span><span>:</span><span>{</span><span>"14"</span><span>:</span><span>{</span><span>"due_at"</span><span>:</span><span>"2015-09-05"</span><span>,</span><span>"grading_period_id"</span><span>:</span><span>null</span><span>,</span><span>"in_closed_grading_period"</span><span>:</span><span>false</span><span>},</span><span>"15"</span><span>:</span><span>{</span><span> due_at</span><span>:</span><span>null</span><span>,</span><span>"grading_period_id"</span><span>:</span><span>3</span><span>,</span><span>"in_closed_grading_period"</span><span>:</span><span>true</span><span>}</span><span>},</span><span>"2"</span><span>:</span><span>{</span><span>"14"</span><span>:</span><span>{</span><span>"due_at"</span><span>:</span><span>"2015-08-05"</span><span>,</span><span>"grading_period_id"</span><span>:</span><span>3</span><span>,</span><span>"in_closed_grading_period"</span><span>:</span><span>true</span><span>}</span><span>}</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.permissions">
+   Permissions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#permissions</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/permissions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/permissions</code>
+</div>
+<p>Returns permission information for the calling user in the given course. See also the <a href="accounts.html#method.accounts.permissions" title="Account">Account</a> and <a href="groups.html#method.groups.permissions" title="Group">Group</a> counterparts.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>permissions[]</td>
+<td>string</td>
+<td>
+<p>List of permissions to check against the authenticated user. Permission names are documented in the <a href="roles.html#method.role_overrides.add_role" title="Create a role">Create a role</a> endpoint.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>permissions \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+ </span><span>-</span><span>d </span><span>'permissions[]=manage_grades'</span><span>-</span><span>d </span><span>'permissions[]=send_messages'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>'manage_grades'</span><span>:</span><span>'false'</span><span>,</span><span>'send_messages'</span><span>:</span><span>'true'</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.bulk_user_progress">
+   Get bulk user progress
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#bulk_user_progress</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/bulk_user_progress
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/bulk_user_progress</code>
+</div>
+<p>Returns progress information for all users enrolled in the given course.</p>
+<p>You must be a user who has permission to view all grades in the course (such as a teacher or administrator).</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>courses</span><span>/&lt;</span><span>course_id</span><span>&gt;/</span><span>bulk_user_progress \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>[</span><span>{</span><span>"id"</span><span>:</span><span>1</span><span>,</span><span>"display_name"</span><span>:</span><span>"Test Student 1"</span><span>,</span><span>"avatar_image_url"</span><span>:</span><span>"https://&lt;canvas&gt;/images/messages/avatar-50.png"</span><span>,</span><span>"html_url"</span><span>:</span><span>"https://&lt;canvas&gt;/courses/1/users/1"</span><span>,</span><span>"pronouns"</span><span>:</span><span>null</span><span>,</span><span>"progress"</span><span>:</span><span>{</span><span>"requirement_count"</span><span>:</span><span>2</span><span>,</span><span>"requirement_completed_count"</span><span>:</span><span>1</span><span>,</span><span>"next_requirement_url"</span><span>:</span><span>"https://&lt;canvas&gt;/courses/&lt;course_id&gt;/modules/items/&lt;item_id&gt;"</span><span>,</span><span>"completed_at"</span><span>:</span><span>null</span><span>}</span><span>},</span><span>{</span><span>"id"</span><span>:</span><span>2</span><span>,</span><span>"display_name"</span><span>:</span><span>"Test Student 2"</span><span>,</span><span>"avatar_image_url"</span><span>:</span><span>"https://&lt;canvas&gt;/images/messages/avatar-50.png"</span><span>,</span><span>"html_url"</span><span>:</span><span>"https://&lt;canvas&gt;/courses/1/users/2"</span><span>,</span><span>"pronouns"</span><span>:</span><span>null</span><span>,</span><span>"progress"</span><span>:</span><span>{</span><span>"requirement_count"</span><span>:</span><span>2</span><span>,</span><span>"requirement_completed_count"</span><span>:</span><span>2</span><span>,</span><span>"next_requirement_url"</span><span>:</span><span>null</span><span>,</span><span>"completed_at"</span><span>:</span><span>"2021-08-10T16:26:08Z"</span><span>}</span><span>}</span><span>]</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.courses.dismiss_migration_limitation_msg">
+   Remove quiz migration alert
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/courses_controller.rb">CoursesController#dismiss_migration_limitation_msg</a></span>
+</h2>
+<h3>
+  POST /api/v1/courses/:id/dismiss_migration_limitation_message
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/courses/:id/dismiss_migration_limitation_message</code>
+</div>
+<p>Remove alert about the limitations of quiz migrations that is displayed to a user in a course</p>
+<p>you must be logged in to use this endpoint</p>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"success"</span><span>:</span><span>"true"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.content_imports.copy_course_status">
+   Get course copy status
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/content_imports_controller.rb">ContentImportsController#copy_course_status</a></span>
+</h2>
+<h3>
+  GET /api/v1/courses/:course_id/course_copy/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/courses/:course_id/course_copy/:id</code>
+</div>
+<p>DEPRECATED: Please use the <a href="content_migrations.html#method.content_migrations.create" title="Content Migrations API">Content Migrations API</a></p>
+<p>Retrieve the status of a course copy</p>
+<h4>API response field:</h4>
+<ul>
+<li>
+<span>id</span>
+<div>
+<p>The unique identifier for the course copy.</p>
+</div>
+</li>
+<li>
+<span>created_at</span>
+<div>
+<p>The time that the copy was initiated.</p>
+</div>
+</li>
+<li>
+<span>progress</span>
+<div>
+<p>The progress of the copy as an integer. It is null before the copying starts, and 100 when finished.</p>
+</div>
+</li>
+<li>
+<span>workflow_state</span>
+<div>
+<p>The current status of the course copy. Possible values: “created”, “started”, “completed”, “failed”</p>
+</div>
+</li>
+<li>
+<span>status_url</span>
+<div>
+<p>The url for the course copy status API endpoint.</p>
+</div>
+</li>
+</ul>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>'progress'</span><span>:</span><span>100</span><span>,</span><span>'workflow_state'</span><span>:</span><span>'completed'</span><span>,</span><span>'id'</span><span>:</span><span>257</span><span>,</span><span>'created_at'</span><span>:</span><span>'2011-11-17T16:50:06Z'</span><span>,</span><span>'status_url'</span><span>:</span><span>'/api/v1/courses/9457/course_copy/257'</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.content_imports.copy_course_content">
+   Copy course content
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/content_imports_controller.rb">ContentImportsController#copy_course_content</a></span>
+</h2>
+<h3>
+  POST /api/v1/courses/:course_id/course_copy
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/courses/:course_id/course_copy</code>
+</div>
+<p>DEPRECATED: Please use the <a href="content_migrations.html#method.content_migrations.create" title="Content Migrations API">Content Migrations API</a></p>
+<p>Copies content from one course into another. The default is to copy all course content. You can control specific types to copy by using either the ‘except’ option or the ‘only’ option.</p>
+<p>The response is the same as the course copy status endpoint</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source_course</td>
+<td>string</td>
+<td>
+<p>ID or SIS-ID of the course to copy the content from</p>
+</td>
+</tr>
+<tr>
+<td>except[]</td>
+<td>string</td>
+<td>
+<p>A list of the course content types to exclude, all areas not listed will be copied.</p>
+<p>
+<span>Allowed values:</span> <code>course_settings</code>, <code>assignments</code>, <code>external_tools</code>, <code>files</code>, <code>topics</code>, <code>calendar_events</code>, <code>quizzes</code>, <code>wiki_pages</code>, <code>modules</code>, <code>outcomes</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>only[]</td>
+<td>string</td>
+<td>
+<p>A list of the course content types to copy, all areas not listed will not be copied.</p>
+<p>
+<span>Allowed values:</span> <code>course_settings</code>, <code>assignments</code>, <code>external_tools</code>, <code>files</code>, <code>topics</code>, <code>calendar_events</code>, <code>quizzes</code>, <code>wiki_pages</code>, <code>modules</code>, <code>outcomes</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div>
+ © Instructure, Inc. Generated on Thu Mar 27 16:24:40 2025
+ This documentation is generated directly from the Canvas LMS source code, available <a href="https://github.com/instructure/canvas-lms">on Github</a>.
+</div>

@@ -1,0 +1,1290 @@
+
+<div>
+<h1>
+<a href="index.html">Canvas LMS - REST API and Extensions Documentation</a>
+</h1>
+</div>
+<div>
+<nav>
+<div>
+<label>Expand all</label>
+</div>
+<div>
+<label>Basics</label>
+<div>
+<div>
+<a href="file.graphql.html">GraphQL</a><a href="file.changelog.html">API Change Log</a><a href="file.object_ids.html">SIS IDs</a><a href="file.pagination.html">Pagination</a><a href="file.throttling.html">Throttling</a><a href="file.compound_documents.html">Compound Documents</a><a href="file.file_uploads.html">File Uploads</a><a href="file.endpoint_attributes.html">API Endpoint Attributes</a><a href="file.masquerading.html">Masquerading</a>
+</div>
+</div>
+</div>
+<div>
+<label>OAuth2</label>
+<div>
+<div>
+<a href="file.oauth.html">OAuth2 Overview</a><a href="file.oauth_endpoints.html">OAuth2 Endpoints</a><a href="file.developer_keys.html">Developer Keys</a>
+</div>
+</div>
+</div>
+<div>
+<label>Resources</label>
+<div>
+<div>
+<a href="all_resources.html">All Resources Reference</a>
+<a href="access_tokens.html">Access Tokens</a>
+<a href="account_calendars.html">Account Calendars</a>
+<a href="account_domain_lookups.html">Account Domain Lookups</a>
+<a href="account_notifications.html">Account Notifications</a>
+<a href="account_reports.html">Account Reports</a>
+<a href="accounts.html">Accounts</a>
+<a href="accounts_(lti).html">Accounts (LTI)</a>
+<a href="admins.html">Admins</a>
+<a href="analytics.html">Analytics</a>
+<a href="announcement_external_feeds.html">Announcement External Feeds</a>
+<a href="announcements.html">Announcements</a>
+<a href="api_token_scopes.html">API Token Scopes</a>
+<a href="appointment_groups.html">Appointment Groups</a>
+<a href="assignment_extensions.html">Assignment Extensions</a>
+<a href="assignment_groups.html">Assignment Groups</a>
+<a href="assignments.html">Assignments</a>
+<a href="authentication_providers.html">Authentication Providers</a>
+<a href="authentications_log.html">Authentications Log</a>
+<a href="blackout_dates.html">Blackout Dates</a>
+<a href="block_editor_template.html">BlockEditorTemplate</a>
+<a href="blueprint_courses.html">Blueprint Courses</a>
+<a href="bookmarks.html">Bookmarks</a>
+<a href="brand_configs.html">Brand Configs</a>
+<a href="calendar_events.html">Calendar Events</a>
+<a href="collaborations.html">Collaborations</a>
+<a href="comm_messages.html">CommMessages</a>
+<a href="communication_channels.html">Communication Channels</a>
+<a href="conferences.html">Conferences</a>
+<a href="content_exports.html">Content Exports</a>
+<a href="content_migrations.html">Content Migrations</a>
+<a href="content_security_policy_settings.html">Content Security Policy Settings</a>
+<a href="content_shares.html">Content Shares</a>
+<a href="conversations.html">Conversations</a>
+<a href="course_audit_log.html">Course Audit log</a>
+<a href="course_pace.html">Course Pace</a>
+<a href="course_quiz_extensions.html">Course Quiz Extensions</a>
+<a href="course_reports.html">Course Reports</a>
+<a href="courses.html">Courses</a>
+<a href="custom_gradebook_columns.html">Custom Gradebook Columns</a>
+<a href="developer_key_account_bindings.html">Developer Key Account Bindings</a>
+<a href="developer_keys.html">Developer Keys</a>
+<a href="discussion_topics.html">Discussion Topics</a>
+<a href="enrollment_terms.html">Enrollment Terms</a>
+<a href="enrollments.html">Enrollments</a>
+<a href="e_portfolios.html">ePortfolios</a>
+<a href="e_pub_exports.html">ePub Exports</a>
+<a href="error_reports.html">Error Reports</a>
+<a href="external_tools.html">External Tools</a>
+<a href="favorites.html">Favorites</a>
+<a href="feature_flags.html">Feature Flags</a>
+<a href="files.html">Files</a>
+<a href="grade_change_log.html">Grade Change Log</a>
+<a href="gradebook_history.html">Gradebook History</a>
+<a href="grading_period_sets.html">Grading Period Sets</a>
+<a href="grading_periods.html">Grading Periods</a>
+<a href="grading_standards.html">Grading Standards</a>
+<a href="group_categories.html">Group Categories</a>
+<a href="groups.html">Groups</a>
+<a href="history.html">History</a>
+<a href="inst_access_tokens.html">InstAccess tokens</a>
+<a href="jw_ts.html">JWTs</a>
+<a href="late_policy.html">Late Policy</a>
+<a href="learning_object_dates.html">Learning Object Dates</a>
+<a href="line_items.html">Line Items</a>
+<a href="live_assessments.html">LiveAssessments</a>
+<a href="logins.html">Logins</a>
+<a href="lti_launch_definitions.html">LTI Launch Definitions</a>
+<a href="lti_registrations.html">LTI Registrations</a>
+<a href="lti_resource_links.html">LTI Resource Links</a>
+<a href="media_objects.html">Media Objects</a>
+<a href="moderated_grading.html">Moderated Grading</a>
+<a href="modules.html">Modules</a>
+<a href="names_and_role.html">Names and Role</a>
+<a href="new_quiz_items.html">New Quiz Items</a>
+<a href="new_quizzes.html">New Quizzes</a>
+<a href="new_quizzes_accommodations.html">New Quizzes Accommodations</a>
+<a href="new_quizzes_reports.html">New Quizzes Reports</a>
+<a href="notification_preferences.html">Notification Preferences</a>
+<a href="originality_reports.html">Originality Reports</a>
+<a href="outcome_groups.html">Outcome Groups</a>
+<a href="outcome_imports.html">Outcome Imports</a>
+<a href="outcome_results.html">Outcome Results</a>
+<a href="outcomes.html">Outcomes</a>
+<a href="pages.html">Pages</a>
+<a href="peer_reviews.html">Peer Reviews</a>
+<a href="planner.html">Planner</a>
+<a href="poll_sessions.html">Poll Sessions</a>
+<a href="poll_choices.html">PollChoices</a>
+<a href="polls.html">Polls</a>
+<a href="poll_submissions.html">PollSubmissions</a>
+<a href="proficiency_ratings.html">Proficiency Ratings</a>
+<a href="progress.html">Progress</a>
+<a href="public_jwk.html">Public JWK</a>
+<a href="quiz_assignment_overrides.html">Quiz Assignment Overrides</a>
+<a href="quiz_extensions.html">Quiz Extensions</a>
+<a href="quiz_ip_filters.html">Quiz IP Filters</a>
+<a href="quiz_question_groups.html">Quiz Question Groups</a>
+<a href="quiz_questions.html">Quiz Questions</a>
+<a href="quiz_reports.html">Quiz Reports</a>
+<a href="quiz_statistics.html">Quiz Statistics</a>
+<a href="quiz_submission_events.html">Quiz Submission Events</a>
+<a href="quiz_submission_files.html">Quiz Submission Files</a>
+<a href="quiz_submission_questions.html">Quiz Submission Questions</a>
+<a href="quiz_submission_user_list.html">Quiz Submission User List</a>
+<a href="quiz_submissions.html">Quiz Submissions</a>
+<a href="quizzes.html">Quizzes</a>
+<a href="result.html">Result</a>
+<a href="roles.html">Roles</a>
+<a href="rubrics.html">Rubrics</a>
+<a href="sandboxes.html">Sandboxes</a>
+<a href="score.html">Score</a>
+<a href="search.html">Search</a>
+<a href="sections.html">Sections</a>
+<a href="services.html">Services</a>
+<a href="shared_brand_configs.html">Shared Brand Configs</a>
+<a href="sis_import_errors.html">SIS Import Errors</a>
+<a href="sis_imports.html">SIS Imports</a>
+<a href="sis_integration.html">SIS Integration</a>
+<a href="smart_search.html">Smart Search</a>
+<a href="submission_comments.html">Submission Comments</a>
+<a href="submissions.html">Submissions</a>
+<a href="tabs.html">Tabs</a>
+<a href="temporary_enrollment_pairings.html">Temporary Enrollment Pairings</a>
+<a href="user_observees.html">User Observees</a>
+<a href="users.html">Users</a>
+<a href="what_if_grades.html">What If Grades</a>
+</div>
+</div>
+</div>
+<div>
+<label>Outcomes</label>
+<div>
+<div>
+<a href="file.outcomes_csv.html">Outcomes CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>Group Categories</label>
+<div>
+<div>
+<a href="file.group_category_csv.html">Group Categories CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>SIS</label>
+<div>
+<div>
+<a href="file.sis_csv.html">SIS CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>External Tools</label>
+<div>
+<div>
+<label>LTI</label>
+<div>
+<a href="file.tools_intro.html">Introduction</a><a href="file.registration.html">Registration</a><a href="file.lti_launch_overview.html">Launch Overview</a><a href="file.lti_dev_key_config.html">Configuring</a><a href="file.tools_variable_substitutions.html">Variable Substitutions</a><a href="file.content_item.html">Deep Linking</a><a href="file.assignment_tools.html">Grading</a><a href="file.provisioning.html">Provisioning</a><a href="file.lti_window_post_message.html">PostMessage</a>
+<div>
+<label>Placements</label>
+<div>
+<a href="file.placements_overview.html">Placements Overview</a><a href="file.navigation_tools.html">Navigation</a><a href="file.homework_submission_placement.html">Homework Submission</a><a href="file.editor_button_placement.html">Editor Button</a><a href="file.migration_selection_placement.html">Migration Selection</a><a href="file.link_selection_placement.html">Link Selection (Modules)</a><a href="file.assignment_selection_placement.html">Assignment Selection</a><a href="file.collaborations_placement.html">Collaborations</a>
+</div>
+</div>
+</div>
+</div>
+<a href="file.xapi.html">xAPI</a>
+<a href="file.canvas_roles.html">Canvas Roles</a>
+</div>
+<div>
+<div>
+<label>Plagiarism Detection Platform</label>
+<div>
+<a href="file.plagiarism_platform.html">Overview</a>
+<a href="plagiarism_detection_platform_assignments.html">Plagiarism Detection Platform Assignments</a>
+<a href="plagiarism_detection_platform_users.html">Plagiarism Detection Platform Users</a>
+<a href="plagiarism_detection_submissions.html">Plagiarism Detection Submissions</a>
+<a href="webhooks_subscriptions_for_plagiarism_platform.html">Webhooks Subscriptions for Plagiarism Platform</a>
+<a href="file.jwt_access_tokens.html">JWT Access Tokens</a>
+</div>
+</div>
+</div>
+</div>
+<div>
+<label>Data Services</label>
+<div>
+<div>
+<label>Live Events</label>
+<div>
+<div>
+<label>Overview</label>
+<div>
+<a href="file.data_service_introduction.html">Introduction</a><a href="file.data_service_setup.html">Setup</a><a href="file.data_service_caliper_structure.html">Caliper</a><a href="file.data_service_canvas_event_metadata.html">Metadata</a>
+</div>
+</div>
+<span>Event Format</span>
+</div>
+<div>
+<div>
+<label>Canvas</label>
+<div>
+<a href="file.data_service_canvas_account.html">Account</a><a href="file.data_service_canvas_asset.html">Asset</a><a href="file.data_service_canvas_assignment.html">Assignment</a><a href="file.data_service_canvas_attachment.html">Attachment</a><a href="file.data_service_canvas_content.html">Content</a><a href="file.data_service_canvas_conversation.html">Conversation</a><a href="file.data_service_canvas_course.html">Course</a><a href="file.data_service_canvas_discussion.html">Discussion</a><a href="file.data_service_canvas_enrollment.html">Enrollment</a><a href="file.data_service_canvas_grade.html">Grade</a><a href="file.data_service_canvas_group.html">Group</a><a href="file.data_service_canvas_learning.html">Learning</a><a href="file.data_service_canvas_logged.html">Logged</a><a href="file.data_service_canvas_module.html">Module</a><a href="file.data_service_canvas_outcome.html">Outcome</a><a href="file.data_service_canvas_outcomes.html">Outcomes</a><a href="file.data_service_canvas_plagiarism.html">Plagiarism</a><a href="file.data_service_canvas_quiz.html">Quiz</a><a href="file.data_service_canvas_rubric.html">Rubric</a><a href="file.data_service_canvas_sis.html">Sis</a><a href="file.data_service_canvas_submission.html">Submission</a><a href="file.data_service_canvas_syllabus.html">Syllabus</a><a href="file.data_service_canvas_user.html">User</a><a href="file.data_service_canvas_wiki.html">Wiki</a>
+</div>
+</div>
+</div>
+<div>
+<div>
+<label>Caliper IMS 1.1</label>
+<div>
+<a href="file.data_service_caliper_assessment.html">Assessment</a><a href="file.data_service_caliper_basic.html">Basic</a><a href="file.data_service_caliper_forum.html">Forum</a><a href="file.data_service_caliper_grading.html">Grading</a><a href="file.data_service_caliper_navigation_events.html">Navigation Events</a><a href="file.data_service_caliper_session.html">Session</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</nav>
+</div>
+<div><div>
+<h1>Accounts API</h1>
+<table>
+<tbody><tr><th>Accounts</th><td><a href="#method.accounts.index">List accounts</a><a href="#method.accounts.manageable_accounts">Get accounts that admins can manage</a><a href="#method.accounts.course_creation_accounts">Get accounts that users can create courses in</a><a href="#method.accounts.course_accounts">List accounts for course admins</a><a href="#method.accounts.show">Get a single account</a><a href="#method.accounts.show_settings">Settings</a><a href="#method.accounts.environment">List environment settings</a><a href="#method.accounts.permissions">Permissions</a><a href="#method.accounts.sub_accounts">Get the sub-accounts of an account</a><a href="#method.accounts.terms_of_service">Get the Terms of Service</a><a href="#method.accounts.help_links">Get help links</a><a href="#method.accounts.manually_created_courses_account">Get the manually-created courses sub-account for the domain root account</a><a href="#method.accounts.courses_api">List active courses in an account</a><a href="#method.accounts.update">Update an account</a><a href="#method.accounts.remove_user">Delete a user from the root account</a><a href="#method.accounts.restore_user">Restore a deleted user from a root account</a></td></tr><tr><th>Subaccounts</th><td><a href="#method.sub_accounts.create">Create a new sub-account</a><a href="#method.sub_accounts.destroy">Delete a sub-account</a></td></tr></tbody></table>
+<p>API for accessing account data.</p>
+<div>
+<h3><a>An Account object looks like:</a></h3>
+<pre><code><span>{</span><span>// the ID of the Account object</span><span>"id"</span><span>:</span><span>2</span><span>,</span><span>// The display name of the account</span><span>"name"</span><span>:</span><span>"Canvas Account"</span><span>,</span><span>// The UUID of the account</span><span>"uuid"</span><span>:</span><span>"WvAHhY5FINzq5IyRIJybGeiXyFkG3SqHUPb7jZY5"</span><span>,</span><span>// The account's parent ID, or null if this is the root account</span><span>"parent_account_id"</span><span>:</span><span>1</span><span>,</span><span>// The ID of the root account, or null if this is the root account</span><span>"root_account_id"</span><span>:</span><span>1</span><span>,</span><span>// The storage quota for the account in megabytes, if not otherwise specified</span><span>"default_storage_quota_mb"</span><span>:</span><span>500</span><span>,</span><span>// The storage quota for a user in the account in megabytes, if not otherwise</span><span>// specified</span><span>"default_user_storage_quota_mb"</span><span>:</span><span>50</span><span>,</span><span>// The storage quota for a group in the account in megabytes, if not otherwise</span><span>// specified</span><span>"default_group_storage_quota_mb"</span><span>:</span><span>50</span><span>,</span><span>// The default time zone of the account. Allowed time zones are</span><span>// {http://www.iana.org/time-zones IANA time zones} or friendlier</span><span>// {http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html Ruby on Rails</span><span>// time zones}.</span><span>"default_time_zone"</span><span>:</span><span>"America/Denver"</span><span>,</span><span>// The account's identifier in the Student Information System. Only included if</span><span>// the user has permission to view SIS information.</span><span>"sis_account_id"</span><span>:</span><span>"123xyz"</span><span>,</span><span>// The account's identifier in the Student Information System. Only included if</span><span>// the user has permission to view SIS information.</span><span>"integration_id"</span><span>:</span><span>"123xyz"</span><span>,</span><span>// The id of the SIS import if created through SIS. Only included if the user</span><span>// has permission to manage SIS information.</span><span>"sis_import_id"</span><span>:</span><span>12</span><span>,</span><span>// The number of courses directly under the account (available via include)</span><span>"course_count"</span><span>:</span><span>10</span><span>,</span><span>// The number of sub-accounts directly under the account (available via include)</span><span>"sub_account_count"</span><span>:</span><span>10</span><span>,</span><span>// The account's identifier that is sent as context_id in LTI launches.</span><span>"lti_guid"</span><span>:</span><span>"123xyz"</span><span>,</span><span>// The state of the account. Can be 'active' or 'deleted'.</span><span>"workflow_state"</span><span>:</span><span>"active"</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A TermsOfService object looks like:</a></h3>
+<pre><code><span>{</span><span>// Terms Of Service id</span><span>"id"</span><span>:</span><span>1</span><span>,</span><span>// The given type for the Terms of Service</span><span>"terms_type"</span><span>:</span><span>"default"</span><span>,</span><span>// Boolean dictating if the user must accept Terms of Service</span><span>"passive"</span><span>:</span><span>false</span><span>,</span><span>// The id of the root account that owns the Terms of Service</span><span>"account_id"</span><span>:</span><span>1</span><span>,</span><span>// Content of the Terms of Service</span><span>"content"</span><span>:</span><span>"To be or not to be that is the question"</span><span>,</span><span>// The type of self registration allowed</span><span>"self_registration_type"</span><span>:</span><span>"["</span><span>none</span><span>", "</span><span>observer</span><span>", "</span><span>all</span><span>"]"</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A HelpLink object looks like:</a></h3>
+<pre><code><span>{</span><span>// The ID of the help link</span><span>"id"</span><span>:</span><span>"instructor_question"</span><span>,</span><span>// The name of the help link</span><span>"text"</span><span>:</span><span>"Ask Your Instructor a Question"</span><span>,</span><span>// The description of the help link</span><span>"subtext"</span><span>:</span><span>"Questions are submitted to your instructor"</span><span>,</span><span>// The URL of the help link</span><span>"url"</span><span>:</span><span>"#teacher_feedback"</span><span>,</span><span>// The type of the help link</span><span>"type"</span><span>:</span><span>"default"</span><span>,</span><span>// The roles that have access to this help link</span><span>"available_to"</span><span>:</span><span>[</span><span>"user"</span><span>,</span><span>"student"</span><span>,</span><span>"teacher"</span><span>,</span><span>"admin"</span><span>,</span><span>"observer"</span><span>,</span><span>"unenrolled"</span><span>]</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A HelpLinks object looks like:</a></h3>
+<pre><code><span>{</span><span>// Help link button title</span><span>"help_link_name"</span><span>:</span><span>"Help And Policies"</span><span>,</span><span>// Help link button icon</span><span>"help_link_icon"</span><span>:</span><span>"help"</span><span>,</span><span>// Help links defined by the account. Could include default help links.</span><span>"custom_help_links"</span><span>:</span><span>[{</span><span>"id"</span><span>:</span><span>"link1"</span><span>,</span><span>"text"</span><span>:</span><span>"Custom Link!"</span><span>,</span><span>"subtext"</span><span>:</span><span>"Something something."</span><span>,</span><span>"url"</span><span>:</span><span>"https:\/\/google.com"</span><span>,</span><span>"type"</span><span>:</span><span>"custom"</span><span>,</span><span>"available_to"</span><span>:[</span><span>"user"</span><span>,</span><span>"student"</span><span>,</span><span>"teacher"</span><span>,</span><span>"admin"</span><span>,</span><span>"observer"</span><span>,</span><span>"unenrolled"</span><span>],</span><span>"is_featured"</span><span>:</span><span>true</span><span>,</span><span>"is_new"</span><span>:</span><span>false</span><span>,</span><span>"feature_headline"</span><span>:</span><span>"Check this out!"</span><span>}],</span><span>// Default help links provided when account has not set help links of their own.</span><span>"default_help_links"</span><span>:</span><span>[{</span><span>"available_to"</span><span>:[</span><span>"student"</span><span>],</span><span>"text"</span><span>:</span><span>"Ask Your Instructor a Question"</span><span>,</span><span>"subtext"</span><span>:</span><span>"Questions are submitted to your instructor"</span><span>,</span><span>"url"</span><span>:</span><span>"#teacher_feedback"</span><span>,</span><span>"type"</span><span>:</span><span>"default"</span><span>,</span><span>"id"</span><span>:</span><span>"instructor_question"</span><span>,</span><span>"is_featured"</span><span>:</span><span>false</span><span>,</span><span>"is_new"</span><span>:</span><span>true</span><span>,</span><span>"feature_headline"</span><span>:</span><span>""</span><span>},</span><span>{</span><span>"available_to"</span><span>:[</span><span>"user"</span><span>,</span><span>"student"</span><span>,</span><span>"teacher"</span><span>,</span><span>"admin"</span><span>,</span><span>"observer"</span><span>,</span><span>"unenrolled"</span><span>],</span><span>"text"</span><span>:</span><span>"Search the Canvas Guides"</span><span>,</span><span>"subtext"</span><span>:</span><span>"Find answers to common questions"</span><span>,</span><span>"url"</span><span>:</span><span>"https:\/\/community.canvaslms.com\/t5\/Guides\/ct-p\/guides"</span><span>,</span><span>"type"</span><span>:</span><span>"default"</span><span>,</span><span>"id"</span><span>:</span><span>"search_the_canvas_guides"</span><span>,</span><span>"is_featured"</span><span>:</span><span>false</span><span>,</span><span>"is_new"</span><span>:</span><span>false</span><span>,</span><span>"feature_headline"</span><span>:</span><span>""</span><span>},</span><span>{</span><span>"available_to"</span><span>:[</span><span>"user"</span><span>,</span><span>"student"</span><span>,</span><span>"teacher"</span><span>,</span><span>"admin"</span><span>,</span><span>"observer"</span><span>,</span><span>"unenrolled"</span><span>],</span><span>"text"</span><span>:</span><span>"Report a Problem"</span><span>,</span><span>"subtext"</span><span>:</span><span>"If Canvas misbehaves, tell us about it"</span><span>,</span><span>"url"</span><span>:</span><span>"#create_ticket"</span><span>,</span><span>"type"</span><span>:</span><span>"default"</span><span>,</span><span>"id"</span><span>:</span><span>"report_a_problem"</span><span>,</span><span>"is_featured"</span><span>:</span><span>false</span><span>,</span><span>"is_new"</span><span>:</span><span>false</span><span>,</span><span>"feature_headline"</span><span>:</span><span>""</span><span>}]</span><span>}</span></code></pre>
+</div>
+<div>
+<div>
+<h2>
+<a href="#method.accounts.index">
+   List accounts
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#index</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts</code>
+</div>
+<p>A paginated list of accounts that the current user can view or manage. Typically, students and even teachers will get an empty list in response, only account admins can view the accounts that they are in.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<p>Array of additional information to include.</p>
+<dl><dt>“lti_guid”</dt>
+<dd>
+<p>the ‘tool_consumer_instance_guid’ that will be sent for this account on LTI launches</p>
+</dd><dt>“registration_settings”</dt>
+<dd>
+<p>returns info about the privacy policy and terms of use</p>
+</dd><dt>“services”</dt>
+<dd>
+<p>returns services and whether they are enabled (requires account management permissions)</p>
+</dd><dt>“course_count”</dt>
+<dd>
+<p>returns the number of courses directly under each account</p>
+</dd><dt>“sub_account_count”</dt>
+<dd>
+<p>returns the number of sub-accounts directly under each account</p>
+</dd></dl>
+<p>
+<span>Allowed values:</span> <code>lti_guid</code>, <code>registration_settings</code>, <code>services</code>, <code>course_count</code>, <code>sub_account_count</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="accounts_(lti).html#Account">Account</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.accounts.manageable_accounts">
+   Get accounts that admins can manage
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#manageable_accounts</a></span>
+</h2>
+<h3>
+  GET /api/v1/manageable_accounts
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/manageable_accounts</code>
+</div>
+<p>A paginated list of accounts where the current user has permission to create or manage courses. List will be empty for students and teachers as only admins can view which accounts they are in.</p>
+
+
+ Returns a list of 
+<a href="accounts_(lti).html#Account">Account</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.accounts.course_creation_accounts">
+   Get accounts that users can create courses in
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#course_creation_accounts</a></span>
+</h2>
+<h3>
+  GET /api/v1/course_creation_accounts
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/course_creation_accounts</code>
+</div>
+<p>A paginated list of accounts where the current user has permission to create courses.</p>
+
+
+ Returns a list of 
+<a href="accounts_(lti).html#Account">Account</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.accounts.course_accounts">
+   List accounts for course admins
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#course_accounts</a></span>
+</h2>
+<h3>
+  GET /api/v1/course_accounts
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/course_accounts</code>
+</div>
+<p>A paginated list of accounts that the current user can view through their admin course enrollments. (Teacher, TA, or designer enrollments). Only returns “id”, “name”, “workflow_state”, “root_account_id” and “parent_account_id”</p>
+
+
+ Returns a list of 
+<a href="accounts_(lti).html#Account">Account</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.accounts.show">
+   Get a single account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#show</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:id</code>
+</div>
+<p>Retrieve information on an individual account, given by id or sis sis_account_id.</p>
+
+
+ Returns an
+<a href="accounts_(lti).html#Account">Account</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.accounts.show_settings">
+   Settings
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#show_settings</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/settings
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/settings</code>
+</div>
+<p>Returns a JSON object containing a subset of settings for the specified account. It’s possible an empty set will be returned if no settings are applicable. The caller must be an Account admin with the manage_account_settings permission.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/&lt;</span><span>account_id</span><span>&gt;/</span><span>settings \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"microsoft_sync_enabled"</span><span>:</span><span>true</span><span>,</span><span>"microsoft_sync_login_attribute_suffix"</span><span>:</span><span>false</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.accounts.environment">
+   List environment settings
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#environment</a></span>
+</h2>
+<h3>
+  GET /api/v1/settings/environment
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/settings/environment</code>
+</div>
+<p>Return a hash of global settings for the root account This is the same information supplied to the web interface as <code>ENV.SETTINGS</code>.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'http://&lt;canvas&gt;/api/v1/settings/environment'</span><span> \
+ </span><span>-</span><span>H </span><span>"Authorization: Bearer &lt;token&gt;"</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"calendar_contexts_limit"</span><span>:</span><span>10</span><span>,</span><span>"open_registration"</span><span>:</span><span>false</span><span>,</span><span>...}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.accounts.permissions">
+   Permissions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#permissions</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/permissions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/permissions</code>
+</div>
+<p>Returns permission information for the calling user and the given account. You may use ‘self` as the account id to check permissions against the domain root account. The caller must have an account role or admin (teacher/TA/designer) enrollment in a course in the account.</p>
+<p>See also the <a href="courses.html#method.courses.permissions" title="Course">Course</a> and <a href="groups.html#method.groups.permissions" title="Group">Group</a> counterparts.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>permissions[]</td>
+<td>string</td>
+<td>
+<p>List of permissions to check against the authenticated user. Permission names are documented in the <a href="roles.html#method.role_overrides.add_role" title="Create a role">Create a role</a> endpoint.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/</span><span>self</span><span>/</span><span>permissions \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+ </span><span>-</span><span>d </span><span>'permissions[]=manage_account_memberships'</span><span> \
+ </span><span>-</span><span>d </span><span>'permissions[]=become_user'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>'manage_account_memberships'</span><span>:</span><span>'false'</span><span>,</span><span>'become_user'</span><span>:</span><span>'true'</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.accounts.sub_accounts">
+   Get the sub-accounts of an account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#sub_accounts</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/sub_accounts
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/sub_accounts</code>
+</div>
+<p>List accounts that are sub-accounts of the given account.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>recursive</td>
+<td>boolean</td>
+<td>
+<p>If true, the entire account tree underneath this account will be returned (though still paginated). If false, only direct sub-accounts of this account will be returned. Defaults to false.</p>
+</td>
+</tr>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<p>Array of additional information to include.</p>
+<dl><dt>“course_count”</dt>
+<dd>
+<p>returns the number of courses directly under each account</p>
+</dd><dt>“sub_account_count”</dt>
+<dd>
+<p>returns the number of sub-accounts directly under each account</p>
+</dd></dl>
+<p>
+<span>Allowed values:</span> <code>course_count</code>, <code>sub_account_count</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/&lt;</span><span>account_id</span><span>&gt;/</span><span>sub_accounts \
+   </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+
+ Returns a list of 
+<a href="accounts_(lti).html#Account">Account</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.accounts.terms_of_service">
+   Get the Terms of Service
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#terms_of_service</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/terms_of_service
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/terms_of_service</code>
+</div>
+<p>Returns the terms of service for that account</p>
+
+
+ Returns a
+<a href="accounts.html#TermsOfService">TermsOfService</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.accounts.help_links">
+   Get help links
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#help_links</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/help_links
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/help_links</code>
+</div>
+<p>Returns the help links for that account</p>
+
+
+ Returns a
+<a href="accounts.html#HelpLinks">HelpLinks</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.accounts.manually_created_courses_account">
+   Get the manually-created courses sub-account for the domain root account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#manually_created_courses_account</a></span>
+</h2>
+<h3>
+  GET /api/v1/manually_created_courses_account
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/manually_created_courses_account</code>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.accounts.courses_api">
+   List active courses in an account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#courses_api</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/courses
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/courses</code>
+</div>
+<p>Retrieve a paginated list of courses in this account.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>with_enrollments</td>
+<td>boolean</td>
+<td>
+<p>If true, include only courses with at least one enrollment. If false, include only courses with no enrollments. If not present, do not filter on course enrollment status.</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_type[]</td>
+<td>string</td>
+<td>
+<p>If set, only return courses that have at least one user enrolled in in the course with one of the specified enrollment types.</p>
+<p>
+<span>Allowed values:</span> <code>teacher</code>, <code>student</code>, <code>ta</code>, <code>observer</code>, <code>designer</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>published</td>
+<td>boolean</td>
+<td>
+<p>If true, include only published courses. If false, exclude published courses. If not present, do not filter on published status.</p>
+</td>
+</tr>
+<tr>
+<td>completed</td>
+<td>boolean</td>
+<td>
+<p>If true, include only completed courses (these may be in state ‘completed’, or their enrollment term may have ended). If false, exclude completed courses. If not present, do not filter on completed status.</p>
+</td>
+</tr>
+<tr>
+<td>blueprint</td>
+<td>boolean</td>
+<td>
+<p>If true, include only blueprint courses. If false, exclude them. If not present, do not filter on this basis.</p>
+</td>
+</tr>
+<tr>
+<td>blueprint_associated</td>
+<td>boolean</td>
+<td>
+<p>If true, include only courses that inherit content from a blueprint course. If false, exclude them. If not present, do not filter on this basis.</p>
+</td>
+</tr>
+<tr>
+<td>public</td>
+<td>boolean</td>
+<td>
+<p>If true, include only public courses. If false, exclude them. If not present, do not filter on this basis.</p>
+</td>
+</tr>
+<tr>
+<td>by_teachers[]</td>
+<td>integer</td>
+<td>
+<p>List of User IDs of teachers; if supplied, include only courses taught by one of the referenced users.</p>
+</td>
+</tr>
+<tr>
+<td>by_subaccounts[]</td>
+<td>integer</td>
+<td>
+<p>List of Account IDs; if supplied, include only courses associated with one of the referenced subaccounts.</p>
+</td>
+</tr>
+<tr>
+<td>hide_enrollmentless_courses</td>
+<td>boolean</td>
+<td>
+<p>If present, only return courses that have at least one enrollment. Equivalent to ‘with_enrollments=true’; retained for compatibility.</p>
+</td>
+</tr>
+<tr>
+<td>state[]</td>
+<td>string</td>
+<td>
+<p>If set, only return courses that are in the given state(s). By default, all states but “deleted” are returned.</p>
+<p>
+<span>Allowed values:</span> <code>created</code>, <code>claimed</code>, <code>available</code>, <code>completed</code>, <code>deleted</code>, <code>all</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_term_id</td>
+<td>integer</td>
+<td>
+<p>If set, only includes courses from the specified term.</p>
+</td>
+</tr>
+<tr>
+<td>search_term</td>
+<td>string</td>
+<td>
+<p>The partial course name, code, or full ID to match and return in the results list. Must be at least 3 characters.</p>
+</td>
+</tr>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<ul><li>
+<p>All explanations can be seen in the <a href="courses.html#method.courses.index" title="Course API index documentation">Course API index documentation</a></p>
+</li><li>
+<p>“sections”, “needs_grading_count” and “total_scores” are not valid options at the account level</p>
+</li></ul>
+<p>
+<span>Allowed values:</span> <code>syllabus_body</code>, <code>term</code>, <code>course_progress</code>, <code>storage_quota_used_mb</code>, <code>total_students</code>, <code>teachers</code>, <code>account_name</code>, <code>concluded</code>, <code>post_manually</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>string</td>
+<td>
+<p>The column to sort results by.</p>
+<p>
+<span>Allowed values:</span> <code>course_status</code>, <code>course_name</code>, <code>sis_course_id</code>, <code>teacher</code>, <code>account_name</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>order</td>
+<td>string</td>
+<td>
+<p>The order to sort the given column by.</p>
+<p>
+<span>Allowed values:</span> <code>asc</code>, <code>desc</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>search_by</td>
+<td>string</td>
+<td>
+<p>The filter to search by. “course” searches for course names, course codes, and SIS IDs. “teacher” searches for teacher names</p>
+<p>
+<span>Allowed values:</span> <code>course</code>, <code>teacher</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>starts_before</td>
+<td>Date</td>
+<td>
+<p>If set, only return courses that start before the value (inclusive) or their enrollment term starts before the value (inclusive) or both the course’s start_at and the enrollment term’s start_at are set to null. The value should be formatted as: yyyy-mm-dd or ISO 8601 YYYY-MM-DDTHH:MM:SSZ.</p>
+</td>
+</tr>
+<tr>
+<td>ends_after</td>
+<td>Date</td>
+<td>
+<p>If set, only return courses that end after the value (inclusive) or their enrollment term ends after the value (inclusive) or both the course’s end_at and the enrollment term’s end_at are set to null. The value should be formatted as: yyyy-mm-dd or ISO 8601 YYYY-MM-DDTHH:MM:SSZ.</p>
+</td>
+</tr>
+<tr>
+<td>homeroom</td>
+<td>boolean</td>
+<td>
+<p>If set, only return homeroom courses.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="courses.html#Course">Course</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.accounts.update">
+   Update an account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#update</a></span>
+</h2>
+<h3>
+  PUT /api/v1/accounts/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/accounts/:id</code>
+</div>
+<p>Update an existing account.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>account[name]</td>
+<td>string</td>
+<td>
+<p>Updates the account name</p>
+</td>
+</tr>
+<tr>
+<td>account[sis_account_id]</td>
+<td>string</td>
+<td>
+<p>Updates the account sis_account_id Must have manage_sis permission and must not be a root_account.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_time_zone]</td>
+<td>string</td>
+<td>
+<p>The default time zone of the account. Allowed time zones are <a href="http://www.iana.org/time-zones" title="IANA time zones">IANA time zones</a> or friendlier <a href="http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html" title="Ruby on Rails time zones">Ruby on Rails time zones</a>.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>The default course storage quota to be used, if not otherwise specified.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_user_storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>The default user storage quota to be used, if not otherwise specified.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_group_storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>The default group storage quota to be used, if not otherwise specified.</p>
+</td>
+</tr>
+<tr>
+<td>account[course_template_id]</td>
+<td>integer</td>
+<td>
+<p>The ID of a course to be used as a template for all newly created courses. Empty means to inherit the setting from parent account, 0 means to not use a template even if a parent account has one set. The course must be marked as a template.</p>
+</td>
+</tr>
+<tr>
+<td>account[parent_account_id]</td>
+<td>integer</td>
+<td>
+<p>The ID of a parent account to move the account to. The new parent account must be in the same root account as the original. The hierarchy of sub-accounts will be preserved in the new parent account. The caller must be an administrator in both the original parent account and the new parent account.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][restrict_student_past_view][value]</td>
+<td>boolean</td>
+<td>
+<p>Restrict students from viewing courses after end date</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][restrict_student_past_view][locked]</td>
+<td>boolean</td>
+<td>
+<p>Lock this setting for sub-accounts and courses</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][restrict_student_future_view][value]</td>
+<td>boolean</td>
+<td>
+<p>Restrict students from viewing courses before start date</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][microsoft_sync_enabled]</td>
+<td>boolean</td>
+<td>
+<p>Determines whether this account has Microsoft Teams Sync enabled or not.</p>
+<p>Note that if you are altering Microsoft Teams sync settings you must enable the Microsoft Group enrollment syncing feature flag. In addition, if you are enabling Microsoft Teams sync, you must also specify a tenant, login attribute, and a remote attribute. Specifying a suffix to use is optional.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][microsoft_sync_tenant]</td>
+<td>string</td>
+<td>
+<p>The tenant this account should use when using Microsoft Teams Sync. This should be an Azure Active Directory domain name.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][microsoft_sync_login_attribute]</td>
+<td>string</td>
+<td>
+<p>The attribute this account should use to lookup users when using Microsoft Teams Sync. Must be one of “sub”, “email”, “oid”, “preferred_username”, or “integration_id”.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][microsoft_sync_login_attribute_suffix]</td>
+<td>string</td>
+<td>
+<p>A suffix that will be appended to the result of the login attribute when associating Canvas users with Microsoft users. Must be under 255 characters and contain no whitespace. This field is optional.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][microsoft_sync_remote_attribute]</td>
+<td>string</td>
+<td>
+<p>The Active Directory attribute to use when associating Canvas users with Microsoft users. Must be one of “mail”, “mailNickname”, or “userPrincipalName”.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][restrict_student_future_view][locked]</td>
+<td>boolean</td>
+<td>
+<p>Lock this setting for sub-accounts and courses</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][lock_all_announcements][value]</td>
+<td>boolean</td>
+<td>
+<p>Disable comments on announcements</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][lock_all_announcements][locked]</td>
+<td>boolean</td>
+<td>
+<p>Lock this setting for sub-accounts and courses</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][usage_rights_required][value]</td>
+<td>boolean</td>
+<td>
+<p>Copyright and license information must be provided for files before they are published.</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][usage_rights_required][locked]</td>
+<td>boolean</td>
+<td>
+<p>Lock this setting for sub-accounts and courses</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][restrict_student_future_listing][value]</td>
+<td>boolean</td>
+<td>
+<p>Restrict students from viewing future enrollments in course list</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][restrict_student_future_listing][locked]</td>
+<td>boolean</td>
+<td>
+<p>Lock this setting for sub-accounts and courses</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][conditional_release][value]</td>
+<td>boolean</td>
+<td>
+<p>Enable or disable individual learning paths for students based on assessment</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][conditional_release][locked]</td>
+<td>boolean</td>
+<td>
+<p>Lock this setting for sub-accounts and courses</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][password_policy]</td>
+<td>Hash</td>
+<td>
+<p>Hash of optional password policy configuration parameters for a root account</p>
+<dl><dt><code>allow_login_suspension</code> boolean</dt>
+<dd>
+<p>Allow suspension of user logins upon reaching maximum_login_attempts</p>
+</dd><dt><code>require_number_characters</code> boolean</dt>
+<dd>
+<p>Require the use of number characters when setting up a new password</p>
+</dd><dt><code>require_symbol_characters</code> boolean</dt>
+<dd>
+<p>Require the use of symbol characters when setting up a new password</p>
+</dd><dt><code>minimum_character_length</code> integer</dt>
+<dd>
+<p>Minimum number of characters required for a new password</p>
+</dd><dt><code>maximum_login_attempts</code> integer</dt>
+<dd>
+<p>Maximum number of login attempts before a user is locked out</p>
+</dd></dl>
+<p><em>Required</em> feature option:</p>
+<pre><code><span>Enhance</span> <span>password</span> <span>options</span>
+</code></pre>
+</td>
+</tr>
+<tr>
+<td>account[settings][enable_as_k5_account][value]</td>
+<td>boolean</td>
+<td>
+<p>Enable or disable Canvas for Elementary for this account</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][use_classic_font_in_k5][value]</td>
+<td>boolean</td>
+<td>
+<p>Whether or not the classic font is used on the dashboard. Only applies if enable_as_k5_account is true.</p>
+</td>
+</tr>
+<tr>
+<td>override_sis_stickiness</td>
+<td>boolean</td>
+<td>
+<p>Default is true. If false, any fields containing “sticky” changes will not be updated. See SIS CSV Format documentation for information on which fields can have SIS stickiness</p>
+</td>
+</tr>
+<tr>
+<td>account[settings][lock_outcome_proficiency][value]</td>
+<td>boolean</td>
+<td>
+<dl><dt>DEPRECATED</dt>
+<dd>
+<p>Restrict instructors from changing mastery scale</p>
+</dd></dl>
+</td>
+</tr>
+<tr>
+<td>account[lock_outcome_proficiency][locked]</td>
+<td>boolean</td>
+<td>
+<dl><dt>DEPRECATED</dt>
+<dd>
+<p>Lock this setting for sub-accounts and courses</p>
+</dd></dl>
+</td>
+</tr>
+<tr>
+<td>account[settings][lock_proficiency_calculation][value]</td>
+<td>boolean</td>
+<td>
+<dl><dt>DEPRECATED</dt>
+<dd>
+<p>Restrict instructors from changing proficiency calculation method</p>
+</dd></dl>
+</td>
+</tr>
+<tr>
+<td>account[lock_proficiency_calculation][locked]</td>
+<td>boolean</td>
+<td>
+<dl><dt>DEPRECATED</dt>
+<dd>
+<p>Lock this setting for sub-accounts and courses</p>
+</dd></dl>
+</td>
+</tr>
+<tr>
+<td>account[services]</td>
+<td>Hash</td>
+<td>
+<p>Give this a set of keys and boolean values to enable or disable services matching the keys</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/&lt;</span><span>account_id</span><span>&gt;</span><span> \
+ </span><span>-</span><span>X PUT \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span> \
+ </span><span>-</span><span>d </span><span>'account[name]=New account name'</span><span> \
+ </span><span>-</span><span>d </span><span>'account[default_time_zone]=Mountain Time (US &amp; Canada)'</span><span> \
+ </span><span>-</span><span>d </span><span>'account[default_storage_quota_mb]=450'</span></code></pre>
+</div>
+
+ Returns an
+<a href="accounts_(lti).html#Account">Account</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.accounts.remove_user">
+   Delete a user from the root account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#remove_user</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/accounts/:account_id/users/:user_id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/accounts/:account_id/users/:user_id</code>
+</div>
+<p>Delete a user record from a Canvas root account. If a user is associated with multiple root accounts (in a multi-tenant instance of Canvas), this action will NOT remove them from the other accounts.</p>
+<p>WARNING: This API will allow a user to remove themselves from the account. If they do this, they won’t be able to make API calls or log into Canvas at that account.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/</span><span>3</span><span>/</span><span>users</span><span>/</span><span>5</span><span> \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;ACCESS_TOKEN&gt;'</span><span> \
+ </span><span>-</span><span>X DELETE</span></code></pre>
+</div>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.accounts.restore_user">
+   Restore a deleted user from a root account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/accounts_controller.rb">AccountsController#restore_user</a></span>
+</h2>
+<h3>
+  PUT /api/v1/accounts/:account_id/users/:user_id/restore
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/accounts/:account_id/users/:user_id/restore</code>
+</div>
+<p>Restore a user record along with the most recently deleted pseudonym from a Canvas root account.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>accounts</span><span>/</span><span>3</span><span>/</span><span>users</span><span>/</span><span>5</span><span>/</span><span>restore \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;ACCESS_TOKEN&gt;'</span><span> \
+ </span><span>-</span><span>X PUT</span></code></pre>
+</div>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.sub_accounts.create">
+   Create a new sub-account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/sub_accounts_controller.rb">SubAccountsController#create</a></span>
+</h2>
+<h3>
+  POST /api/v1/accounts/:account_id/sub_accounts
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/accounts/:account_id/sub_accounts</code>
+</div>
+<p>Add a new sub-account to a given account.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>account[name]</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The name of the new sub-account.</p>
+</td>
+</tr>
+<tr>
+<td>account[sis_account_id]</td>
+<td>string</td>
+<td>
+<p>The account’s identifier in the Student Information System.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>The default course storage quota to be used, if not otherwise specified.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_user_storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>The default user storage quota to be used, if not otherwise specified.</p>
+</td>
+</tr>
+<tr>
+<td>account[default_group_storage_quota_mb]</td>
+<td>integer</td>
+<td>
+<p>The default group storage quota to be used, if not otherwise specified.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns an
+<a href="accounts_(lti).html#Account">Account</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.sub_accounts.destroy">
+   Delete a sub-account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/sub_accounts_controller.rb">SubAccountsController#destroy</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/accounts/:account_id/sub_accounts/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/accounts/:account_id/sub_accounts/:id</code>
+</div>
+<p>Cannot delete an account with active courses or active sub_accounts. Cannot delete a root_account</p>
+
+
+ Returns an
+<a href="accounts_(lti).html#Account">Account</a>
+object
+</div>
+</div>
+</div>
+</div>
+<div>
+ © Instructure, Inc. Generated on Thu Mar 27 16:24:38 2025
+ This documentation is generated directly from the Canvas LMS source code, available <a href="https://github.com/instructure/canvas-lms">on Github</a>.
+</div>

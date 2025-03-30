@@ -1,17 +1,15 @@
 import json
 import os
-from typing import List, Set, Tuple
+import re
+from typing import List, Set, Dict, Tuple, Optional
+from bs4 import BeautifulSoup
 
 from crawl4ai import (
     AsyncWebCrawler,
     BrowserConfig,
     CacheMode,
     CrawlerRunConfig,
-    LLMExtractionStrategy,
 )
-
-from models.venue import Venue
-from utils.data_utils import is_complete_venue, is_duplicate_venue
 
 
 def get_browser_config() -> BrowserConfig:
@@ -21,7 +19,6 @@ def get_browser_config() -> BrowserConfig:
     Returns:
         BrowserConfig: The configuration settings for the browser.
     """
-    # https://docs.crawl4ai.com/core/browser-crawler-config/
     return BrowserConfig(
         browser_type="chromium",  # Type of browser to simulate
         headless=False,  # Whether to run in headless mode (no GUI)
@@ -29,149 +26,229 @@ def get_browser_config() -> BrowserConfig:
     )
 
 
-def get_llm_strategy() -> LLMExtractionStrategy:
-    """
-    Returns the configuration for the language model extraction strategy.
-
-    Returns:
-        LLMExtractionStrategy: The settings for how to extract data using LLM.
-    """
-    # https://docs.crawl4ai.com/api/strategies/#llmextractionstrategy
-    return LLMExtractionStrategy(
-        provider="groq/deepseek-r1-distill-llama-70b",  # Name of the LLM provider
-        api_token=os.getenv("GROQ_API_KEY"),  # API token for authentication
-        schema=Venue.model_json_schema(),  # JSON schema of the data model
-        extraction_type="schema",  # Type of extraction to perform
-        instruction=(
-            "Extract all venue objects with 'name', 'location', 'price', 'capacity', "
-            "'rating', 'reviews', and a 1 sentence description of the venue from the "
-            "following content."
-        ),  # Instructions for the LLM
-        input_format="markdown",  # Format of the input content
-        verbose=True,  # Enable verbose logging
-    )
-
-
-async def check_no_results(
+async def extract_resource_links(
     crawler: AsyncWebCrawler,
-    url: str,
+    base_url: str,
     session_id: str,
-) -> bool:
+) -> List[Tuple[str, str]]:
     """
-    Checks if the "No Results Found" message is present on the page.
+    Extract resource links from the Canvas API documentation.
 
     Args:
-        crawler (AsyncWebCrawler): The web crawler instance.
-        url (str): The URL to check.
-        session_id (str): The session identifier.
+        crawler (AsyncWebCrawler): The web crawler instance
+        base_url (str): Base URL of the API documentation
+        session_id (str): Session identifier
 
     Returns:
-        bool: True if "No Results Found" message is found, False otherwise.
+        List[Tuple[str, str]]: List of (link_url, resource_name) tuples
     """
-    # Fetch the page without any CSS selector or extraction strategy
+    # Try using the hardcoded list since the structure is difficult to parse automatically
+    print("Using predefined list of common Canvas API resources")
+
+    # This list was compiled from the Canvas API documentation
+    resource_list = [
+        # Core resources
+        ("users.html", "Users"),
+        ("courses.html", "Courses"),
+        ("accounts.html", "Accounts"),
+        ("enrollments.html", "Enrollments"),
+        ("assignments.html", "Assignments"),
+        ("submissions.html", "Submissions"),
+        ("files.html", "Files"),
+        ("groups.html", "Groups"),
+        # Additional important resources
+        ("discussion_topics.html", "Discussion Topics"),
+        ("pages.html", "Pages"),
+        ("modules.html", "Modules"),
+        ("quizzes.html", "Quizzes"),
+        ("sections.html", "Sections"),
+        ("announcements.html", "Announcements"),
+        ("calendar_events.html", "Calendar Events"),
+        ("content_migrations.html", "Content Migrations"),
+        ("external_tools.html", "External Tools"),
+        ("grading_standards.html", "Grading Standards"),
+        ("rubrics.html", "Rubrics"),
+        ("authentication_providers.html", "Authentication Providers"),
+        ("sis_imports.html", "SIS Imports"),
+        ("tabs.html", "Tabs"),
+        ("outcome_groups.html", "Outcome Groups"),
+        ("outcomes.html", "Outcomes"),
+        ("bookmarks.html", "Bookmarks"),
+        ("api_token_scopes.html", "API Token Scopes"),
+        ("conversations.html", "Conversations"),
+        ("collaborations.html", "Collaborations"),
+        ("gradebook_history.html", "Gradebook History"),
+        ("favorites.html", "Favorites"),
+        ("feature_flags.html", "Feature Flags"),
+        ("services.html", "Services"),
+    ]
+
+    # Convert to full URLs
+    resources = [(f"{base_url}{href}", name) for href, name in resource_list]
+
+    print(f"Using {len(resources)} predefined API resource links")
+    return resources
+
+
+async def extract_api_endpoints(
+    crawler: AsyncWebCrawler,
+    resource_url: str,
+    resource_name: str,
+    session_id: str,
+) -> List[Dict]:
+    """
+    Extract API endpoints from a resource page using direct HTML parsing.
+
+    Args:
+        crawler (AsyncWebCrawler): The web crawler instance
+        resource_url (str): URL of the resource page
+        resource_name (str): Name of the resource
+        session_id (str): Session identifier
+
+    Returns:
+        List[Dict]: List of extracted API endpoints
+    """
+    print(f"Processing resource: {resource_name} ({resource_url})")
+
+    # Crawl the resource page
     result = await crawler.arun(
-        url=url,
+        url=resource_url,
         config=CrawlerRunConfig(
             cache_mode=CacheMode.BYPASS,
             session_id=session_id,
         ),
     )
 
-    if result.success:
-        if "No Results Found" in result.cleaned_html:
-            return True
-    else:
-        print(
-            f"Error fetching page for 'No Results Found' check: {result.error_message}"
-        )
+    if not result.success:
+        print(f"Error processing resource {resource_name}: {result.error_message}")
+        return []
 
-    return False
+    # Save HTML for debugging (first page only)
+    if resource_name == "Users":
+        with open(f"debug_{resource_name.lower()}.html", "w", encoding="utf-8") as f:
+            f.write(result.cleaned_html)
+            print(
+                f"Saved HTML for {resource_name} to debug_{resource_name.lower()}.html"
+            )
+
+    # Parse HTML
+    soup = BeautifulSoup(result.cleaned_html, "html.parser")
+    endpoints = []
+
+    # Find all API method sections (they typically have an h2 with class 'api_method_name')
+    api_methods = soup.select("h2.api_method_name")
+    print(f"Found {len(api_methods)} API methods in {resource_name}")
+
+    if not api_methods:
+        # If no API methods found with class, try to find methods without specific class
+        api_methods = soup.select("div#content h2")
+        if api_methods:
+            print(
+                f"Found {len(api_methods)} potential API methods using general selector"
+            )
+
+            # Further filter to only include API method-like headers
+            filtered_methods = []
+            for method in api_methods:
+                text = method.get_text(strip=True)
+                if re.search(r"(GET|POST|PUT|DELETE|PATCH)\s+(/[^\s]+)", text):
+                    filtered_methods.append(method)
+
+            api_methods = filtered_methods
+            print(f"Filtered to {len(api_methods)} API methods based on content")
+
+    for method in api_methods:
+        # Extract method information
+        endpoint = parse_api_method(method, resource_name)
+        if endpoint:
+            endpoints.append(endpoint)
+
+    print(f"Extracted {len(endpoints)} API endpoints from {resource_name}")
+    return endpoints
 
 
-async def fetch_and_process_page(
-    crawler: AsyncWebCrawler,
-    page_number: int,
-    base_url: str,
-    css_selector: str,
-    llm_strategy: LLMExtractionStrategy,
-    session_id: str,
-    required_keys: List[str],
-    seen_names: Set[str],
-) -> Tuple[List[dict], bool]:
+def parse_api_method(method_element, resource_name: str) -> Optional[Dict]:
     """
-    Fetches and processes a single page of venue data.
+    Parse an API method element to extract endpoint information.
 
     Args:
-        crawler (AsyncWebCrawler): The web crawler instance.
-        page_number (int): The page number to fetch.
-        base_url (str): The base URL of the website.
-        css_selector (str): The CSS selector to target the content.
-        llm_strategy (LLMExtractionStrategy): The LLM extraction strategy.
-        session_id (str): The session identifier.
-        required_keys (List[str]): List of required keys in the venue data.
-        seen_names (Set[str]): Set of venue names that have already been seen.
+        method_element: The h2 element containing the API method name
+        resource_name: Name of the resource
 
     Returns:
-        Tuple[List[dict], bool]:
-            - List[dict]: A list of processed venues from the page.
-            - bool: A flag indicating if the "No Results Found" message was encountered.
+        Optional[Dict]: Endpoint information or None if parsing fails
     """
-    url = f"{base_url}?page={page_number}"
-    print(f"Loading page {page_number}...")
+    # The method name is usually in the format "METHOD /api/v1/path"
+    method_text = method_element.get_text(strip=True)
 
-    # Check if "No Results Found" message is present
-    no_results = await check_no_results(crawler, url, session_id)
-    if no_results:
-        return [], True  # No more results, signal to stop crawling
+    # Debug the actual text found
+    print(f"Analyzing method text: {method_text[:50]}...")
 
-    # Fetch page content with the extraction strategy
-    result = await crawler.arun(
-        url=url,
-        config=CrawlerRunConfig(
-            cache_mode=CacheMode.BYPASS,  # Do not use cached data
-            extraction_strategy=llm_strategy,  # Strategy for data extraction
-            css_selector=css_selector,  # Target specific content on the page
-            session_id=session_id,  # Unique session ID for the crawl
-        ),
-    )
+    # Try to extract HTTP method and path with multiple patterns to be more robust
+    match = re.search(r"(GET|POST|PUT|DELETE|PATCH)\s+(/[^\s]+)", method_text)
+    if not match:
+        # Try an alternate pattern that might capture more formats
+        match = re.search(r"(GET|POST|PUT|DELETE|PATCH)\s+([\/\w\.\-]+)", method_text)
 
-    if not (result.success and result.extracted_content):
-        print(f"Error fetching page {page_number}: {result.error_message}")
-        return [], False
+    if not match:
+        print(f"Could not extract method and path from: {method_text[:50]}...")
+        return None
 
-    # Parse extracted content
-    extracted_data = json.loads(result.extracted_content)
-    if not extracted_data:
-        print(f"No venues found on page {page_number}.")
-        return [], False
+    http_method, path = match.groups()
 
-    # After parsing extracted content
-    print("Extracted data:", extracted_data)
+    # Find description - usually in paragraphs after the method heading
+    description = ""
+    current = method_element.next_sibling
 
-    # Process venues
-    complete_venues = []
-    for venue in extracted_data:
-        # Debugging: Print each venue to understand its structure
-        print("Processing venue:", venue)
+    # Look for description in next few elements
+    description_found = False
+    for _ in range(10):  # Check next 10 siblings to be more thorough
+        if not current:
+            break
 
-        # Ignore the 'error' key if it's False
-        if venue.get("error") is False:
-            venue.pop("error", None)  # Remove the 'error' key if it's False
+        if hasattr(current, "name") and current.name in ["p", "div"]:
+            text = current.get_text(strip=True)
+            if text and len(text) > 10:  # Only consider substantial text
+                description = text
+                description_found = True
+                break
 
-        if not is_complete_venue(venue, required_keys):
-            continue  # Skip incomplete venues
+        current = current.next_sibling
 
-        if is_duplicate_venue(venue["name"], seen_names):
-            print(f"Duplicate venue '{venue['name']}' found. Skipping.")
-            continue  # Skip duplicate venues
+    # If no description found in paragraphs, try to get it from the title attribute
+    if not description_found and method_element.get("title"):
+        description = method_element.get("title")
 
-        # Add venue to the list
-        seen_names.add(venue["name"])
-        complete_venues.append(venue)
+    # If still no description, look for any text in the parent element
+    if not description and hasattr(method_element, "parent"):
+        parent_text = method_element.parent.get_text(strip=True)
+        if parent_text and parent_text != method_text:
+            # Remove the method text from the parent text
+            description = parent_text.replace(method_text, "").strip()
 
-    if not complete_venues:
-        print(f"No complete venues found on page {page_number}.")
-        return [], False
+    # If still no description, use a generic one
+    if not description:
+        description = f"API endpoint for {path}"
 
-    print(f"Extracted {len(complete_venues)} venues from page {page_number}.")
-    return complete_venues, False  # Continue crawling
+    # Limit description length
+    description = description[:500] + "..." if len(description) > 500 else description
+
+    # Extract name from the path
+    name_parts = path.split("/")
+    name = name_parts[-1] if name_parts and name_parts[-1] else path
+    if not name or name == "/":
+        name = f"{http_method} {resource_name} endpoint"
+
+    # Create endpoint object
+    endpoint = {
+        "resource": resource_name,
+        "name": name,
+        "http_method": http_method,
+        "path": path,
+        "description": description,
+        "parameters": [],  # We could extract parameters in a more complex version
+        "example": None,  # We could extract examples in a more complex version
+    }
+
+    print(f"Extracted endpoint: {http_method} {path}")
+    return endpoint

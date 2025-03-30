@@ -1,0 +1,2324 @@
+
+<div>
+<h1>
+<a href="index.html">Canvas LMS - REST API and Extensions Documentation</a>
+</h1>
+</div>
+<div>
+<nav>
+<div>
+<label>Expand all</label>
+</div>
+<div>
+<label>Basics</label>
+<div>
+<div>
+<a href="file.graphql.html">GraphQL</a><a href="file.changelog.html">API Change Log</a><a href="file.object_ids.html">SIS IDs</a><a href="file.pagination.html">Pagination</a><a href="file.throttling.html">Throttling</a><a href="file.compound_documents.html">Compound Documents</a><a href="file.file_uploads.html">File Uploads</a><a href="file.endpoint_attributes.html">API Endpoint Attributes</a><a href="file.masquerading.html">Masquerading</a>
+</div>
+</div>
+</div>
+<div>
+<label>OAuth2</label>
+<div>
+<div>
+<a href="file.oauth.html">OAuth2 Overview</a><a href="file.oauth_endpoints.html">OAuth2 Endpoints</a><a href="file.developer_keys.html">Developer Keys</a>
+</div>
+</div>
+</div>
+<div>
+<label>Resources</label>
+<div>
+<div>
+<a href="all_resources.html">All Resources Reference</a>
+<a href="access_tokens.html">Access Tokens</a>
+<a href="account_calendars.html">Account Calendars</a>
+<a href="account_domain_lookups.html">Account Domain Lookups</a>
+<a href="account_notifications.html">Account Notifications</a>
+<a href="account_reports.html">Account Reports</a>
+<a href="accounts.html">Accounts</a>
+<a href="accounts_(lti).html">Accounts (LTI)</a>
+<a href="admins.html">Admins</a>
+<a href="analytics.html">Analytics</a>
+<a href="announcement_external_feeds.html">Announcement External Feeds</a>
+<a href="announcements.html">Announcements</a>
+<a href="api_token_scopes.html">API Token Scopes</a>
+<a href="appointment_groups.html">Appointment Groups</a>
+<a href="assignment_extensions.html">Assignment Extensions</a>
+<a href="assignment_groups.html">Assignment Groups</a>
+<a href="assignments.html">Assignments</a>
+<a href="authentication_providers.html">Authentication Providers</a>
+<a href="authentications_log.html">Authentications Log</a>
+<a href="blackout_dates.html">Blackout Dates</a>
+<a href="block_editor_template.html">BlockEditorTemplate</a>
+<a href="blueprint_courses.html">Blueprint Courses</a>
+<a href="bookmarks.html">Bookmarks</a>
+<a href="brand_configs.html">Brand Configs</a>
+<a href="calendar_events.html">Calendar Events</a>
+<a href="collaborations.html">Collaborations</a>
+<a href="comm_messages.html">CommMessages</a>
+<a href="communication_channels.html">Communication Channels</a>
+<a href="conferences.html">Conferences</a>
+<a href="content_exports.html">Content Exports</a>
+<a href="content_migrations.html">Content Migrations</a>
+<a href="content_security_policy_settings.html">Content Security Policy Settings</a>
+<a href="content_shares.html">Content Shares</a>
+<a href="conversations.html">Conversations</a>
+<a href="course_audit_log.html">Course Audit log</a>
+<a href="course_pace.html">Course Pace</a>
+<a href="course_quiz_extensions.html">Course Quiz Extensions</a>
+<a href="course_reports.html">Course Reports</a>
+<a href="courses.html">Courses</a>
+<a href="custom_gradebook_columns.html">Custom Gradebook Columns</a>
+<a href="developer_key_account_bindings.html">Developer Key Account Bindings</a>
+<a href="developer_keys.html">Developer Keys</a>
+<a href="discussion_topics.html">Discussion Topics</a>
+<a href="enrollment_terms.html">Enrollment Terms</a>
+<a href="enrollments.html">Enrollments</a>
+<a href="e_portfolios.html">ePortfolios</a>
+<a href="e_pub_exports.html">ePub Exports</a>
+<a href="error_reports.html">Error Reports</a>
+<a href="external_tools.html">External Tools</a>
+<a href="favorites.html">Favorites</a>
+<a href="feature_flags.html">Feature Flags</a>
+<a href="files.html">Files</a>
+<a href="grade_change_log.html">Grade Change Log</a>
+<a href="gradebook_history.html">Gradebook History</a>
+<a href="grading_period_sets.html">Grading Period Sets</a>
+<a href="grading_periods.html">Grading Periods</a>
+<a href="grading_standards.html">Grading Standards</a>
+<a href="group_categories.html">Group Categories</a>
+<a href="groups.html">Groups</a>
+<a href="history.html">History</a>
+<a href="inst_access_tokens.html">InstAccess tokens</a>
+<a href="jw_ts.html">JWTs</a>
+<a href="late_policy.html">Late Policy</a>
+<a href="learning_object_dates.html">Learning Object Dates</a>
+<a href="line_items.html">Line Items</a>
+<a href="live_assessments.html">LiveAssessments</a>
+<a href="logins.html">Logins</a>
+<a href="lti_launch_definitions.html">LTI Launch Definitions</a>
+<a href="lti_registrations.html">LTI Registrations</a>
+<a href="lti_resource_links.html">LTI Resource Links</a>
+<a href="media_objects.html">Media Objects</a>
+<a href="moderated_grading.html">Moderated Grading</a>
+<a href="modules.html">Modules</a>
+<a href="names_and_role.html">Names and Role</a>
+<a href="new_quiz_items.html">New Quiz Items</a>
+<a href="new_quizzes.html">New Quizzes</a>
+<a href="new_quizzes_accommodations.html">New Quizzes Accommodations</a>
+<a href="new_quizzes_reports.html">New Quizzes Reports</a>
+<a href="notification_preferences.html">Notification Preferences</a>
+<a href="originality_reports.html">Originality Reports</a>
+<a href="outcome_groups.html">Outcome Groups</a>
+<a href="outcome_imports.html">Outcome Imports</a>
+<a href="outcome_results.html">Outcome Results</a>
+<a href="outcomes.html">Outcomes</a>
+<a href="pages.html">Pages</a>
+<a href="peer_reviews.html">Peer Reviews</a>
+<a href="planner.html">Planner</a>
+<a href="poll_sessions.html">Poll Sessions</a>
+<a href="poll_choices.html">PollChoices</a>
+<a href="polls.html">Polls</a>
+<a href="poll_submissions.html">PollSubmissions</a>
+<a href="proficiency_ratings.html">Proficiency Ratings</a>
+<a href="progress.html">Progress</a>
+<a href="public_jwk.html">Public JWK</a>
+<a href="quiz_assignment_overrides.html">Quiz Assignment Overrides</a>
+<a href="quiz_extensions.html">Quiz Extensions</a>
+<a href="quiz_ip_filters.html">Quiz IP Filters</a>
+<a href="quiz_question_groups.html">Quiz Question Groups</a>
+<a href="quiz_questions.html">Quiz Questions</a>
+<a href="quiz_reports.html">Quiz Reports</a>
+<a href="quiz_statistics.html">Quiz Statistics</a>
+<a href="quiz_submission_events.html">Quiz Submission Events</a>
+<a href="quiz_submission_files.html">Quiz Submission Files</a>
+<a href="quiz_submission_questions.html">Quiz Submission Questions</a>
+<a href="quiz_submission_user_list.html">Quiz Submission User List</a>
+<a href="quiz_submissions.html">Quiz Submissions</a>
+<a href="quizzes.html">Quizzes</a>
+<a href="result.html">Result</a>
+<a href="roles.html">Roles</a>
+<a href="rubrics.html">Rubrics</a>
+<a href="sandboxes.html">Sandboxes</a>
+<a href="score.html">Score</a>
+<a href="search.html">Search</a>
+<a href="sections.html">Sections</a>
+<a href="services.html">Services</a>
+<a href="shared_brand_configs.html">Shared Brand Configs</a>
+<a href="sis_import_errors.html">SIS Import Errors</a>
+<a href="sis_imports.html">SIS Imports</a>
+<a href="sis_integration.html">SIS Integration</a>
+<a href="smart_search.html">Smart Search</a>
+<a href="submission_comments.html">Submission Comments</a>
+<a href="submissions.html">Submissions</a>
+<a href="tabs.html">Tabs</a>
+<a href="temporary_enrollment_pairings.html">Temporary Enrollment Pairings</a>
+<a href="user_observees.html">User Observees</a>
+<a href="users.html">Users</a>
+<a href="what_if_grades.html">What If Grades</a>
+</div>
+</div>
+</div>
+<div>
+<label>Outcomes</label>
+<div>
+<div>
+<a href="file.outcomes_csv.html">Outcomes CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>Group Categories</label>
+<div>
+<div>
+<a href="file.group_category_csv.html">Group Categories CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>SIS</label>
+<div>
+<div>
+<a href="file.sis_csv.html">SIS CSV Format</a>
+</div>
+</div>
+</div>
+<div>
+<label>External Tools</label>
+<div>
+<div>
+<label>LTI</label>
+<div>
+<a href="file.tools_intro.html">Introduction</a><a href="file.registration.html">Registration</a><a href="file.lti_launch_overview.html">Launch Overview</a><a href="file.lti_dev_key_config.html">Configuring</a><a href="file.tools_variable_substitutions.html">Variable Substitutions</a><a href="file.content_item.html">Deep Linking</a><a href="file.assignment_tools.html">Grading</a><a href="file.provisioning.html">Provisioning</a><a href="file.lti_window_post_message.html">PostMessage</a>
+<div>
+<label>Placements</label>
+<div>
+<a href="file.placements_overview.html">Placements Overview</a><a href="file.navigation_tools.html">Navigation</a><a href="file.homework_submission_placement.html">Homework Submission</a><a href="file.editor_button_placement.html">Editor Button</a><a href="file.migration_selection_placement.html">Migration Selection</a><a href="file.link_selection_placement.html">Link Selection (Modules)</a><a href="file.assignment_selection_placement.html">Assignment Selection</a><a href="file.collaborations_placement.html">Collaborations</a>
+</div>
+</div>
+</div>
+</div>
+<a href="file.xapi.html">xAPI</a>
+<a href="file.canvas_roles.html">Canvas Roles</a>
+</div>
+<div>
+<div>
+<label>Plagiarism Detection Platform</label>
+<div>
+<a href="file.plagiarism_platform.html">Overview</a>
+<a href="plagiarism_detection_platform_assignments.html">Plagiarism Detection Platform Assignments</a>
+<a href="plagiarism_detection_platform_users.html">Plagiarism Detection Platform Users</a>
+<a href="plagiarism_detection_submissions.html">Plagiarism Detection Submissions</a>
+<a href="webhooks_subscriptions_for_plagiarism_platform.html">Webhooks Subscriptions for Plagiarism Platform</a>
+<a href="file.jwt_access_tokens.html">JWT Access Tokens</a>
+</div>
+</div>
+</div>
+</div>
+<div>
+<label>Data Services</label>
+<div>
+<div>
+<label>Live Events</label>
+<div>
+<div>
+<label>Overview</label>
+<div>
+<a href="file.data_service_introduction.html">Introduction</a><a href="file.data_service_setup.html">Setup</a><a href="file.data_service_caliper_structure.html">Caliper</a><a href="file.data_service_canvas_event_metadata.html">Metadata</a>
+</div>
+</div>
+<span>Event Format</span>
+</div>
+<div>
+<div>
+<label>Canvas</label>
+<div>
+<a href="file.data_service_canvas_account.html">Account</a><a href="file.data_service_canvas_asset.html">Asset</a><a href="file.data_service_canvas_assignment.html">Assignment</a><a href="file.data_service_canvas_attachment.html">Attachment</a><a href="file.data_service_canvas_content.html">Content</a><a href="file.data_service_canvas_conversation.html">Conversation</a><a href="file.data_service_canvas_course.html">Course</a><a href="file.data_service_canvas_discussion.html">Discussion</a><a href="file.data_service_canvas_enrollment.html">Enrollment</a><a href="file.data_service_canvas_grade.html">Grade</a><a href="file.data_service_canvas_group.html">Group</a><a href="file.data_service_canvas_learning.html">Learning</a><a href="file.data_service_canvas_logged.html">Logged</a><a href="file.data_service_canvas_module.html">Module</a><a href="file.data_service_canvas_outcome.html">Outcome</a><a href="file.data_service_canvas_outcomes.html">Outcomes</a><a href="file.data_service_canvas_plagiarism.html">Plagiarism</a><a href="file.data_service_canvas_quiz.html">Quiz</a><a href="file.data_service_canvas_rubric.html">Rubric</a><a href="file.data_service_canvas_sis.html">Sis</a><a href="file.data_service_canvas_submission.html">Submission</a><a href="file.data_service_canvas_syllabus.html">Syllabus</a><a href="file.data_service_canvas_user.html">User</a><a href="file.data_service_canvas_wiki.html">Wiki</a>
+</div>
+</div>
+</div>
+<div>
+<div>
+<label>Caliper IMS 1.1</label>
+<div>
+<a href="file.data_service_caliper_assessment.html">Assessment</a><a href="file.data_service_caliper_basic.html">Basic</a><a href="file.data_service_caliper_forum.html">Forum</a><a href="file.data_service_caliper_grading.html">Grading</a><a href="file.data_service_caliper_navigation_events.html">Navigation Events</a><a href="file.data_service_caliper_session.html">Session</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</nav>
+</div>
+<div><div>
+<h1>Users API</h1>
+<table>
+<tbody><tr><th>Users</th><td><a href="#method.users.api_index">List users in account</a><a href="#method.users.activity_stream">List the activity stream</a><a href="#method.users.activity_stream_summary">Activity stream summary</a><a href="#method.users.todo_items">List the TODO items</a><a href="#method.users.todo_item_count">List counts for todo items</a><a href="#method.users.upcoming_events">List upcoming assignments, calendar events</a><a href="#method.users.missing_submissions">List Missing Submissions</a><a href="#method.users.ignore_stream_item">Hide a stream item</a><a href="#method.users.ignore_all_stream_items">Hide all stream items</a><a href="#method.users.create_file">Upload a file</a><a href="#method.users.api_show">Show user details</a><a href="#method.users.create">Create a user</a><a href="#method.users.create_self_registered_user">[DEPRECATED] Self register a user</a><a href="#method.users.settings">Update user settings.</a><a href="#method.users.get_custom_colors">Get custom colors</a><a href="#method.users.get_custom_color">Get custom color</a><a href="#method.users.set_custom_color">Update custom color</a><a href="#method.users.set_text_editor_preference">Update text editor preference</a><a href="#method.users.get_dashboard_positions">Get dashboard positions</a><a href="#method.users.set_dashboard_positions">Update dashboard positions</a><a href="#method.users.update">Edit a user</a><a href="#method.users.terminate_sessions">Terminate all user sessions</a><a href="#method.users.expire_mobile_sessions">Log users out of all mobile apps</a><a href="#method.users.merge_into">Merge user into another user</a><a href="#method.users.split">Split merged users into separate users</a><a href="#method.users.pandata_events_token">Get a Pandata Events jwt token and its expiration date</a><a href="#method.users.user_graded_submissions">Get a users most recently graded submissions</a><a href="#method.profile.settings">Get user profile</a><a href="#method.profile.profile_pics">List avatar options</a><a href="#method.page_views.index">List user page views</a></td></tr><tr><th>Custom Data</th><td><a href="#method.custom_data.set_data">Store custom data</a><a href="#method.custom_data.get_data">Load custom data</a><a href="#method.custom_data.delete_data">Delete custom data</a></td></tr><tr><th>Course Nicknames</th><td><a href="#method.course_nicknames.index">List course nicknames</a><a href="#method.course_nicknames.show">Get course nickname</a><a href="#method.course_nicknames.update">Set course nickname</a><a href="#method.course_nicknames.delete">Remove course nickname</a><a href="#method.course_nicknames.clear">Clear course nicknames</a></td></tr></tbody></table>
+<p>API for accessing information on the current and other users.</p>
+<p>Throughout this API, the <code>:user_id</code> parameter can be replaced with <code>self</code> as
+a shortcut for the id of the user accessing the API. For instance,
+<code>users/:user_id/page_views</code> can be accessed as <code>users/self/page_views</code> to
+access the current user's page views.</p>
+<p>API for manipulating course nicknames</p>
+<p>Course nicknames are alternate names for courses that are unique to each user.
+They are useful when the course's name is too long or less meaningful.
+If a user defines a nickname for a course, that name will be returned by the
+API in place of the course's actual name.</p>
+<div>
+<h3><a>An UserDisplay object looks like:</a></h3>
+<pre><code><span>// This mini-object is used for secondary user responses, when we just want to</span><span>// provide enough information to display a user.</span><span>{</span><span>// The ID of the user.</span><span>"id"</span><span>:</span><span>2</span><span>,</span><span>// A short name the user has selected, for use in conversations or other less</span><span>// formal places through the site.</span><span>"short_name"</span><span>:</span><span>"Shelly"</span><span>,</span><span>// If avatars are enabled, this field will be included and contain a url to</span><span>// retrieve the user's avatar.</span><span>"avatar_image_url"</span><span>:</span><span>"https://en.gravatar.com/avatar/d8cb8c8cd40ddf0cd05241443a591868?s=80&amp;r=g"</span><span>,</span><span>// URL to access user, either nested to a context or directly.</span><span>"html_url"</span><span>:</span><span>"https://school.instructure.com/courses/:course_id/users/:user_id"</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>An AnonymousUserDisplay object looks like:</a></h3>
+<pre><code><span>// This mini-object is returned in place of UserDisplay when returning student</span><span>// data for anonymous assignments, and includes an anonymous ID to identify a</span><span>// user within the scope of a single assignment.</span><span>{</span><span>// A unique short ID identifying this user within the scope of a particular</span><span>// assignment.</span><span>"anonymous_id"</span><span>:</span><span>"xn29Q"</span><span>,</span><span>// A URL to retrieve a generic avatar.</span><span>"avatar_image_url"</span><span>:</span><span>"https://en.gravatar.com/avatar/d8cb8c8cd40ddf0cd05241443a591868?s=80&amp;r=g"</span><span>,</span><span>// The anonymized display name for the student.</span><span>"display_name"</span><span>:</span><span>"Student 2"</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>An User object looks like:</a></h3>
+<pre><code><span>// A Canvas user, e.g. a student, teacher, administrator, observer, etc.</span><span>{</span><span>// The ID of the user.</span><span>"id"</span><span>:</span><span>2</span><span>,</span><span>// The name of the user.</span><span>"name"</span><span>:</span><span>"Sheldon Cooper"</span><span>,</span><span>// The name of the user that is should be used for sorting groups of users, such</span><span>// as in the gradebook.</span><span>"sortable_name"</span><span>:</span><span>"Cooper, Sheldon"</span><span>,</span><span>// The last name of the user.</span><span>"last_name"</span><span>:</span><span>"Cooper"</span><span>,</span><span>// The first name of the user.</span><span>"first_name"</span><span>:</span><span>"Sheldon"</span><span>,</span><span>// A short name the user has selected, for use in conversations or other less</span><span>// formal places through the site.</span><span>"short_name"</span><span>:</span><span>"Shelly"</span><span>,</span><span>// The SIS ID associated with the user. This field is only included if the user</span><span>// came from a SIS import and has permissions to view SIS information.</span><span>"sis_user_id"</span><span>:</span><span>"SHEL93921"</span><span>,</span><span>// The id of the SIS import. This field is only included if the user came from</span><span>// a SIS import and has permissions to manage SIS information.</span><span>"sis_import_id"</span><span>:</span><span>18</span><span>,</span><span>// The integration_id associated with the user. This field is only included if</span><span>// the user came from a SIS import and has permissions to view SIS information.</span><span>"integration_id"</span><span>:</span><span>"ABC59802"</span><span>,</span><span>// The unique login id for the user. This is what the user uses to log in to</span><span>// Canvas.</span><span>"login_id"</span><span>:</span><span>"sheldon@caltech.example.com"</span><span>,</span><span>// If avatars are enabled, this field will be included and contain a url to</span><span>// retrieve the user's avatar.</span><span>"avatar_url"</span><span>:</span><span>"https://en.gravatar.com/avatar/d8cb8c8cd40ddf0cd05241443a591868?s=80&amp;r=g"</span><span>,</span><span>// Optional: If avatars are enabled and caller is admin, this field can be</span><span>// requested and will contain the current state of the user's avatar.</span><span>"avatar_state"</span><span>:</span><span>"approved"</span><span>,</span><span>// Optional: This field can be requested with certain API calls, and will return</span><span>// a list of the users active enrollments. See the List enrollments API for more</span><span>// details about the format of these records.</span><span>"enrollments"</span><span>:</span><span>null</span><span>,</span><span>// Optional: This field can be requested with certain API calls, and will return</span><span>// the users primary email address.</span><span>"email"</span><span>:</span><span>"sheldon@caltech.example.com"</span><span>,</span><span>// Optional: This field can be requested with certain API calls, and will return</span><span>// the users locale in RFC 5646 format.</span><span>"locale"</span><span>:</span><span>"tlh"</span><span>,</span><span>// Optional: This field is only returned in certain API calls, and will return a</span><span>// timestamp representing the last time the user logged in to canvas.</span><span>"last_login"</span><span>:</span><span>"2012-05-30T17:45:25Z"</span><span>,</span><span>// Optional: This field is only returned in certain API calls, and will return</span><span>// the IANA time zone name of the user's preferred timezone.</span><span>"time_zone"</span><span>:</span><span>"America/Denver"</span><span>,</span><span>// Optional: The user's bio.</span><span>"bio"</span><span>:</span><span>"I like the Muppets."</span><span>,</span><span>// Optional: This field is only returned if pronouns are enabled, and will</span><span>// return the pronouns of the user.</span><span>"pronouns"</span><span>:</span><span>"he/him"</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A Profile object looks like:</a></h3>
+<pre><code><span>// Profile details for a Canvas user.</span><span>{</span><span>// The ID of the user.</span><span>"id"</span><span>:</span><span>1234</span><span>,</span><span>// Sample User</span><span>"name"</span><span>:</span><span>"Sample User"</span><span>,</span><span>// Sample User</span><span>"short_name"</span><span>:</span><span>"Sample User"</span><span>,</span><span>// user, sample</span><span>"sortable_name"</span><span>:</span><span>"user, sample"</span><span>,</span><span>"title"</span><span>:</span><span>null</span><span>,</span><span>"bio"</span><span>:</span><span>null</span><span>,</span><span>// Name pronunciation</span><span>"pronunciation"</span><span>:</span><span>"Sample name pronunciation"</span><span>,</span><span>// sample_user@example.com</span><span>"primary_email"</span><span>:</span><span>"sample_user@example.com"</span><span>,</span><span>// sample_user@example.com</span><span>"login_id"</span><span>:</span><span>"sample_user@example.com"</span><span>,</span><span>// sis1</span><span>"sis_user_id"</span><span>:</span><span>"sis1"</span><span>,</span><span>"lti_user_id"</span><span>:</span><span>null</span><span>,</span><span>// The avatar_url can change over time, so we recommend not caching it for more</span><span>// than a few hours</span><span>"avatar_url"</span><span>:</span><span>"..url.."</span><span>,</span><span>"calendar"</span><span>:</span><span>null</span><span>,</span><span>// Optional: This field is only returned in certain API calls, and will return</span><span>// the IANA time zone name of the user's preferred timezone.</span><span>"time_zone"</span><span>:</span><span>"America/Denver"</span><span>,</span><span>// The users locale.</span><span>"locale"</span><span>:</span><span>null</span><span>,</span><span>// Optional: Whether or not the user is a K5 user. This field is nil if the user</span><span>// settings are not for the user making the request.</span><span>"k5_user"</span><span>:</span><span>true</span><span>,</span><span>// Optional: Whether or not the user should see the classic font on the</span><span>// dashboard. Only applies if k5_user is true. This field is nil if the user</span><span>// settings are not for the user making the request.</span><span>"use_classic_font_in_k5"</span><span>:</span><span>false</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>An Avatar object looks like:</a></h3>
+<pre><code><span>// Possible avatar for a user.</span><span>{</span><span>// ['gravatar'|'attachment'|'no_pic'] The type of avatar record, for</span><span>// categorization purposes.</span><span>"type"</span><span>:</span><span>"gravatar"</span><span>,</span><span>// The url of the avatar</span><span>"url"</span><span>:</span><span>"https://secure.gravatar.com/avatar/2284..."</span><span>,</span><span>// A unique representation of the avatar record which can be used to set the</span><span>// avatar with the user update endpoint. Note: this is an internal</span><span>// representation and is subject to change without notice. It should be consumed</span><span>// with this api endpoint and used in the user update endpoint, and should not</span><span>// be constructed by the client.</span><span>"token"</span><span>:</span><span>"&lt;opaque_token&gt;"</span><span>,</span><span>// A textual description of the avatar record.</span><span>"display_name"</span><span>:</span><span>"user, sample"</span><span>,</span><span>// ['attachment' type only] the internal id of the attachment</span><span>"id"</span><span>:</span><span>12</span><span>,</span><span>// ['attachment' type only] the content-type of the attachment.</span><span>"content-type"</span><span>:</span><span>"image/jpeg"</span><span>,</span><span>// ['attachment' type only] the filename of the attachment</span><span>"filename"</span><span>:</span><span>"profile.jpg"</span><span>,</span><span>// ['attachment' type only] the size of the attachment</span><span>"size"</span><span>:</span><span>32649</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A PageView object looks like:</a></h3>
+<pre><code><span>// The record of a user page view access in Canvas</span><span>{</span><span>// A UUID representing the page view. This is also the unique request id</span><span>"id"</span><span>:</span><span>"3e246700-e305-0130-51de-02e33aa501ef"</span><span>,</span><span>// If the request is from an API request, the app that generated the access</span><span>// token</span><span>"app_name"</span><span>:</span><span>"Canvas for iOS"</span><span>,</span><span>// The URL requested</span><span>"url"</span><span>:</span><span>"https://canvas.instructure.com/conversations"</span><span>,</span><span>// The type of context for the request</span><span>"context_type"</span><span>:</span><span>"Course"</span><span>,</span><span>// The type of asset in the context for the request, if any</span><span>"asset_type"</span><span>:</span><span>"Discussion"</span><span>,</span><span>// The rails controller that handled the request</span><span>"controller"</span><span>:</span><span>"discussions"</span><span>,</span><span>// The rails action that handled the request</span><span>"action"</span><span>:</span><span>"index"</span><span>,</span><span>// This field is deprecated, and will always be false</span><span>"contributed"</span><span>:</span><span>false</span><span>,</span><span>// An approximation of how long the user spent on the page, in seconds</span><span>"interaction_seconds"</span><span>:</span><span>7.21</span><span>,</span><span>// When the request was made</span><span>"created_at"</span><span>:</span><span>"2013-10-01T19:49:47Z"</span><span>,</span><span>// A flag indicating whether the request was user-initiated, or automatic (such</span><span>// as an AJAX call)</span><span>"user_request"</span><span>:</span><span>true</span><span>,</span><span>// How long the response took to render, in seconds</span><span>"render_time"</span><span>:</span><span>0.369</span><span>,</span><span>// The user-agent of the browser or program that made the request</span><span>"user_agent"</span><span>:</span><span>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1"</span><span>,</span><span>// True if the request counted as participating, such as submitting homework</span><span>"participated"</span><span>:</span><span>false</span><span>,</span><span>// The HTTP method such as GET or POST</span><span>"http_method"</span><span>:</span><span>"GET"</span><span>,</span><span>// The origin IP address of the request</span><span>"remote_ip"</span><span>:</span><span>"173.194.46.71"</span><span>,</span><span>// The page view links to define the relationships</span><span>"links"</span><span>:</span><span>{</span><span>"user"</span><span>:</span><span>1234</span><span>,</span><span>"account"</span><span>:</span><span>1234</span><span>}</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A PageViewLinks object looks like:</a></h3>
+<pre><code><span>// The links of a page view access in Canvas</span><span>{</span><span>// The ID of the user for this page view</span><span>"user"</span><span>:</span><span>1234</span><span>,</span><span>// The ID of the context for the request (course id if context_type is Course,</span><span>// etc)</span><span>"context"</span><span>:</span><span>1234</span><span>,</span><span>// The ID of the asset for the request, if any</span><span>"asset"</span><span>:</span><span>1234</span><span>,</span><span>// The ID of the actual user who made this request, if the request was made by a</span><span>// user who was masquerading</span><span>"real_user"</span><span>:</span><span>1234</span><span>,</span><span>// The ID of the account context for this page view</span><span>"account"</span><span>:</span><span>1234</span><span>}</span></code></pre>
+</div>
+<div>
+<h3><a>A CourseNickname object looks like:</a></h3>
+<pre><code><span>{</span><span>// the ID of the course</span><span>"course_id"</span><span>:</span><span>88</span><span>,</span><span>// the actual name of the course</span><span>"name"</span><span>:</span><span>"S1048576 DPMS1200 Intro to Newtonian Mechanics"</span><span>,</span><span>// the calling user's nickname for the course</span><span>"nickname"</span><span>:</span><span>"Physics"</span><span>}</span></code></pre>
+</div>
+<div>
+<div>
+<h2>
+<a href="#method.users.api_index">
+   List users in account
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#api_index</a></span>
+</h2>
+<h3>
+  GET /api/v1/accounts/:account_id/users
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/accounts/:account_id/users</code>
+</div>
+<p>A paginated list of users associated with this account.</p>
+<pre><code>@example_request
+ curl https://&lt;canvas&gt;/api/v1/accounts/self/users?search_term=&lt;search value&gt; \
+   -X GET \
+   -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search_term</td>
+<td>string</td>
+<td>
+<p>The partial name or full ID of the users to match and return in the results list. Must be at least 3 characters.</p>
+<p>Note that the API will prefer matching on canonical user ID if the ID has a numeric form. It will only search against other fields if non-numeric in form, or if the numeric value doesn’t yield any matches. Queries by administrative users will search on SIS ID, Integration ID, login ID, name, or email address</p>
+</td>
+</tr>
+<tr>
+<td>enrollment_type</td>
+<td>string</td>
+<td>
+<p>When set, only return users enrolled with the specified course-level base role. This can be a base role type of ‘student’, ‘teacher’, ‘ta’, ‘observer’, or ‘designer’.</p>
+</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>string</td>
+<td>
+<p>The column to sort results by.</p>
+<p>
+<span>Allowed values:</span> <code>username</code>, <code>email</code>, <code>sis_id</code>, <code>integration_id</code>, <code>last_login</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>order</td>
+<td>string</td>
+<td>
+<p>The order to sort the given column by.</p>
+<p>
+<span>Allowed values:</span> <code>asc</code>, <code>desc</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>include_deleted_users</td>
+<td>boolean</td>
+<td>
+<p>When set to true and used with an account context, returns users who have deleted pseudonyms for the context</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="users.html#User">User</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.users.activity_stream">
+   List the activity stream
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#activity_stream</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/activity_stream
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/activity_stream</code>
+</div>
+<h3>
+  GET /api/v1/users/activity_stream
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/activity_stream</code>
+</div>
+<p>Returns the current user’s global activity stream, paginated.</p>
+<p>There are many types of objects that can be returned in the activity stream. All object types have the same basic set of shared attributes:</p>
+<pre><code><span>{</span><span>'created_at'</span><span>:</span><span>'2011-07-13T09:12:00Z'</span><span>,</span><span>'updated_at'</span><span>:</span><span>'2011-07-25T08:52:41Z'</span><span>,</span><span>'id'</span><span>:</span><span>1234</span><span>,</span><span>'title'</span><span>:</span><span>'Stream Item Subject'</span><span>,</span><span>'message'</span><span>:</span><span>'This is the body text of the activity stream item. It is plain-text, and can be multiple paragraphs.'</span><span>,</span><span>'type'</span><span>:</span><span>'DiscussionTopic|Conversation|Message|Submission|Conference|Collaboration|AssessmentRequest...'</span><span>,</span><span>'read_state'</span><span>:</span><span>false</span><span>,</span><span>'context_type'</span><span>:</span><span>'course'</span><span>,</span><span>// course|group</span><span>'course_id'</span><span>:</span><span>1</span><span>,</span><span>'group_id'</span><span>:</span><span>null</span><span>,</span><span>'html_url'</span><span>:</span><span>"http://..."</span><span>// URL to the Canvas web UI for this stream item</span><span>}</span></code></pre>
+<p>In addition, each item type has its own set of attributes available.</p>
+<p>DiscussionTopic:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'DiscussionTopic'</span><span>,</span><span>'discussion_topic_id'</span><span>:</span><span>1234</span><span>,</span><span>'total_root_discussion_entries'</span><span>:</span><span>5</span><span>,</span><span>'require_initial_post'</span><span>:</span><span>true</span><span>,</span><span>'user_has_posted'</span><span>:</span><span>true</span><span>,</span><span>'root_discussion_entries'</span><span>:</span><span>{</span><span>...</span><span>}</span><span>}</span></code></pre>
+<p>For DiscussionTopic, the message is truncated at 4kb.</p>
+<p>Announcement:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'Announcement'</span><span>,</span><span>'announcement_id'</span><span>:</span><span>1234</span><span>,</span><span>'total_root_discussion_entries'</span><span>:</span><span>5</span><span>,</span><span>'require_initial_post'</span><span>:</span><span>true</span><span>,</span><span>'user_has_posted'</span><span>:</span><span>null</span><span>,</span><span>'root_discussion_entries'</span><span>:</span><span>{</span><span>...</span><span>}</span><span>}</span></code></pre>
+<p>For Announcement, the message is truncated at 4kb.</p>
+<p>Conversation:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'Conversation'</span><span>,</span><span>'conversation_id'</span><span>:</span><span>1234</span><span>,</span><span>'private'</span><span>:</span><span>false</span><span>,</span><span>'participant_count'</span><span>:</span><span>3</span><span>,</span><span>}</span></code></pre>
+<p>Message:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'Message'</span><span>,</span><span>'message_id'</span><span>:</span><span>1234</span><span>,</span><span>'notification_category'</span><span>:</span><span>'Assignment Graded'</span><span>}</span></code></pre>
+<p>Submission:</p>
+<p>Returns an <a href="submissions.html#Submission" title="Submission">Submission</a> with its Course and Assignment data.</p>
+<p>Conference:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'Conference'</span><span>,</span><span>'web_conference_id'</span><span>:</span><span>1234</span><span>}</span></code></pre>
+<p>Collaboration:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'Collaboration'</span><span>,</span><span>'collaboration_id'</span><span>:</span><span>1234</span><span>}</span></code></pre>
+<p>AssessmentRequest:</p>
+<pre><code><span>{</span><span>'type'</span><span>:</span><span>'AssessmentRequest'</span><span>,</span><span>'assessment_request_id'</span><span>:</span><span>1234</span><span>}</span></code></pre>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>only_active_courses</td>
+<td>boolean</td>
+<td>
+<p>If true, will only return objects for courses the user is actively participating in</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h2>
+<a href="#method.users.activity_stream_summary">
+   Activity stream summary
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#activity_stream_summary</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/activity_stream/summary
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/activity_stream/summary</code>
+</div>
+<p>Returns a summary of the current user’s global activity stream.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>only_active_courses</td>
+<td>boolean</td>
+<td>
+<p>If true, will only return objects for courses the user is actively participating in</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>[</span><span>{</span><span>"type"</span><span>:</span><span>"DiscussionTopic"</span><span>,</span><span>"unread_count"</span><span>:</span><span>2</span><span>,</span><span>"count"</span><span>:</span><span>7</span><span>},</span><span>{</span><span>"type"</span><span>:</span><span>"Conversation"</span><span>,</span><span>"unread_count"</span><span>:</span><span>0</span><span>,</span><span>"count"</span><span>:</span><span>3</span><span>}</span><span>]</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.todo_items">
+   List the TODO items
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#todo_items</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/todo
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/todo</code>
+</div>
+<p>A paginated list of the current user’s list of todo items.</p>
+<p>There is a limit to the number of items returned.</p>
+<p>The ‘ignore` and `ignore_permanently` URLs can be used to update the user’s preferences on what items will be displayed. Performing a DELETE request against the ‘ignore` URL will hide that item from future todo item requests, until the item changes. Performing a DELETE request against the `ignore_permanently` URL will hide that item forever.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<dl><dt>“ungraded_quizzes”</dt>
+<dd>
+<p>Optionally include ungraded quizzes (such as practice quizzes and surveys) in the list. These will be returned under a <code>quiz</code> key instead of an <code>assignment</code> key in response elements.</p>
+</dd></dl>
+<p>
+<span>Allowed values:</span> <code>ungraded_quizzes</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>[</span><span>{</span><span>'type'</span><span>:</span><span>'grading'</span><span>,</span><span>// an assignment that needs grading</span><span>'assignment'</span><span>:</span><span>{</span><span>..</span><span> assignment object </span><span>..</span><span>},</span><span>'ignore'</span><span>:</span><span>'.. url ..'</span><span>,</span><span>'ignore_permanently'</span><span>:</span><span>'.. url ..'</span><span>,</span><span>'html_url'</span><span>:</span><span>'.. url ..'</span><span>,</span><span>'needs_grading_count'</span><span>:</span><span>3</span><span>,</span><span>// number of submissions that need grading</span><span>'context_type'</span><span>:</span><span>'course'</span><span>,</span><span>// course|group</span><span>'course_id'</span><span>:</span><span>1</span><span>,</span><span>'group_id'</span><span>:</span><span>null</span><span>,</span><span>},</span><span>{</span><span>'type'</span><span>=&gt;</span><span>'submitting'</span><span>,</span><span>// an assignment that needs submitting soon</span><span>'assignment'</span><span>=&gt;</span><span>{</span><span>..</span><span> assignment object </span><span>..</span><span>},</span><span>'ignore'</span><span>=&gt;</span><span>'.. url ..'</span><span>,</span><span>'ignore_permanently'</span><span>=&gt;</span><span>'.. url ..'</span><span>,</span><span>'html_url'</span><span>:</span><span>'.. url ..'</span><span>,</span><span>'context_type'</span><span>:</span><span>'course'</span><span>,</span><span>'course_id'</span><span>:</span><span>1</span><span>,</span><span>},</span><span>{</span><span>'type'</span><span>=&gt;</span><span>'submitting'</span><span>,</span><span>// a quiz that needs submitting soon</span><span>'quiz'</span><span>=&gt;</span><span>{</span><span>..</span><span> quiz object </span><span>..</span><span>},</span><span>'ignore'</span><span>=&gt;</span><span>'.. url ..'</span><span>,</span><span>'ignore_permanently'</span><span>=&gt;</span><span>'.. url ..'</span><span>,</span><span>'html_url'</span><span>:</span><span>'.. url ..'</span><span>,</span><span>'context_type'</span><span>:</span><span>'course'</span><span>,</span><span>'course_id'</span><span>:</span><span>1</span><span>,</span><span>},</span><span>]</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.todo_item_count">
+   List counts for todo items
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#todo_item_count</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/todo_item_count
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/todo_item_count</code>
+</div>
+<p>Counts of different todo items such as the number of assignments needing grading as well as the number of assignments needing submitting.</p>
+<p>There is a limit to the number of todo items this endpoint will count. It will only look at the first 100 todo items for the user. If the user has more than 100 todo items this count may not be reliable. The largest reliable number for both counts is 100.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<dl><dt>“ungraded_quizzes”</dt>
+<dd>
+<p>Optionally include ungraded quizzes (such as practice quizzes and surveys) in the list. These will be returned under a <code>quiz</code> key instead of an <code>assignment</code> key in response elements.</p>
+</dd></dl>
+<p>
+<span>Allowed values:</span> <code>ungraded_quizzes</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>
+ needs_grading_count</span><span>:</span><span>32</span><span>,</span><span>
+ assignments_needing_submitting</span><span>:</span><span>10</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.upcoming_events">
+   List upcoming assignments, calendar events
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#upcoming_events</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/upcoming_events
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/upcoming_events</code>
+</div>
+<p>A paginated list of the current user’s upcoming events.</p>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>[</span><span>{</span><span>"id"</span><span>=&gt;</span><span>597</span><span>,</span><span>"title"</span><span>=&gt;</span><span>"Upcoming Course Event"</span><span>,</span><span>"description"</span><span>=&gt;</span><span>"Attendance is correlated with passing!"</span><span>,</span><span>"start_at"</span><span>=&gt;</span><span>"2013-04-27T14:33:14Z"</span><span>,</span><span>"end_at"</span><span>=&gt;</span><span>"2013-04-27T14:33:14Z"</span><span>,</span><span>"location_name"</span><span>=&gt;</span><span>"Red brick house"</span><span>,</span><span>"location_address"</span><span>=&gt;</span><span>"110 Top of the Hill Dr."</span><span>,</span><span>"all_day"</span><span>=&gt;</span><span>false</span><span>,</span><span>"all_day_date"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"created_at"</span><span>=&gt;</span><span>"2013-04-26T14:33:14Z"</span><span>,</span><span>"updated_at"</span><span>=&gt;</span><span>"2013-04-26T14:33:14Z"</span><span>,</span><span>"workflow_state"</span><span>=&gt;</span><span>"active"</span><span>,</span><span>"context_code"</span><span>=&gt;</span><span>"course_12938"</span><span>,</span><span>"child_events_count"</span><span>=&gt;</span><span>0</span><span>,</span><span>"child_events"</span><span>=&gt;[],</span><span>"parent_event_id"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"hidden"</span><span>=&gt;</span><span>false</span><span>,</span><span>"url"</span><span>=&gt;</span><span>"http://www.example.com/api/v1/calendar_events/597"</span><span>,</span><span>"html_url"</span><span>=&gt;</span><span>"http://www.example.com/calendar?event_id=597&amp;include_contexts=course_12938"</span><span>},</span><span>{</span><span>"id"</span><span>=&gt;</span><span>"assignment_9729"</span><span>,</span><span>"title"</span><span>=&gt;</span><span>"Upcoming Assignment"</span><span>,</span><span>"description"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"start_at"</span><span>=&gt;</span><span>"2013-04-28T14:47:32Z"</span><span>,</span><span>"end_at"</span><span>=&gt;</span><span>"2013-04-28T14:47:32Z"</span><span>,</span><span>"all_day"</span><span>=&gt;</span><span>false</span><span>,</span><span>"all_day_date"</span><span>=&gt;</span><span>"2013-04-28"</span><span>,</span><span>"created_at"</span><span>=&gt;</span><span>"2013-04-26T14:47:32Z"</span><span>,</span><span>"updated_at"</span><span>=&gt;</span><span>"2013-04-26T14:47:32Z"</span><span>,</span><span>"workflow_state"</span><span>=&gt;</span><span>"published"</span><span>,</span><span>"context_code"</span><span>=&gt;</span><span>"course_12942"</span><span>,</span><span>"assignment"</span><span>=&gt;{</span><span>"id"</span><span>=&gt;</span><span>9729</span><span>,</span><span>"name"</span><span>=&gt;</span><span>"Upcoming Assignment"</span><span>,</span><span>"description"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"points_possible"</span><span>=&gt;</span><span>10</span><span>,</span><span>"due_at"</span><span>=&gt;</span><span>"2013-04-28T14:47:32Z"</span><span>,</span><span>"assignment_group_id"</span><span>=&gt;</span><span>2439</span><span>,</span><span>"automatic_peer_reviews"</span><span>=&gt;</span><span>false</span><span>,</span><span>"grade_group_students_individually"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"grading_standard_id"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"grading_type"</span><span>=&gt;</span><span>"points"</span><span>,</span><span>"group_category_id"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"lock_at"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"peer_reviews"</span><span>=&gt;</span><span>false</span><span>,</span><span>"position"</span><span>=&gt;</span><span>1</span><span>,</span><span>"unlock_at"</span><span>=&gt;</span><span>nil</span><span>,</span><span>"course_id"</span><span>=&gt;</span><span>12942</span><span>,</span><span>"submission_types"</span><span>=&gt;[</span><span>"none"</span><span>],</span><span>"needs_grading_count"</span><span>=&gt;</span><span>0</span><span>,</span><span>"html_url"</span><span>=&gt;</span><span>"http://www.example.com/courses/12942/assignments/9729"</span><span>},</span><span>"url"</span><span>=&gt;</span><span>"http://www.example.com/api/v1/calendar_events/assignment_9729"</span><span>,</span><span>"html_url"</span><span>=&gt;</span><span>"http://www.example.com/courses/12942/assignments/9729"</span><span>}</span><span>]</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.missing_submissions">
+   List Missing Submissions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#missing_submissions</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:user_id/missing_submissions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:user_id/missing_submissions</code>
+</div>
+<p>A paginated list of past-due assignments for which the student does not have a submission. The user sending the request must either be the student, an admin or a parent observer using the parent app</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_id</td>
+<td>string</td>
+<td>
+<p>the student’s ID</p>
+</td>
+</tr>
+<tr>
+<td>observed_user_id</td>
+<td>string</td>
+<td>
+<p>Return missing submissions for the given observed user. Must be accompanied by course_ids[]. The user making the request must be observing the observed user in all the courses specified by course_ids[].</p>
+</td>
+</tr>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<dl><dt>“planner_overrides”</dt>
+<dd>
+<p>Optionally include the assignment’s associated planner override, if it exists, for the current user. These will be returned under a <code>planner_override</code> key</p>
+</dd><dt>“course”</dt>
+<dd>
+<p>Optionally include the assignments’ courses</p>
+</dd></dl>
+<p>
+<span>Allowed values:</span> <code>planner_overrides</code>, <code>course</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>filter[]</td>
+<td>string</td>
+<td>
+<dl><dt>“submittable”</dt>
+<dd>
+<p>Only return assignments that the current user can submit (i.e. filter out locked assignments)</p>
+</dd><dt>“current_grading_period”</dt>
+<dd>
+<p>Only return missing assignments that are in the current grading period</p>
+</dd></dl>
+<p>
+<span>Allowed values:</span> <code>submittable</code>, <code>current_grading_period</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>course_ids[]</td>
+<td>string</td>
+<td>
+<p>Optionally restricts the list of past-due assignments to only those associated with the specified course IDs. Required if observed_user_id is passed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="assignments.html#Assignment">Assignment</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.users.ignore_stream_item">
+   Hide a stream item
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#ignore_stream_item</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/self/activity_stream/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/self/activity_stream/:id</code>
+</div>
+<p>Hide the given stream item.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/</span><span>self</span><span>/</span><span>activity_stream</span><span>/&lt;</span><span>stream_item_id</span><span>&gt;</span><span> \
+  </span><span>-</span><span>X DELETE \
+  </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"hidden"</span><span>:</span><span>true</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.ignore_all_stream_items">
+   Hide all stream items
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#ignore_all_stream_items</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/self/activity_stream
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/self/activity_stream</code>
+</div>
+<p>Hide all stream items for the user</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/</span><span>self</span><span>/</span><span>activity_stream \
+  </span><span>-</span><span>X DELETE \
+  </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"hidden"</span><span>:</span><span>true</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.create_file">
+   Upload a file
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#create_file</a></span>
+</h2>
+<h3>
+  POST /api/v1/users/:user_id/files
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/users/:user_id/files</code>
+</div>
+<p>Upload a file to the user’s personal files section.</p>
+<p>This API endpoint is the first step in uploading a file to a user’s files. See the <a href="file_uploads.html" title="File Upload Documentation">File Upload Documentation</a> for details on the file upload workflow.</p>
+<p>Note that typically users will only be able to upload files to their own files section. Passing a user_id of <code>self</code> is an easy shortcut to specify the current user.</p>
+</div>
+<div>
+<h2>
+<a href="#method.users.api_show">
+   Show user details
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#api_show</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:id</code>
+</div>
+<p>Shows details for user.</p>
+<p>Also includes an attribute “permissions”, a non-comprehensive list of permissions for the user. Example:</p>
+<pre><code><span>"permissions"</span><span>:</span><span>{</span><span>"can_update_name"</span><span>:</span><span>true</span><span>,</span><span>// Whether the user can update their name.</span><span>"can_update_avatar"</span><span>:</span><span>false</span><span>,</span><span>// Whether the user can update their avatar.</span><span>"limit_parent_app_web_access"</span><span>:</span><span>false</span><span>// Whether the user can interact with Canvas web from the Canvas Parent app.</span><span>}</span></code></pre>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>include[]</td>
+<td>string</td>
+<td>
+<p>Array of additional information to include on the user record. “locale”, “avatar_url”, “permissions”, “email”, and “effective_locale” will always be returned</p>
+<p>
+<span>Allowed values:</span> <code>uuid</code>, <code>last_login</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/</span><span>self \
+  </span><span>-</span><span>X GET \
+  </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.users.create">
+   Create a user
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#create</a></span>
+</h2>
+<h3>
+  POST /api/v1/accounts/:account_id/users
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/accounts/:account_id/users</code>
+</div>
+<p>Create and return a new user and pseudonym for an account.</p>
+<dl><dt>DEPRECATED (for self-registration only)</dt>
+<dd>
+<p>If you don’t have the “Modify</p>
+</dd></dl>
+<p>login details for users“ permission, but self-registration is enabled on the account, you can still use this endpoint to register new users. Certain fields will be required, and others will be ignored (see below).</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user[name]</td>
+<td>string</td>
+<td>
+<p>The full name of the user. This name will be used by teacher for grading. Required if this is a self-registration.</p>
+</td>
+</tr>
+<tr>
+<td>user[short_name]</td>
+<td>string</td>
+<td>
+<p>User’s name as it will be displayed in discussions, messages, and comments.</p>
+</td>
+</tr>
+<tr>
+<td>user[sortable_name]</td>
+<td>string</td>
+<td>
+<p>User’s name as used to sort alphabetically in lists.</p>
+</td>
+</tr>
+<tr>
+<td>user[time_zone]</td>
+<td>string</td>
+<td>
+<p>The time zone for the user. Allowed time zones are <a href="http://www.iana.org/time-zones" title="IANA time zones">IANA time zones</a> or friendlier <a href="http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html" title="Ruby on Rails time zones">Ruby on Rails time zones</a>.</p>
+</td>
+</tr>
+<tr>
+<td>user[locale]</td>
+<td>string</td>
+<td>
+<p>The user’s preferred language, from the list of languages Canvas supports. This is in RFC-5646 format.</p>
+</td>
+</tr>
+<tr>
+<td>user[terms_of_use]</td>
+<td>boolean</td>
+<td>
+<p>Whether the user accepts the terms of use. Required if this is a self-registration and this canvas instance requires users to accept the terms (on by default).</p>
+<p>If this is true, it will mark the user as having accepted the terms of use.</p>
+</td>
+</tr>
+<tr>
+<td>user[skip_registration]</td>
+<td>boolean</td>
+<td>
+<p>Automatically mark the user as registered.</p>
+<p>If this is true, it is recommended to set <code>"pseudonym[send_confirmation]"</code> to true as well. Otherwise, the user will not receive any messages about their account creation.</p>
+<p>The users communication channel confirmation can be skipped by setting <code>"communication_channel[skip_confirmation]"</code> to true as well.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[unique_id]</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>User’s login ID. If this is a self-registration, it must be a valid email address.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[password]</td>
+<td>string</td>
+<td>
+<p>User’s password. Cannot be set during self-registration.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[sis_user_id]</td>
+<td>string</td>
+<td>
+<p>SIS ID for the user’s account. To set this parameter, the caller must be able to manage SIS permissions.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[integration_id]</td>
+<td>string</td>
+<td>
+<p>Integration ID for the login. To set this parameter, the caller must be able to manage SIS permissions. The Integration ID is a secondary identifier useful for more complex SIS integrations.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[send_confirmation]</td>
+<td>boolean</td>
+<td>
+<p>Send user notification of account creation if true. Automatically set to true during self-registration.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[force_self_registration]</td>
+<td>boolean</td>
+<td>
+<p>Send user a self-registration style email if true. Setting it means the users will get a notification asking them to “complete the registration process” by clicking it, setting a password, and letting them in. Will only be executed on if the user does not need admin approval. Defaults to false unless explicitly provided.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[authentication_provider_id]</td>
+<td>string</td>
+<td>
+<p>The authentication provider this login is associated with. Logins associated with a specific provider can only be used with that provider. Legacy providers (LDAP, CAS, SAML) will search for logins associated with them, or unassociated logins. New providers will only search for logins explicitly associated with them. This can be the integer ID of the provider, or the type of the provider (in which case, it will find the first matching provider).</p>
+</td>
+</tr>
+<tr>
+<td>communication_channel[type]</td>
+<td>string</td>
+<td>
+<p>The communication channel type, e.g. ‘email’ or ‘sms’.</p>
+</td>
+</tr>
+<tr>
+<td>communication_channel[address]</td>
+<td>string</td>
+<td>
+<p>The communication channel address, e.g. the user’s email address.</p>
+</td>
+</tr>
+<tr>
+<td>communication_channel[confirmation_url]</td>
+<td>boolean</td>
+<td>
+<p>Only valid for account admins. If true, returns the new user account confirmation URL in the response.</p>
+</td>
+</tr>
+<tr>
+<td>communication_channel[skip_confirmation]</td>
+<td>boolean</td>
+<td>
+<p>Only valid for site admins and account admins making requests; If true, the channel is automatically validated and no confirmation email or SMS is sent. Otherwise, the user must respond to a confirmation message to confirm the channel.</p>
+<p>If this is true, it is recommended to set <code>"pseudonym[send_confirmation]"</code> to true as well. Otherwise, the user will not receive any messages about their account creation.</p>
+</td>
+</tr>
+<tr>
+<td>force_validations</td>
+<td>boolean</td>
+<td>
+<p>If true, validations are performed on the newly created user (and their associated pseudonym) even if the request is made by a privileged user like an admin. When set to false, or not included in the request parameters, any newly created users are subject to validations unless the request is made by a user with a ‘manage_user_logins’ right. In which case, certain validations such as ‘require_acceptance_of_terms’ and ‘require_presence_of_name’ are not enforced. Use this parameter to return helpful json errors while building users with an admin request.</p>
+</td>
+</tr>
+<tr>
+<td>enable_sis_reactivation</td>
+<td>boolean</td>
+<td>
+<p>When true, will first try to re-activate a deleted user with matching sis_user_id if possible. This is commonly done with <a href="skip_registration">user</a> and <a href="skip_confirmation">communication_channel</a> so that the default communication_channel is also restored.</p>
+</td>
+</tr>
+<tr>
+<td>destination</td>
+<td>URL</td>
+<td>
+<p>If you’re setting the password for the newly created user, you can provide this param with a valid URL pointing into this Canvas installation, and the response will include a destination field that’s a URL that you can redirect a browser to and have the newly created user automatically logged in. The URL is only valid for a short time, and must match the domain this request is directed to, and be for a well-formed path that Canvas can recognize.</p>
+</td>
+</tr>
+<tr>
+<td>initial_enrollment_type</td>
+<td>string</td>
+<td>
+<p>‘observer` if doing a self-registration with a pairing code. This allows setting the password during user creation.</p>
+</td>
+</tr>
+<tr>
+<td>pairing_code[code]</td>
+<td>string</td>
+<td>
+<p>If provided and valid, will link the new user as an observer to the student’s whose pairing code is given.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.users.create_self_registered_user">
+   [DEPRECATED] Self register a user
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#create_self_registered_user</a></span>
+</h2>
+<h3>
+  POST /api/v1/accounts/:account_id/self_registration
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/accounts/:account_id/self_registration</code>
+</div>
+<p>Self register and return a new user and pseudonym for an account.</p>
+<p>If self-registration is enabled on the account, you can use this endpoint to self register new users.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user[name]</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The full name of the user. This name will be used by teacher for grading.</p>
+</td>
+</tr>
+<tr>
+<td>user[short_name]</td>
+<td>string</td>
+<td>
+<p>User’s name as it will be displayed in discussions, messages, and comments.</p>
+</td>
+</tr>
+<tr>
+<td>user[sortable_name]</td>
+<td>string</td>
+<td>
+<p>User’s name as used to sort alphabetically in lists.</p>
+</td>
+</tr>
+<tr>
+<td>user[time_zone]</td>
+<td>string</td>
+<td>
+<p>The time zone for the user. Allowed time zones are <a href="http://www.iana.org/time-zones" title="IANA time zones">IANA time zones</a> or friendlier <a href="http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html" title="Ruby on Rails time zones">Ruby on Rails time zones</a>.</p>
+</td>
+</tr>
+<tr>
+<td>user[locale]</td>
+<td>string</td>
+<td>
+<p>The user’s preferred language, from the list of languages Canvas supports. This is in RFC-5646 format.</p>
+</td>
+</tr>
+<tr>
+<td>user[terms_of_use]</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>boolean</td>
+<td>
+<p>Whether the user accepts the terms of use.</p>
+</td>
+</tr>
+<tr>
+<td>pseudonym[unique_id]</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>User’s login ID. Must be a valid email address.</p>
+</td>
+</tr>
+<tr>
+<td>communication_channel[type]</td>
+<td>string</td>
+<td>
+<p>The communication channel type, e.g. ‘email’ or ‘sms’.</p>
+</td>
+</tr>
+<tr>
+<td>communication_channel[address]</td>
+<td>string</td>
+<td>
+<p>The communication channel address, e.g. the user’s email address.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.users.settings">
+   Update user settings.
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#settings</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:id/settings
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:id/settings</code>
+</div>
+<h3>
+  PUT /api/v1/users/:id/settings
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id/settings</code>
+</div>
+<p>Update an existing user’s settings.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>manual_mark_as_read</td>
+<td>boolean</td>
+<td>
+<p>If true, require user to manually mark discussion posts as read (don’t auto-mark as read).</p>
+</td>
+</tr>
+<tr>
+<td>release_notes_badge_disabled</td>
+<td>boolean</td>
+<td>
+<p>If true, hide the badge for new release notes.</p>
+</td>
+</tr>
+<tr>
+<td>collapse_global_nav</td>
+<td>boolean</td>
+<td>
+<p>If true, the user’s page loads with the global navigation collapsed</p>
+</td>
+</tr>
+<tr>
+<td>collapse_course_nav</td>
+<td>boolean</td>
+<td>
+<p>If true, the user’s course pages will load with the course navigation collapsed.</p>
+</td>
+</tr>
+<tr>
+<td>hide_dashcard_color_overlays</td>
+<td>boolean</td>
+<td>
+<p>If true, images on course cards will be presented without being tinted to match the course color.</p>
+</td>
+</tr>
+<tr>
+<td>comment_library_suggestions_enabled</td>
+<td>boolean</td>
+<td>
+<p>If true, suggestions within the comment library will be shown.</p>
+</td>
+</tr>
+<tr>
+<td>elementary_dashboard_disabled</td>
+<td>boolean</td>
+<td>
+<p>If true, will display the user’s preferred class Canvas dashboard view instead of the canvas for elementary view.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/settings \
+ -X PUT \
+ -F '</span><span>manual_mark_as_read</span><span>=</span><span>true</span><span>'
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.get_custom_colors">
+   Get custom colors
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#get_custom_colors</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:id/colors
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:id/colors</code>
+</div>
+<p>Returns all custom colors that have been saved for a user.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/colors/ \
+ -X GET \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"custom_colors"</span><span>:</span><span>{</span><span>"course_42"</span><span>:</span><span>"#abc123"</span><span>,</span><span>"course_88"</span><span>:</span><span>"#123abc"</span><span>}</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.get_custom_color">
+   Get custom color
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#get_custom_color</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:id/colors/:asset_string
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:id/colors/:asset_string</code>
+</div>
+<p>Returns the custom colors that have been saved for a user for a given context.</p>
+<p>The asset_string parameter should be in the format ‘context_id’, for example ‘course_42’.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/colors/&lt;asset_string&gt; \
+ -X GET \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"hexcode"</span><span>:</span><span>"#abc123"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.set_custom_color">
+   Update custom color
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#set_custom_color</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/:id/colors/:asset_string
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id/colors/:asset_string</code>
+</div>
+<p>Updates a custom color for a user for a given context. This allows colors for the calendar and elsewhere to be customized on a user basis.</p>
+<p>The asset string parameter should be in the format ‘context_id’, for example ‘course_42’</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hexcode</td>
+<td>string</td>
+<td>
+<p>The hexcode of the color to set for the context, if you choose to pass the hexcode as a query parameter rather than in the request body you should NOT include the ‘#’ unless you escape it first.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/colors/&lt;asset_string&gt; \
+ -X PUT \
+ -F '</span><span>hexcode</span><span>=</span><span>fffeee</span><span>'
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"hexcode"</span><span>:</span><span>"#abc123"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.set_text_editor_preference">
+   Update text editor preference
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#set_text_editor_preference</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/:id/text_editor_preference
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id/text_editor_preference</code>
+</div>
+<p>Updates a user’s default choice for text editor. This allows the Choose an Editor propmts to preload the user’s preference.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text_editor_preference</td>
+<td>string</td>
+<td>
+<p>The identifier for the editor.</p>
+<p>
+<span>Allowed values:</span> <code>block_editor</code>, <code>rce</code>, 
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/prefered_editor \
+ -X PUT \
+ -F '</span><span>text_editor_preference</span><span>=</span><span>rce</span><span>'
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"text_editor_preference"</span><span>:</span><span>"rce"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.get_dashboard_positions">
+   Get dashboard positions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#get_dashboard_positions</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:id/dashboard_positions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:id/dashboard_positions</code>
+</div>
+<p>Returns all dashboard positions that have been saved for a user.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/dashboard_positions/ \
+ -X GET \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"dashboard_positions"</span><span>:</span><span>{</span><span>"course_42"</span><span>:</span><span>2</span><span>,</span><span>"course_88"</span><span>:</span><span>1</span><span>}</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.set_dashboard_positions">
+   Update dashboard positions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#set_dashboard_positions</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/:id/dashboard_positions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id/dashboard_positions</code>
+</div>
+<p>Updates the dashboard positions for a user for a given context. This allows positions for the dashboard cards and elsewhere to be customized on a per user basis.</p>
+<p>The asset string parameter should be in the format ‘context_id’, for example ‘course_42’</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/dashboard_positions/ \
+ -X PUT \
+ -F '</span><span>dashboard_positions</span><span>[</span><span>course_42</span><span>]=</span><span>1</span><span>' \
+ -F '</span><span>dashboard_positions</span><span>[</span><span>course_53</span><span>]=</span><span>2</span><span>' \
+ -F '</span><span>dashboard_positions</span><span>[</span><span>course_10</span><span>]=</span><span>3</span><span>' \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"dashboard_positions"</span><span>:</span><span>{</span><span>"course_10"</span><span>:</span><span>3</span><span>,</span><span>"course_42"</span><span>:</span><span>1</span><span>,</span><span>"course_53"</span><span>:</span><span>2</span><span>}</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.update">
+   Edit a user
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#update</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/:id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id</code>
+</div>
+<p>Modify an existing user. To modify a user’s login, see the documentation for logins.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user[name]</td>
+<td>string</td>
+<td>
+<p>The full name of the user. This name will be used by teacher for grading.</p>
+</td>
+</tr>
+<tr>
+<td>user[short_name]</td>
+<td>string</td>
+<td>
+<p>User’s name as it will be displayed in discussions, messages, and comments.</p>
+</td>
+</tr>
+<tr>
+<td>user[sortable_name]</td>
+<td>string</td>
+<td>
+<p>User’s name as used to sort alphabetically in lists.</p>
+</td>
+</tr>
+<tr>
+<td>user[time_zone]</td>
+<td>string</td>
+<td>
+<p>The time zone for the user. Allowed time zones are <a href="http://www.iana.org/time-zones" title="IANA time zones">IANA time zones</a> or friendlier <a href="http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html" title="Ruby on Rails time zones">Ruby on Rails time zones</a>.</p>
+</td>
+</tr>
+<tr>
+<td>user[email]</td>
+<td>string</td>
+<td>
+<p>The default email address of the user.</p>
+</td>
+</tr>
+<tr>
+<td>user[locale]</td>
+<td>string</td>
+<td>
+<p>The user’s preferred language, from the list of languages Canvas supports. This is in RFC-5646 format.</p>
+</td>
+</tr>
+<tr>
+<td>user[avatar][token]</td>
+<td>string</td>
+<td>
+<p>A unique representation of the avatar record to assign as the user’s current avatar. This token can be obtained from the user avatars endpoint. This supersedes the user [avatar] [url] argument, and if both are included the url will be ignored. Note: this is an internal representation and is subject to change without notice. It should be consumed with this api endpoint and used in the user update endpoint, and should not be constructed by the client.</p>
+</td>
+</tr>
+<tr>
+<td>user[avatar][url]</td>
+<td>string</td>
+<td>
+<p>To set the user’s avatar to point to an external url, do not include a token and instead pass the url here. Warning: For maximum compatibility, please use 128 px square images.</p>
+</td>
+</tr>
+<tr>
+<td>user[avatar][state]</td>
+<td>string</td>
+<td>
+<p>To set the state of user’s avatar. Only valid for account administrator.</p>
+<p>
+<span>Allowed values:</span> <code>none</code>, <code>submitted</code>, <code>approved</code>, <code>locked</code>, <code>reported</code>, <code>re_reported</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>user[title]</td>
+<td>string</td>
+<td>
+<p>Sets a title on the user profile. (See <a href="users.html#method.profile.settings" title="Get user profile">Get user profile</a>.) Profiles must be enabled on the root account.</p>
+</td>
+</tr>
+<tr>
+<td>user[bio]</td>
+<td>string</td>
+<td>
+<p>Sets a bio on the user profile. (See <a href="users.html#method.profile.settings" title="Get user profile">Get user profile</a>.) Profiles must be enabled on the root account.</p>
+</td>
+</tr>
+<tr>
+<td>user[pronunciation]</td>
+<td>string</td>
+<td>
+<p>Sets name pronunciation on the user profile. (See <a href="users.html#method.profile.settings" title="Get user profile">Get user profile</a>.) Profiles and name pronunciation must be enabled on the root account.</p>
+</td>
+</tr>
+<tr>
+<td>user[pronouns]</td>
+<td>string</td>
+<td>
+<p>Sets pronouns on the user profile. Passing an empty string will empty the user’s pronouns Only Available Pronouns set on the root account are allowed Adding and changing pronouns must be enabled on the root account.</p>
+</td>
+</tr>
+<tr>
+<td>user[event]</td>
+<td>string</td>
+<td>
+<p>Suspends or unsuspends all logins for this user that the calling user has permission to</p>
+<p>
+<span>Allowed values:</span> <code>suspend</code>, <code>unsuspend</code>
+</p>
+</td>
+</tr>
+<tr>
+<td>override_sis_stickiness</td>
+<td>boolean</td>
+<td>
+<p>Default is true. If false, any fields containing “sticky” changes will not be updated. See SIS CSV Format documentation for information on which fields can have SIS stickiness</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/133'</span><span> \
+   </span><span>-</span><span>X PUT \
+   </span><span>-</span><span>F </span><span>'user[name]=Sheldon Cooper'</span><span> \
+   </span><span>-</span><span>F </span><span>'user[short_name]=Shelly'</span><span> \
+   </span><span>-</span><span>F </span><span>'user[time_zone]=Pacific Time (US &amp; Canada)'</span><span> \
+   </span><span>-</span><span>F </span><span>'user[avatar][token]=&lt;opaque_token&gt;'</span><span> \
+   </span><span>-</span><span>H </span><span>"Authorization: Bearer &lt;token&gt;"</span></code></pre>
+</div>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.users.terminate_sessions">
+   Terminate all user sessions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#terminate_sessions</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/:id/sessions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/:id/sessions</code>
+</div>
+<p>Terminates all sessions for a user. This includes all browser-based sessions and all access tokens, including manually generated ones. The user can immediately re-authenticate to access Canvas again if they have the current credentials. All integrations will need to be re-authorized.</p>
+</div>
+<div>
+<h2>
+<a href="#method.users.expire_mobile_sessions">
+   Log users out of all mobile apps
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#expire_mobile_sessions</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/mobile_sessions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/mobile_sessions</code>
+</div>
+<h3>
+  DELETE /api/v1/users/:id/mobile_sessions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/:id/mobile_sessions</code>
+</div>
+<p>Permanently expires any active mobile sessions, forcing them to re-authorize.</p>
+<p>The route that takes a user id will expire mobile sessions for that user. The route that doesn’t take a user id will expire mobile sessions for <strong>all</strong> users in the institution.</p>
+</div>
+<div>
+<h2>
+<a href="#method.users.merge_into">
+   Merge user into another user
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#merge_into</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/:id/merge_into/:destination_user_id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id/merge_into/:destination_user_id</code>
+</div>
+<h3>
+  PUT /api/v1/users/:id/merge_into/accounts/:destination_account_id/users/:destination_user_id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:id/merge_into/accounts/:destination_account_id/users/:destination_user_id</code>
+</div>
+<p>Merge a user into another user. To merge users, the caller must have permissions to manage both users. This should be considered irreversible. This will delete the user and move all the data into the destination user.</p>
+<p>User merge details and caveats: The from_user is the user that was deleted in the user_merge process. The destination_user is the user that remains, that is being split.</p>
+<p>Avatars: When both users have avatars, only the destination_users avatar will remain. When one user has an avatar, it will end up on the destination_user.</p>
+<p>Terms of Use: If either user has accepted terms of use, it will be be left as accepted.</p>
+<p>Communication Channels: All unique communication channels moved to the destination_user. All notification preferences are moved to the destination_user.</p>
+<p>Enrollments: All unique enrollments are moved to the destination_user. When there is an enrollment that would end up making it so that a user would be observing themselves, the enrollment is not moved over. Everything that is tied to the from_user at the course level relating to the enrollment is also moved to the destination_user.</p>
+<p>Submissions: All submissions are moved to the destination_user. If there are enrollments for both users in the same course, we prefer submissions that have grades then submissions that have work in them, and if there are no grades or no work, they are not moved.</p>
+<p>Other notes: Access Tokens are moved on merge. Conversations are moved on merge. Favorites are moved on merge. Courses will commonly use LTI tools. LTI tools reference the user with IDs that are stored on a user object. Merging users deletes one user and moves all records from the deleted user to the destination_user. These IDs are kept for all enrollments, group_membership, and account_users for the from_user at the time of the merge. When the destination_user launches an LTI tool from a course that used to be the from_user’s, it doesn’t appear as a new user to the tool provider. Instead it will send the stored ids. The destination_user’s LTI IDs remain as they were for the courses that they originally had. Future enrollments for the destination_user will use the IDs that are on the destination_user object. LTI IDs that are kept and tracked per context include lti_context_id, lti_id and uuid. APIs that return the LTI ids will return the one for the context that it is called for, except for the user uuid. The user UUID will display the destination_users uuid, and when getting the uuid from an api that is in a context that was recorded from a merge event, an additional attribute is added as past_uuid.</p>
+<p>When finding users by SIS ids in different accounts the destination_account_id is required.</p>
+<p>The account can also be identified by passing the domain in destination_account_id.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/&lt;</span><span>user_id</span><span>&gt;/</span><span>merge_into</span><span>/&lt;</span><span>destination_user_id</span><span>&gt;</span><span> \
+   </span><span>-</span><span>X PUT \
+   </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/&lt;</span><span>user_id</span><span>&gt;/</span><span>merge_into</span><span>/</span><span>accounts</span><span>/&lt;</span><span>destination_account_id</span><span>&gt;/</span><span>users</span><span>/&lt;</span><span>destination_user_id</span><span>&gt;</span><span> \
+   </span><span>-</span><span>X PUT \
+   </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+
+ Returns an
+<a href="users.html#User">User</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.users.split">
+   Split merged users into separate users
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#split</a></span>
+</h2>
+<h3>
+  POST /api/v1/users/:id/split
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/users/:id/split</code>
+</div>
+<p>Merged users cannot be fully restored to their previous state, but this will attempt to split as much as possible to the previous state. To split a merged user, the caller must have permissions to manage all of the users logins. If there are multiple users that have been merged into one user it will split each merge into a separate user. A split can only happen within 180 days of a user merge. A user merge deletes the previous user and may be permanently deleted. In this scenario we create a new user object and proceed to move as much as possible to the new user. The user object will not have preserved the name or settings from the previous user. Some items may have been deleted during a user_merge that cannot be restored, and/or the data has become stale because of other changes to the objects since the time of the user_merge.</p>
+<p>Split users details and caveats:</p>
+<p>The from_user is the user that was deleted in the user_merge process. The destination_user is the user that remains, that is being split.</p>
+<p>Avatars: When both users had avatars, both will be remain. When from_user had an avatar and destination_user did not have an avatar, the destination_user’s avatar will be deleted if it still matches what was there are the time of the merge. If the destination_user’s avatar was changed at anytime after the merge, it will remain on the destination user. If the from_user had an avatar it will be there after split.</p>
+<p>Terms of Use: If from_user had not accepted terms of use, they will be prompted again to accept terms of use after the split. If the destination_user had not accepted terms of use, hey will be prompted again to accept terms of use after the split. If neither user had accepted the terms of use, but since the time of the merge had accepted, both will be prompted to accept terms of use. If both had accepted terms of use, this will remain.</p>
+<p>Communication Channels: All communication channels are restored to what they were prior to the merge. If a communication channel was added after the merge, it will remain on the destination_user. Notification preferences remain with the communication channels.</p>
+<p>Enrollments: All enrollments from the time of the merge will be moved back to where they were. Enrollments created since the time of the merge that were created by sis_import will go to the user that owns that sis_id used for the import. Other new enrollments will remain on the destination_user. Everything that is tied to the destination_user at the course level relating to an enrollment is moved to the from_user. When both users are in the same course prior to merge this can cause some unexpected items to move.</p>
+<p>Submissions: Unlike other items tied to a course, submissions are explicitly recorded to avoid problems with grades. All submissions were moved are restored to the spot prior to merge. All submission that were created in a course that was moved in enrollments are moved over to the from_user.</p>
+<p>Other notes: Access Tokens are moved back on split. Conversations are moved back on split. Favorites that existing at the time of merge are moved back on split. LTI ids are restored to how they were prior to merge.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/&lt;</span><span>user_id</span><span>&gt;/</span><span>split \
+   </span><span>-</span><span>X POST \
+   </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+
+ Returns a list of 
+<a href="users.html#User">User</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.users.pandata_events_token">
+   Get a Pandata Events jwt token and its expiration date
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#pandata_events_token</a></span>
+</h2>
+<h3>
+  POST /api/v1/users/self/pandata_events_token
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:POST|/api/v1/users/self/pandata_events_token</code>
+</div>
+<p>Returns a jwt auth and props token that can be used to send events to Pandata.</p>
+<p>NOTE: This is currently only available to the mobile developer keys.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>app_key</td>
+<td>string</td>
+<td>
+<p>The pandata events appKey for this mobile app</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl https</span><span>://&lt;</span><span>canvas</span><span>&gt;/</span><span>api</span><span>/</span><span>v1</span><span>/</span><span>users</span><span>/</span><span>self</span><span>/</span><span>pandata_events_token \
+   </span><span>-</span><span>X POST \
+   </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span><span>-</span><span>F </span><span>'app_key=MOBILE_APPS_KEY'</span><span> \</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"url"</span><span>:</span><span>"https://example.com/pandata/events"</span><span>"auth_token"</span><span>:</span><span>"wek23klsdnsoieioeoi3of9deeo8r8eo8fdn"</span><span>,</span><span>"props_token"</span><span>:</span><span>"paowinefopwienpfiownepfiownepfownef"</span><span>,</span><span>"expires_at"</span><span>:</span><span>1521667783000</span><span>,</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.users.user_graded_submissions">
+   Get a users most recently graded submissions
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/users_controller.rb">UsersController#user_graded_submissions</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:id/graded_submissions
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:id/graded_submissions</code>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.profile.settings">
+   Get user profile
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/profile_controller.rb">ProfileController#settings</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:user_id/profile
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:user_id/profile</code>
+</div>
+<p>Returns user profile data, including user id, name, and profile pic.</p>
+<p>When requesting the profile for the user accessing the API, the user’s calendar feed URL and LTI user id will be returned as well.</p>
+
+
+ Returns a
+<a href="users.html#Profile">Profile</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.profile.profile_pics">
+   List avatar options
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/profile_controller.rb">ProfileController#profile_pics</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:user_id/avatars
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:user_id/avatars</code>
+</div>
+<p>A paginated list of the possible user avatar options that can be set with the user update endpoint. The response will be an array of avatar records. If the ‘type’ field is ‘attachment’, the record will include all the normal attachment json fields; otherwise it will include only the ‘url’ and ‘display_name’ fields. Additionally, all records will include a ‘type’ field and a ‘token’ field. The following explains each field in more detail</p>
+<dl><dt>type</dt>
+<dd><dl><dt>“gravatar”|“attachment”|“no_pic”</dt>
+<dd>
+<p>The type of avatar record, for categorization purposes.</p>
+</dd></dl>
+</dd><dt>url</dt>
+<dd>
+<p>The url of the avatar</p>
+</dd><dt>token</dt>
+<dd>
+<p>A unique representation of the avatar record which can be used to set the avatar with the user update endpoint. Note: this is an internal representation and is subject to change without notice. It should be consumed with this api endpoint and used in the user update endpoint, and should not be constructed by the client.</p>
+</dd><dt>display_name</dt>
+<dd>
+<p>A textual description of the avatar record</p>
+</dd><dt>id</dt>
+<dd><dl><dt>‘attachment’ type only</dt>
+<dd>
+<p>the internal id of the attachment</p>
+</dd></dl>
+</dd><dt>content-type</dt>
+<dd><dl><dt>‘attachment’ type only</dt>
+<dd>
+<p>the content-type of the attachment</p>
+</dd></dl>
+</dd><dt>filename</dt>
+<dd><dl><dt>‘attachment’ type only</dt>
+<dd>
+<p>the filename of the attachment</p>
+</dd></dl>
+</dd><dt>size</dt>
+<dd><dl><dt>‘attachment’ type only</dt>
+<dd>
+<p>the size of the attachment</p>
+</dd></dl>
+</dd></dl>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/1/avatars.json'</span><span> \
+   </span><span>-</span><span>H </span><span>"Authorization: Bearer &lt;token&gt;"</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>[</span><span>{</span><span>"type"</span><span>:</span><span>"gravatar"</span><span>,</span><span>"url"</span><span>:</span><span>"https://secure.gravatar.com/avatar/2284..."</span><span>,</span><span>"token"</span><span>:&lt;</span><span>opaque_token</span><span>&gt;,</span><span>"display_name"</span><span>:</span><span>"gravatar pic"</span><span>},</span><span>{</span><span>"type"</span><span>:</span><span>"attachment"</span><span>,</span><span>"url"</span><span>:&lt;</span><span>url to fetch thumbnail of attachment</span><span>&gt;,</span><span>"token"</span><span>:&lt;</span><span>opaque_token</span><span>&gt;,</span><span>"display_name"</span><span>:</span><span>"profile.jpg"</span><span>,</span><span>"id"</span><span>:</span><span>12</span><span>,</span><span>"content-type"</span><span>:</span><span>"image/jpeg"</span><span>,</span><span>"filename"</span><span>:</span><span>"profile.jpg"</span><span>,</span><span>"size"</span><span>:</span><span>32649</span><span>},</span><span>{</span><span>"type"</span><span>:</span><span>"no_pic"</span><span>,</span><span>"url"</span><span>:</span><span>"https://&lt;canvas&gt;/images/dotted_pic.png"</span><span>,</span><span>"token"</span><span>:&lt;</span><span>opaque_token</span><span>&gt;,</span><span>"display_name"</span><span>:</span><span>"no pic"</span><span>}</span><span>]</span></code></pre>
+</div>
+
+ Returns a list of 
+<a href="users.html#Avatar">Avatar</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.page_views.index">
+   List user page views
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/page_views_controller.rb">PageViewsController#index</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:user_id/page_views
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:user_id/page_views</code>
+</div>
+<p>Return a paginated list of the user’s page view history in json format, similar to the available CSV download. Page views are returned in descending order, newest to oldest.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start_time</td>
+<td>DateTime</td>
+<td>
+<p>The beginning of the time range from which you want page views.</p>
+</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>DateTime</td>
+<td>
+<p>The end of the time range from which you want page views.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+ Returns a list of 
+<a href="users.html#PageView">PageView</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.custom_data.set_data">
+   Store custom data
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/custom_data_controller.rb">CustomDataController#set_data</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/:user_id/custom_data(/*scope)
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/:user_id/custom_data(/*scope)</code>
+</div>
+<p>Store arbitrary user data as JSON.</p>
+<p>Arbitrary JSON data can be stored for a User. A typical scenario would be an external site/service that registers users in Canvas and wants to capture additional info about them. The part of the URL that follows <code>/custom_data/</code> defines the scope of the request, and it reflects the structure of the JSON data to be stored or retrieved.</p>
+<p>The value <code>self</code> may be used for <code>user_id</code> to store data associated with the calling user. In order to access another user’s custom data, you must be an account administrator with permission to manage users.</p>
+<p>A namespace parameter, <code>ns</code>, is used to prevent custom_data collisions between different apps. This parameter is required for all custom_data requests.</p>
+<p>A request with Content-Type multipart/form-data or Content-Type application/x-www-form-urlencoded can only be used to store strings.</p>
+<p>Example PUT with multipart/form-data data:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/telephone' \
+ -X PUT \
+ -F 'ns=com.my-organization.canvas-app' \
+ -F 'data=555-1234' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>"555-1234"</span><span>}</span></code></pre>
+<p>Subscopes (or, generated scopes) can also be specified by passing values to <code>data</code>[<code>subscope</code>].</p>
+<p>Example PUT specifying subscopes:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/body/measurements' \
+ -X PUT \
+ -F 'ns=com.my-organization.canvas-app' \
+ -F 'data[waist]=32in' \
+ -F 'data[inseam]=34in' \
+ -F 'data[chest]=40in' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>{</span><span>"chest"</span><span>:</span><span>"40in"</span><span>,</span><span>"waist"</span><span>:</span><span>"32in"</span><span>,</span><span>"inseam"</span><span>:</span><span>"34in"</span><span>}</span><span>}</span></code></pre>
+<p>Following such a request, subsets of the stored data to be retrieved directly from a subscope.</p>
+<p>Example <a href="users.html#method.users.get_custom_data" title="GET">GET</a> from a generated scope</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/body/measurements/chest' \
+ -X GET \
+ -F 'ns=com.my-organization.canvas-app' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>"40in"</span><span>}</span></code></pre>
+<p>If you want to store more than just strings (i.e. numbers, arrays, hashes, true, false, and/or null), you must make a request with Content-Type application/json as in the following example.</p>
+<p>Example PUT with JSON data:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data' \
+ -H 'Content-Type: application/json' \
+ -X PUT \
+ -d '{
+    "ns": "com.my-organization.canvas-app",
+    "data": {
+     "a-number": 6.02e23,
+     "a-bool": true,
+     "a-string": "true",
+     "a-hash": {"a": {"b": "ohai"}},
+     "an-array": [1, "two", null, false]
+    }
+   }' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>{</span><span>"a-number"</span><span>:</span><span>6.02e+23</span><span>,</span><span>"a-bool"</span><span>:</span><span>true</span><span>,</span><span>"a-string"</span><span>:</span><span>"true"</span><span>,</span><span>"a-hash"</span><span>:</span><span>{</span><span>"a"</span><span>:</span><span>{</span><span>"b"</span><span>:</span><span>"ohai"</span><span>}</span><span>},</span><span>"an-array"</span><span>:</span><span>[</span><span>1</span><span>,</span><span>"two"</span><span>,</span><span>null</span><span>,</span><span>false</span><span>]</span><span>}</span><span>}</span></code></pre>
+<p>If the data is an Object (as it is in the above example), then subsets of the data can be accessed by including the object’s (possibly nested) keys in the scope of a GET request.</p>
+<p>Example <a href="users.html#method.users.get_custom_data" title="GET">GET</a> with a generated scope:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/a-hash/a/b' \
+ -X GET \
+ -F 'ns=com.my-organization.canvas-app' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>"ohai"</span><span>}</span></code></pre>
+<p>On success, this endpoint returns an object containing the data that was stored.</p>
+<p>Responds with status code 200 if the scope already contained data, and it was overwritten by the data specified in the request.</p>
+<p>Responds with status code 201 if the scope was previously empty, and the data specified in the request was successfully stored there.</p>
+<p>Responds with status code 400 if the namespace parameter, <code>ns</code>, is missing or invalid, or if the <code>data</code> parameter is missing.</p>
+<p>Responds with status code 409 if the requested scope caused a conflict and data was not stored. This happens when storing data at the requested scope would cause data at an outer scope to be lost. e.g., if <code>/custom_data</code> was <tt>{“fashion_app”: {“hair”: “blonde”}}</tt>, but you tried to <tt>‘PUT /custom_data/fashion_app/hair/style -F data=buzz`</tt>, then for the request to succeed,the value of <code>/custom_data/fashion_app/hair</code> would have to become a hash, and its old string value would be lost. In this situation, an error object is returned with the following format:</p>
+<pre><code><span>{</span><span>"message"</span><span>:</span><span>"write conflict for custom_data hash"</span><span>,</span><span>"conflict_scope"</span><span>:</span><span>"fashion_app/hair"</span><span>,</span><span>"type_at_conflict"</span><span>:</span><span>"String"</span><span>,</span><span>"value_at_conflict"</span><span>:</span><span>"blonde"</span><span>}</span></code></pre>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ns</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The namespace under which to store the data. This should be something other Canvas API apps aren’t likely to use, such as a reverse DNS for your organization.</p>
+</td>
+</tr>
+<tr>
+<td>data</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>JSON</td>
+<td>
+<p>The data you want to store for the user, at the specified scope. If the data is composed of (possibly nested) JSON objects, scopes will be generated for the (nested) keys (see examples).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/food_app'</span><span> \
+ </span><span>-</span><span>X PUT \
+ </span><span>-</span><span>F </span><span>'ns=com.my-organization.canvas-app'</span><span> \
+ </span><span>-</span><span>F </span><span>'data[weight]=81kg'</span><span> \
+ </span><span>-</span><span>F </span><span>'data[favorites][meat]=pork belly'</span><span> \
+ </span><span>-</span><span>F </span><span>'data[favorites][dessert]=pistachio ice cream'</span><span> \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>{</span><span>"weight"</span><span>:</span><span>"81kg"</span><span>,</span><span>"favorites"</span><span>:</span><span>{</span><span>"meat"</span><span>:</span><span>"pork belly"</span><span>,</span><span>"dessert"</span><span>:</span><span>"pistachio ice cream"</span><span>}</span><span>}</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.custom_data.get_data">
+   Load custom data
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/custom_data_controller.rb">CustomDataController#get_data</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/:user_id/custom_data(/*scope)
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/:user_id/custom_data(/*scope)</code>
+</div>
+<p>Load custom user data.</p>
+<p>Arbitrary JSON data can be stored for a User. This API call retrieves that data for a (optional) given scope. See <a href="users.html#method.users.set_custom_data" title="Store Custom Data">Store Custom Data</a> for details and examples.</p>
+<p>On success, this endpoint returns an object containing the data that was requested.</p>
+<p>Responds with status code 400 if the namespace parameter, <code>ns</code>, is missing or invalid, or if the specified scope does not contain any data.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ns</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The namespace from which to retrieve the data. This should be something other Canvas API apps aren’t likely to use, such as a reverse DNS for your organization.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/food_app/favorites/dessert'</span><span> \
+ </span><span>-</span><span>X GET \
+ </span><span>-</span><span>F </span><span>'ns=com.my-organization.canvas-app'</span><span> \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>"pistachio ice cream"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.custom_data.delete_data">
+   Delete custom data
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/custom_data_controller.rb">CustomDataController#delete_data</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/:user_id/custom_data(/*scope)
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/:user_id/custom_data(/*scope)</code>
+</div>
+<p>Delete custom user data.</p>
+<p>Arbitrary JSON data can be stored for a User. This API call deletes that data for a given scope. Without a scope, all custom_data is deleted. See <a href="users.html#method.users.set_custom_data" title="Store Custom Data">Store Custom Data</a> for details and examples of storage and retrieval.</p>
+<p>As an example, we’ll store some data, then delete a subset of it.</p>
+<p>Example <a href="users.html#method.users.set_custom_data" title="PUT">PUT</a> with valid JSON data:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data' \
+ -X PUT \
+ -F 'ns=com.my-organization.canvas-app' \
+ -F 'data[fruit][apple]=so tasty' \
+ -F 'data[fruit][kiwi]=a bit sour' \
+ -F 'data[veggies][root][onion]=tear-jerking' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>{</span><span>"fruit"</span><span>:</span><span>{</span><span>"apple"</span><span>:</span><span>"so tasty"</span><span>,</span><span>"kiwi"</span><span>:</span><span>"a bit sour"</span><span>},</span><span>"veggies"</span><span>:</span><span>{</span><span>"root"</span><span>:</span><span>{</span><span>"onion"</span><span>:</span><span>"tear-jerking"</span><span>}</span><span>}</span><span>}</span><span>}</span></code></pre>
+<p>Example DELETE:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/fruit/kiwi' \
+ -X DELETE \
+ -F 'ns=com.my-organization.canvas-app' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>"a bit sour"</span><span>}</span></code></pre>
+<p>Example <a href="users.html#method.users.get_custom_data" title="GET">GET</a> following the above DELETE:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data' \
+ -X GET \
+ -F 'ns=com.my-organization.canvas-app' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>{</span><span>"fruit"</span><span>:</span><span>{</span><span>"apple"</span><span>:</span><span>"so tasty"</span><span>},</span><span>"veggies"</span><span>:</span><span>{</span><span>"root"</span><span>:</span><span>{</span><span>"onion"</span><span>:</span><span>"tear-jerking"</span><span>}</span><span>}</span><span>}</span><span>}</span></code></pre>
+<p>Note that hashes left empty after a DELETE will get removed from the custom_data store. For example, following the previous commands, if we delete /custom_data/veggies/root/onion, then the entire /custom_data/veggies scope will be removed.</p>
+<p>Example DELETE that empties a parent scope:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/veggies/root/onion' \
+ -X DELETE \
+ -F 'ns=com.my-organization.canvas-app' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>"tear-jerking"</span><span>}</span></code></pre>
+<p>Example <a href="users.html#method.users.get_custom_data" title="GET">GET</a> following the above DELETE:</p>
+<pre><code>curl 'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data' \
+ -X GET \
+ -F 'ns=com.my-organization.canvas-app' \
+ -H 'Authorization: Bearer &lt;token&gt;'
+</code></pre>
+<p>Response:</p>
+<pre><code><span>{</span><span>"data"</span><span>:</span><span>{</span><span>"fruit"</span><span>:</span><span>{</span><span>"apple"</span><span>:</span><span>"so tasty"</span><span>}</span><span>}</span><span>}</span></code></pre>
+<p>On success, this endpoint returns an object containing the data that was deleted.</p>
+<p>Responds with status code 400 if the namespace parameter, <code>ns</code>, is missing or invalid, or if the specified scope does not contain any data.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ns</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The namespace from which to delete the data. This should be something other Canvas API apps aren’t likely to use, such as a reverse DNS for your organization.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/&lt;user_id&gt;/custom_data/fruit/kiwi'</span><span> \
+ </span><span>-</span><span>X DELETE \
+ </span><span>-</span><span>F </span><span>'ns=com.my-organization.canvas-app'</span><span> \
+ </span><span>-</span><span>H </span><span>'Authorization: Bearer &lt;token&gt;'</span></code></pre>
+</div>
+<div>
+<h4>Example Response:</h4>
+<pre><code><span>!!!</span><span>javascript
+</span><span>{</span><span>"data"</span><span>:</span><span>"a bit sour"</span><span>}</span></code></pre>
+</div>
+</div>
+<div>
+<h2>
+<a href="#method.course_nicknames.index">
+   List course nicknames
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/course_nicknames_controller.rb">CourseNicknamesController#index</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/course_nicknames
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/course_nicknames</code>
+</div>
+<p>Returns all course nicknames you have set.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/self/course_nicknames \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+
+ Returns a list of 
+<a href="users.html#CourseNickname">CourseNickname</a>
+objects
+</div>
+<div>
+<h2>
+<a href="#method.course_nicknames.show">
+   Get course nickname
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/course_nicknames_controller.rb">CourseNicknamesController#show</a></span>
+</h2>
+<h3>
+  GET /api/v1/users/self/course_nicknames/:course_id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:GET|/api/v1/users/self/course_nicknames/:course_id</code>
+</div>
+<p>Returns the nickname for a specific course.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/self/course_nicknames/&lt;course_id&gt; \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+
+ Returns a
+<a href="users.html#CourseNickname">CourseNickname</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.course_nicknames.update">
+   Set course nickname
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/course_nicknames_controller.rb">CourseNicknamesController#update</a></span>
+</h2>
+<h3>
+  PUT /api/v1/users/self/course_nicknames/:course_id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:PUT|/api/v1/users/self/course_nicknames/:course_id</code>
+</div>
+<p>Set a nickname for the given course. This will replace the course’s name in output of API calls you make subsequently, as well as in selected places in the Canvas web user interface.</p>
+<h4>Request Parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nickname</td>
+<td>
+    
+    Required
+    
+   </td>
+<td>string</td>
+<td>
+<p>The nickname to set. It must be non-empty and shorter than 60 characters.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/self/course_nicknames/&lt;course_id&gt; \
+ -X PUT \
+ -F '</span><span>nickname</span><span>=</span><span>Physics</span><span>' \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+
+ Returns a
+<a href="users.html#CourseNickname">CourseNickname</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.course_nicknames.delete">
+   Remove course nickname
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/course_nicknames_controller.rb">CourseNicknamesController#delete</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/self/course_nicknames/:course_id
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/self/course_nicknames/:course_id</code>
+</div>
+<p>Remove the nickname for the given course. Subsequent course API calls will return the actual name for the course.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/self/course_nicknames/&lt;course_id&gt; \
+ -X DELETE \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+
+ Returns a
+<a href="users.html#CourseNickname">CourseNickname</a>
+object
+</div>
+<div>
+<h2>
+<a href="#method.course_nicknames.clear">
+   Clear course nicknames
+  </a>
+<span><a href="https://github.com/instructure/canvas-lms/blob/master/app/controllers/course_nicknames_controller.rb">CourseNicknamesController#clear</a></span>
+</h2>
+<h3>
+  DELETE /api/v1/users/self/course_nicknames
+ </h3>
+<div>
+<strong>Scope: </strong>
+<code>url:DELETE|/api/v1/users/self/course_nicknames</code>
+</div>
+<p>Remove all stored course nicknames.</p>
+<div>
+<h4>Example Request:</h4>
+<pre><code><span>curl </span><span>'https://&lt;canvas&gt;/api/v1/users/self/course_nicknames \
+ -X DELETE \
+ -H '</span><span>Authorization</span><span>:</span><span>Bearer</span><span>&lt;</span><span>token</span><span>&gt;</span><span>'</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+ © Instructure, Inc. Generated on Thu Mar 27 16:24:44 2025
+ This documentation is generated directly from the Canvas LMS source code, available <a href="https://github.com/instructure/canvas-lms">on Github</a>.
+</div>
